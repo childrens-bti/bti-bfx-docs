@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>GitHub Pull Request Guidelines - CNH BTI Bioinformatics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "GitHub Pull Request Guidelines";
+        var mkdocs_page_input_path = "github-pr-guide.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CNH BTI Bioinformatics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cnh-onboarding/">CNH-Specific Onboarding</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../access/">Technology Access Requests</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../aws/">AWS Compute</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cavatica/">CAVATICA Compute</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker/">Using Docker or Podman</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-general/">Using GitHub</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-repo-guide/">GitHub Repository Guidelines</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">GitHub Pull Request Guidelines</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#preparing-code-for-a-pull-request-pr-and-review-some-principles">Preparing Code for a Pull Request (PR) and Review - Some Principles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#check-out-a-new-branch">Check out a new branch</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#update-local-git-repo">Update local git repo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#submitting-a-pull-request-pr">Submitting a Pull Request (PR)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stacking-prs">Stacking PRs</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code-review-guide/">Code Review Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project-mgmt/">BTI Project Management</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sprints/">Sprint Planning</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docs-resources/">Docs</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CNH BTI Bioinformatics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">GitHub Pull Request Guidelines</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="github-code-and-pull-request-pr-guidelines">GitHub Code and Pull Request (PR) Guidelines</h1>
+<p>We prefer the use of <code>tidyverse</code> functions over base R, when possible. The reason for this is so that all developers and reviewers are speaking the same language, making coding and reviewing easier across the team. </p>
+<ul>
+<li>Additional style guidelines<ul>
+<li>We follow the <a href="https://style.tidyverse.org/index.html">tidyverse style guide</a> for writing code.</li>
+<li>Avoid <code>CamelCase</code> unless already in a package function being used.</li>
+</ul>
+</li>
+</ul>
+<h2 id="preparing-code-for-a-pull-request-pr-and-review-some-principles">Preparing Code for a Pull Request (PR) and Review - Some Principles</h2>
+<ol>
+<li>
+<p><strong>Create quantifiable and transparent analysis goals</strong></p>
+<ul>
+<li>Usually PRs will be linked to an issue (bug fix, new module development, module rerun with new data) or a scientific question we are seeking to answer. Clearly define this ahead of time by submitting an issue to track what you’d like to do/have done or keep this in mind when creating a new branch for a future review.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use informative commit messages</strong></p>
+<ul>
+<li><em>“Update 01-new-analysis-01.R”</em> does not adequately explain what was done in that commit. It will be harder for you to go back and find where you changed something and harder for the reviewer to understand what was changed in that commit. Something like <em>“fix bug in survival cox ph function”</em> is more informative. Additional (bulleted) information can be added to the within the commit message if more detail is needed. </li>
+<li>See <a href="https://cbea.ms/git-commit/">“Why good commit messages matter”</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Keep PRs  ≤ 400 lines of code (LOC)</strong></p>
+<ul>
+<li>In practice, a review of 200-400 LOC over 60 to 90 minutes should yield 70-90% defect discovery. Therefore, we aim to have PRs within this 200-400 LOC limit.</li>
+</ul>
+</li>
+<li>
+<p><strong>Separate your scripts by purpose, and stack the PRs.</strong></p>
+<ul>
+<li>Frequently, an analysis module has multiple scripts. Sometimes a module contains a new function. In these cases, you should separate your PRs by script, stacking them in the order in which they should be reviewed. For more on stacking PRs, see below.</li>
+<li>See our repository structure guidelines.</li>
+</ul>
+</li>
+<li>
+<p><strong>Annotate your code.</strong></p>
+<ol>
+<li>This should be done throughout the code, explaining each code chunk in a notebook and/or steps for an analysis. Reviewers will find fewer bugs/mistakes when authors read through and annotate their own code before submitting it for review.</li>
+</ol>
+</li>
+<li>
+<p><strong>Add a module README.</strong></p>
+<ul>
+<li>See <a href="https://github.com/rokitalab/OpenPedCan-Project-CNH#documenting-your-analysis">OpenPedCan's Documenting Your Analysis</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Add a module run script.</strong></p>
+<ul>
+<li>Usually this is a shell script which runs all of the module scripts in order.</li>
+</ul>
+</li>
+<li>
+<p><strong>Clearly document your goals within the PR template.</strong></p>
+<ul>
+<li>Remember, a reviewer may not have the background of your project or previous analyses leading up to the PR in question, so it is very helpful to the reviewer when the PR is clearly described.</li>
+</ul>
+</li>
+</ol>
+<h2 id="check-out-a-new-branch">Check out a new branch</h2>
+<ol>
+<li>
+<p><strong>To make local changes to project repo, checkout a new branch:</strong> </p>
+<pre><code>git switch -c &lt;new-branch&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>Make desired changes to project repo in new branch (usually one script per PR)</strong></p>
+<ul>
+<li>Add new analysis module</li>
+<li>Edit an existing module (add/edit scripts, etc.)</li>
+<li>Add new packages to project <code>Dockerfile</code></li>
+<li>Add data files for new data release</li>
+</ul>
+</li>
+<li>
+<p><strong>Change branch index to reflect any local changes</strong></p>
+<ul>
+<li>
+<p><code>git add &lt;FILE&gt;</code> for any new or edited files or <code>git add -A</code> to add <em>all</em> changed files</p>
+</li>
+<li>
+<p><code>git rm &lt;FILE&gt;</code> for any deleted files</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Commit local changes to branch, and includes a message describing that changes made</strong></p>
+<pre><code>git commit -m "message-regarding-changes"
+</code></pre>
+</li>
+<li>
+<p><strong>Push commit(s) to remote repository</strong></p>
+<pre><code>git push origin &lt;new-branch&gt;
+</code></pre>
+<p>This will push commits to remote branch <code>new-branch</code>, which will be created if it does not already exist. </p>
+<p>If authentication is required, the user needs to do the following:</p>
+<ul>
+<li>Go to github page → personal account/Settings/Developer settings
+choose tokens (classic) → Generate new token</li>
+<li>Once in the terminal and ask for authentication, to use the token as password.</li>
+</ul>
+</li>
+</ol>
+<h2 id="update-local-git-repo">Update local git repo</h2>
+<ul>
+<li>
+<p>To download all changes from remote repo to local repo, use:</p>
+<pre><code>git fetch
+</code></pre>
+</li>
+<li>
+<p>To download changes AND merge them into current branch, use:</p>
+<pre><code>git pull
+</code></pre>
+</li>
+</ul>
+<h2 id="submitting-a-pull-request-pr">Submitting a Pull Request (PR)</h2>
+<p>Any changes pushed to a project repo branch must be reviewed by team members prior to merging into another branch. This is accomplished by submitting a pull request (PR) that compares the new branch to the one you would like to merge into, and describes changes made. </p>
+<ol>
+<li>
+<p><strong>Navigate to remote project repo, and click “Pull Requests”:</strong> </p>
+<p><img alt="Screenshot 2023-04-12 at 10.23.35 AM.png" src="../img/Screenshot_2023-04-12_at_10.23.35_AM.png" /></p>
+</li>
+<li>
+<p><strong>Click “New pull request”</strong></p>
+<p><img alt="Screenshot 2023-04-12 at 10.23.56 AM.png" src="../img/Screenshot_2023-04-12_at_10.23.56_AM.png" /></p>
+</li>
+<li>
+<p><strong>Select two branches to compare.</strong> The <code>base</code> branch should be the branch in which changes were made, and the <code>compare</code> branch should be the one into which you would like to merge. For example if you wanted to merge branch <code>v12-tpm</code> into <code>dev</code>:</p>
+<p><img alt="Screenshot 2023-04-12 at 10.25.00 AM.png" src="../img/Screenshot_2023-04-12_at_10.25.00_AM.png" /></p>
+</li>
+<li>
+<p><strong>Click “Create pull request”.</strong> This will navigate you to a page where you can provide a brief title and a description that reflects changes. At minimum, you should give details on: 1) changes made to repository and their motivation, 2) what kind of feedback you are seeking from reviewers, and 3) anything else that should be discussed regarding analyses and other changes. If a markdown template is in place (see example below), all questions should be answered prior to submitting PR. </p>
+<p><img alt="Screenshot 2023-04-12 at 10.31.57 AM.png" src="../img/Screenshot_2023-04-12_at_10.31.57_AM.png" /></p>
+</li>
+<li>
+<p><strong>Once completed, click “Create pull request”.</strong> The PR should now be visible if you navigate to open PRs. </p>
+</li>
+<li>
+<p><strong>Add reviewers and labels to PR.</strong></p>
+<p>There is a sidebar on the “Open a pull request” page and PR page that allows you to choose reviewers and add labels to PR.</p>
+<p><img alt="Screenshot 2023-04-12 at 10.41.19 AM.png" src="../img/Screenshot_2023-04-12_at_10.41.19_AM.png" /></p>
+<p>To add reviewers, click “Reviewers” and type in GitHub username of desired reviewer</p>
+<p>To add labels, click “Labels” and add desired label (e.g., “Ready for Review”, “Blocked”, “Stacked”). </p>
+</li>
+</ol>
+<h2 id="stacking-prs">Stacking PRs</h2>
+<ul>
+<li>
+<p>To stack a PR, checkout the branch on which you would like to stack your next PR:</p>
+<pre><code>git switch branch-1
+</code></pre>
+</li>
+<li>
+<p>Then, from within <em>that</em> branch, and not main/master/dev, create a new branch for the stacked PR:</p>
+<pre><code>git switch branch-2
+</code></pre>
+</li>
+<li>
+<p>Once you create your PR with the second branch, then change the base branch to <code>branch-1</code>. Now, you should see <em>only</em> the changes in <code>branch-2</code> in your PR.</p>
+</li>
+<li>These PRs either have to be merged <em>in stacked order</em> or they need to be merged backwards.<ul>
+<li>If merging in order, then be sure to delete the branch post merge of each PR. This will automatically trigger changing of the base branch to <code>main</code> or <code>master</code> or <code>dev</code> in preparation for the next PR merge.</li>
+<li>If merging backwards, such as with data releases, they should all be approved first, and keep note that the number of changed files will get larger, making it harder to track.</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../github-repo-guide/" class="btn btn-neutral float-left" title="GitHub Repository Guidelines"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../code-review-guide/" class="btn btn-neutral float-right" title="Code Review Guidelines">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../github-repo-guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../code-review-guide/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
