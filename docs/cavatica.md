@@ -4,7 +4,7 @@ CAVATICA is a platform which enables users to run AWS compute jobs through Commo
 
 We will generally use CAVATICA to:
 
-1. Run upstream processing workflows on raw data files, for example, those created through the Kids First Data Resource Center (KF DRC) at CHOP
+1. Run upstream processing workflows on raw data files, for example, those created through the Kids First Data Resource Center (KF DRC) at CHOP.
 2. Benchmark and implement new workflows specific to the needs of the BTI, for example, CITE-Seq, miRNA-Seq, pangenome analyses, etc.
 3. Small-scale merges/quick analyses of many data files to avoid downloads, such as through Data Studio.
 
