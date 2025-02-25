@@ -2,7 +2,7 @@
 
 ## GitHub
 
-We operate two GitHub organizations, [the Rokita Lab](https://github.com/rokitalab) and [BTI Bioinformatics Core](https://github.com/childrens-bti). All Rokta Lab and BTI Bioinformatics Core staff should be added to both.
+We operate two GitHub organizations, [the Rokita Lab](https://github.com/rokitalab) and [BTI Bioinformatics Core](https://github.com/childrens-bti). All Rokita Lab and BTI Bioinformatics Core staff should be added to both.
 
 ## High Performance Cluster (HPC)
 
