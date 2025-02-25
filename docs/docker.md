@@ -36,7 +36,7 @@ docker build -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
 docker build -t pgc-images.sbgenomics.com/naqvia/autopvs1:latest .
 ```
 
-For Mac users (M1 chip), you may need to specify the platform
+For Mac users with Apple silicon chips (M1-M4 chip), you may need to specify the platform
 
 ```bash
 docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
