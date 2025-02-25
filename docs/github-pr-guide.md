@@ -59,7 +59,7 @@ We prefer the use of `tidyverse` functions over base R, when possible. The reaso
     
     - `git rm <FILE>` for any deleted files
     
-4. **Commit local changes to branch, and includes a message describing that changes made**
+4. **Commit local changes to branch, and includes a message describing what changes were made**
     
         git commit -m "message-regarding-changes"
     
