@@ -37,7 +37,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
         
         Alternatively, the container can be initialized through the Docker dashboard on desktop
         
-    4. Once running, a bash shell can be opened into the container to run analyses. For example if <CONTAINER NAME> = openpedcan, run the following command from the root directory: 
+    4. Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
             docker exec -ti <CONTAINER_NAME> bash
         
