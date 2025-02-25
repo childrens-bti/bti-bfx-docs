@@ -73,7 +73,7 @@ We prefer the use of `tidyverse` functions over base R, when possible. The reaso
     
     - Go to github page → personal account/Settings/Developer settings
     choose tokens (classic) → Generate new token
-    - Once in the terminal and ask for authentication, to use the token as password.
+    - Once in the terminal and asked for authentication, use the token as password.
     
 
 ## Update local git repo
