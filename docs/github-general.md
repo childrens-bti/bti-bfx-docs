@@ -1,0 +1,103 @@
+# Using GitHub
+
+For general information on using GitHub, [see here](https://git-scm.com/doc).
+
+## Setting up a local SSH Key and adding to GitHub
+
+On your local computer (or EC2 instance for the first time), run the following command to generate your public SSH key.
+
+```bash
+ssh-keygen
+<enter>
+<enter>
+<enter>
+
+cat ~/.ssh/id_rsa.pub
+```
+
+Add this new SSH key to your profile in GitHub by following [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+
+## Setting up a Github repository locally
+
+1. **Clone remote Github repo onto local computer using SSH:**
+    
+        git clone git@github.com:rokitalab/OpenPedCan-Project-CNH.git
+    
+2. **Run project Docker image**
+
+    - Obtain latest version of project Docker image using Docker or Podman:
+
+            docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+            podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+
+    3. Run the Docker container locally (be sure to change <CONTAINER_NAME>): 
+        
+            docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+        
+        Alternatively, the container can be initialized through the Docker dashboard on desktop
+        
+    4. Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
+        
+            docker exec -ti openpedcan bash
+        
+        from here, you can navigate to the module of interest as follows: 
+        
+            cd /home/rstudio/OpenPedCan-Project-CNH/analyses/module-of-interest
+        
+3. **Download project data**
+    
+    Data can typically be downloaded via a [download-data.sh](http://download-data.sh) shell script in the project root directory: 
+    
+        bash download-data.sh
+    
+    This will download all project data from the associated Amazon S3 bucket and create symlinks in `data/` to the latest data release version. This command can be re-run to ensure that the most updated files are downloaded. 
+    
+
+## Creating submodules
+
+The following is a good resource: [https://git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+Below is documentation from Kelsey Keith at CHOP:
+
+```markdown
+## Git Submodules
+
+Followed the instructions in the git book for setting up a submodule, <https://git-scm.com/book/en/v2/Git-Tools-Submodules>
+
+### Toy Example of How to Set up a Submodule
+*2022-09-02*
+
+Setting up a repo as a submodule of another repo. 
+I used two personal private toy repositories `practice` and `old_practice_repository`
+
+```bash
+git clone https://github.com/kelseykeith/practice.git
+cd practice
+git submodule add https://github.com/kelseykeith/old_practice_repository
+git submodule init
+git submodule update
+```
+
+Go to the other repository, make some changes, and then you can sync them into the other repository it's a submodule of
+
+```bash
+git clone https://github.com/kelseykeith/old_practice_repository
+cd old_practice_repository
+echo 'submodule testing' > submodule_test.txt
+git add submodule_test.txt 
+git commit -m 'using this repo and the practice repository repo to practice adding a git submodule'
+git push
+cd /path/to/practice/repository
+git submodule update --remote --merge
+```
+Setting up `OpenPedCan-analysis` as a submodule of `documentation` so that I can reference `OpenPedCan-analysis` files
+
+```bash
+cd documentation
+git checkout main
+git checkout -b table-update
+git submodule add https://github.com/PediatricOpenTargets/OpenPedCan-analysis.git
+# reset submodule to the last v10/v1.0.0 commit
+git reset --hard c0e5692e2949ad30b8e087ff0ec4e9385bde4b13
+```

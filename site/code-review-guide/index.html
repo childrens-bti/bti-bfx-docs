@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Code Review Guidelines - CNH BTI Bioinformatics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Code Review Guidelines";
+        var mkdocs_page_input_path = "code-review-guide.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CNH BTI Bioinformatics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cnh-onboarding/">CNH-Specific Onboarding</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../access/">Technology Access Requests</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../aws/">AWS Compute</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cavatica/">CAVATICA Compute</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker/">Using Docker or Podman</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-general/">Using GitHub</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-repo-guide/">GitHub Repository Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-pr-guide/">GitHub Pull Request Guidelines</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Code Review Guidelines</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#our-code-review-model-based-on-openpedcan">Our Code Review model, based on OpenPedCan.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rules-of-thumb">Rules of thumb:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#merging-approved-pull-requests">Merging approved pull requests</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-code-review-resources">Additional Code Review Resources</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project-mgmt/">BTI Project Management</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sprints/">Sprint Planning</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docs-resources/">Docs</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CNH BTI Bioinformatics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Code Review Guidelines</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="code-review-guidelines">Code Review Guidelines</h1>
+<p>All pull requests will undergo peer review, and we do so while maintaining a culture of positive peer review.</p>
+<h2 id="our-code-review-model-based-on-openpedcan">Our Code Review model, based on <a href="https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/CONTRIBUTING.md#pull-requests">OpenPedCan</a>.</h2>
+<p>The review intends to ensure that a pull request conforms to the following basic requirements:</p>
+<ul>
+<li>The code is correct.</li>
+<li>The results can be reproduced in a reasonable amount of time.</li>
+<li>The results are expected.</li>
+<li>The documentation describes the purpose, methods, results, input, output, and how to run the code.</li>
+<li>The code follows basic style guidelines.</li>
+<li>The code contains comments that explain non-obvious procedures.</li>
+<li>The analysis is scientifically sound.</li>
+</ul>
+<p>But, why?</p>
+<ul>
+<li>To foster a culture of collaboration.</li>
+<li>To <a href="https://smartbear.com/blog/developing-a-culture-of-mentorship-with-code-revie/">allow junior team members to learn from senior team members</a>, or frequently, vice versa!</li>
+<li>To spark knowledge transfer, not only of coding practices, but also through project-specific analyses and subject matter.</li>
+<li>To track our changes and thoughts over time (i.e. this is our virtual lab notebook).</li>
+<li>To maintain our high standard of reproducibility and rigor.</li>
+<li>To have all code, figures, and tables ready for future manuscript submission.</li>
+</ul>
+<h2 id="rules-of-thumb">Rules of thumb:</h2>
+<ol>
+<li>Always rerun the module to ensure it works and outputs can be reproduced identically.</li>
+<li>Review ≤ 400 lines of code (LOC) at a time</li>
+<li>Do not review for more than 60 minutes at a time.</li>
+<li>Take 20 minute breaks in between reviews.</li>
+</ol>
+<p>Pull requests can be reviewed using <a href="https://help.github.com/articles/about-pull-request-reviews/">GitHub's review interface</a>. Following are the basic guidelines for reviewing pull requests:</p>
+<ul>
+<li>Note the type of review you performed: did you look over the source code, did you look over the documentation, did you run the source code, did you look at and interpret the results or a combination of these?</li>
+<li>Suggest modifications or, potentially, directly suggest, <strong><em>but do not commit changes to</em></strong>, the pull request.</li>
+<li>Explain in <strong>detail</strong> whether and why the suggested modifications are <strong>necessary</strong>, and how the modifications should be implemented specifically, so that the developers are able to follow the suggestions without misunderstanding.</li>
+<li>For any suggestions/comments that are related to the lines that were changed in the particular PR, make the comment underneath the code by clicking the "+" next to the code (see below images). Click "Start a review" for the first comment, and afterwards, click "Add single comment" to keep all comments within the same review. Click "Finish your review" once completed.</li>
+</ul>
+<p><img alt="Screenshot_2023-07-09_at_2.36.59_PM.png" src="../img/Screenshot_2023-07-09_at_2.36.59_PM.png" /></p>
+<p><img alt="Screenshot_2023-07-09_at_2.39.03_PM.png" src="../img/Screenshot_2023-07-09_at_2.39.03_PM.png" /></p>
+<p><img alt="Screenshot_2023-07-09_at_2.39.37_PM.png" src="../img/Screenshot_2023-07-09_at_2.39.37_PM.png" /></p>
+<ul>
+<li>If there are any comments/suggestions that are <strong>outside</strong> of the code changes this particular PR, for example, any questions about the results, or any lines of code (although not changed) that seemed puzzling, mention them as comments after you click "Finish your review". The permalinks of the referenced results or code can be obtained by the following procedure: click the "Commits" tab of the pull request, browse the repository at a specific commit that contains the referenced results or code by clicking the <code>&lt;&gt;</code> button of the commit row, go to the referenced file in the repository to get file or line permalinks.</li>
+<li>If the suggested modifications are extensive refactoring or re-designing without any change on the code behaviors, results or run-time, consider submitting a new issue for the refactoring or re-designing, and discussing the priority and specific implementations in the new issue, after the pull request under review is merged, so that the pull request under review will not be kept open for lengthy discussions and commits on extensive refactoring or re-designing that are out of the scope of the original pull request addressed issue.</li>
+</ul>
+<p>Before a repository maintainer merges a pull request, there must be at least one affirmative review. If there is any unaddressed criticism or disapproval, a repository maintainer will determine how to proceed and may wait for additional feedback.</p>
+<h2 id="merging-approved-pull-requests">Merging approved pull requests</h2>
+<p>If working on a collaborative repository, and a pull request is approved, please do <strong>not</strong> merge it immediately. Instead, wait for the repository maintainer to coordinate with you on when to merge the pull request and whether the pull request should be updated with the latest <code>dev</code> or <code>main</code> branch. The coordination can reduce the workload of developers for checking whether the <code>dev</code> or <code>main</code> branch updates by merging other pull requests will affect their own pull requests.</p>
+<h2 id="additional-code-review-resources">Additional Code Review Resources</h2>
+<p><a href="https://hutchdatascience.org/code_review/index.html#resources-for-lab-developers">Fred Hutch Data Science Lab</a></p>
+<p><a href="https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/">SmartBear Code Review</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../github-pr-guide/" class="btn btn-neutral float-left" title="GitHub Pull Request Guidelines"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../project-mgmt/" class="btn btn-neutral float-right" title="BTI Project Management">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../github-pr-guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../project-mgmt/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
