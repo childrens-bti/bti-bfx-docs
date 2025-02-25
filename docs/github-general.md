@@ -39,7 +39,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
         
     4. Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
-            docker exec -ti <CONTAINER_NAME> bash
+            docker exec -ti openpedcan bash
         
         from here, you can navigate to the module of interest as follows: 
         
