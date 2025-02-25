@@ -15,7 +15,7 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
-Add this to new SSH key to your profile in GitHub.
+Add this new SSH key to your profile in GitHub by following [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 
 ## Setting up a Github repository locally
