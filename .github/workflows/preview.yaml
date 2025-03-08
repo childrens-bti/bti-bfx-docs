@@ -1,19 +1,43 @@
-name: Deploy Preview Website
+name: build-preview
+run-name: Build Pull Request Preview
+
 on:
+  # Allow this workflow to be invoked by another workflow or manually.
+  workflow_call:
+  workflow_dispatch:
+  # Also trigger on pull request events against main.
   pull_request:
     branches:
       - main
+
+env:
+  PREVIEWS_BRANCH: pr-preview
+
 permissions:
   contents: write
+  pull-requests: write
+
 jobs:
-  deploy:
+  build-preview:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Debug dump
+        uses: crazy-max/ghaction-dump-context@v2
+
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          # Check out the PR's head branch
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - run: pip install mkdocs mkdocs-material
-      - name: Deploy preview site
-        run: mkdocs gh-deploy --clean --force --remote-branch pr-preview
+          python-version: "3.x"
+
+      - name: Install MkDocs and dependencies
+        run: pip install mkdocs mkdocs-material
+
+      - name: Build and deploy preview site
+        run: mkdocs gh-deploy --clean --force --remote-branch ${{ env.PREVIEWS_BRANCH }}
