@@ -6,13 +6,13 @@ To file an issue, please see the docs repo [here](https://github.com/childrens-b
 
 ## Responsible and Ethical Use of Bioinformatics Resources
 
-### Ethical considerations
+### Ethical Considerations
 
 Please be sure to work with your PI and/or Dr. Rokita to understand which metadata, clinical data, and genomic data types are allowed to be stored in public and private spaces.
 Please do not share our AWS account number or IP addresses externally or within GitHub. 
 If you have questions, please ask us!
 
-### Submitting jobs or tasks
+### Submitting Jobs or Tasks
 
 1. HPC: When utilizing the HPC, please be mindful when submitting large or many jobs, as this is a community resource.
 2. AWS: We have created an EC2 service catalog product, "BTI Research" for use by researchers in the BTI. 
