@@ -2,15 +2,14 @@ name: build-preview
 run-name: Build Pull Request Preview
 
 on:
-  workflow_call:
-  workflow_dispatch:
   pull_request:
     branches:
       - main
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
 
 env:
   PREVIEWS_BRANCH: pr-preview
-  PREVIEWS_FOLDER: preview
 
 permissions:
   contents: write
@@ -26,7 +25,7 @@ jobs:
       - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
-          # Checkout the head branch of the PR
+          # Check out the pull request’s head branch
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
@@ -40,13 +39,10 @@ jobs:
 
       - name: Build and deploy preview site
         run: |
-          # Build and deploy to the preview branch
-          mkdocs gh-deploy --clean --force --remote-branch ${{ env.PREVIEWS_BRANCH }} \
-            --message "Deploy preview for PR #${{ github.event.pull_request.number }}" \
-            --config-file mkdocs.yml
+          echo "Deploying preview for PR #${{ github.event.pull_request.number }}"
+          mkdocs gh-deploy --clean --force --remote-branch ${{ env.PREVIEWS_BRANCH }}
 
       - name: Post PR Comment with Preview Link
-        if: github.event_name == 'pull_request'
         uses: peter-evans/create-or-update-comment@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -54,4 +50,4 @@ jobs:
           body: |
             🚀 **Preview Available!**
             A preview of this pull request is available at:
-            [Preview Link](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.pull_request.number }}/)
+            [Preview Link](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)
