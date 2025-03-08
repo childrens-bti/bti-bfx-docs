@@ -23,11 +23,15 @@ Jobs will be automatically scheduled and queued based on your user capacity.
 ### Fiscal Responsibility 
 
 1. AWS: Please only launch an EC2 instance type and volume for the work you will need to do to minimize costs (We are charged for instances per hour and by storage). Below are some ways you can minimize costs.
+    
     - Always `STOP` your instance once you are finished, or if are not actively working on the instance (e.g. you have 3 meetings and will not be working on it - you can stop it and come back later).
     - `TERMINATE` your instance once you no longer need it, or if you will not be using it for an extended period of time (weeks - months).
+
 2. CAVATICA: Use of CAVATICA requires set up of a billing group and funds.
 Please work with your PI and/or Dr. Rokita if you would like to run tasks in CAVATICA.
+
     - The NIH has Cloud Credits available for working with specific datasets through application (e.g. [CFDE](https://docs.cavatica.org/docs/common-fund-data-ecosystem) and/or [Kids First](https://commonfund.nih.gov/kidsfirst/cloudcredits)).
+
 3. [Cancer Genomics Cloud (CGC)](https://www.cancergenomicscloud.org/): New users of the CGC get $300 in cloud credits when they create a new account, and this can be used to run and/or test new workflows as desired.
 CGC has cloud credits available through [application](https://docs.cancergenomicscloud.org/docs/credits) as well.
 
@@ -35,6 +39,7 @@ CGC has cloud credits available through [application](https://docs.cancergenomic
 
 Using AI for bioinformatics (e.g. chatbots, GitHub Copilot) can drastically streamline time to project completion as it can be very useful when converting code from one language to another, developing functions, working out bugs, and more.
 However, it is very important to consider the information and data we enter into a chatbot or AI assistant such as Github Copilot.
-  - Do _not_ paste any identifiable patient data into chatbots, whether in the form of files or free text.
-  - Do _not_ utilize any AI software in conjuction with GitHub or your text editor so that private repositories are not exposed.
+
+- Do _not_ paste any identifiable patient data into chatbots, whether in the form of files or free text.
+- Do _not_ utilize any AI software in conjuction with GitHub or your text editor so that private repositories are not exposed.
 
