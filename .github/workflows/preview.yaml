@@ -1,0 +1,64 @@
+name: Build PR Preview (Option 2)
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+env:
+  GH_PAGES_BRANCH: gh-pages
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install MkDocs and dependencies
+        run: pip install mkdocs mkdocs-material
+
+      - name: Build MkDocs site
+        run: mkdocs build --clean
+
+      - name: Checkout gh-pages branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone --branch $GH_PAGES_BRANCH https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+
+      - name: Copy built site to PR preview directory
+        run: |
+          PREVIEW_DIR="preview/pr-${{ github.event.pull_request.number }}"
+          mkdir -p gh-pages/$PREVIEW_DIR
+          rsync -av --delete site/ gh-pages/$PREVIEW_DIR/
+
+      - name: Commit and push changes to gh-pages
+        working-directory: gh-pages
+        run: |
+          git add .
+          git commit -m "Update preview for PR #${{ github.event.pull_request.number }}" || echo "No changes to commit"
+          git push origin $GH_PAGES_BRANCH
+
+      - name: Post PR Comment with Preview Link
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🚀 **Preview Available!**
+            A preview of this pull request is available at:
+            [Preview Link](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview/pr-${{ github.event.pull_request.number }}/)

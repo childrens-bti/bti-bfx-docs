@@ -2,7 +2,7 @@
 
 This documentation was created with [mkdocs.org](https://www.mkdocs.org).
 
-To update, please submit a PR to [GitHub](https://github.com/childrens-bti/bti-bioinformatics-docs).
+To update, please submit a PR to [GitHub](https://github.com/childrens-bti/bti-bfx-docs).
 
 ## Commands
 
