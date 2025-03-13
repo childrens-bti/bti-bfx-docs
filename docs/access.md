@@ -11,6 +11,20 @@ We operate two GitHub organizations, [the Rokita Lab](https://github.com/rokital
 Please create a new `Access Request` [issue](https://github.com/childrens-bti/internal-ticket-tracker/issues) and obtain approval from Dr. Rokita.
 Then, create an "Incident type" IS request in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
 
+### Mapping the L Drive
+
+To map the L drive on a macbook:
+- While on VPN, Go to the Finder --> Go --> Connect to server and add the path: `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
+
+### Instructions for depositing data into `CancerImmunology-BTI`
+
+1. Use this ONLY for raw genomics data which will need to be processed by the BTI Bioinformatics Core and file manifests for those raw data. 
+Please, no word docs, ppts, etc.
+2. Create one root folder per lab (eg: `FonsecaLab`)
+3. Within the lab folder, create project-specific folders.
+4. Within project-specific folders, feel free to organize how you'd like (for now 🙂).
+5. We can now access the data via HPC and/or upload to AWS very quickly.
+
 ## High Performance Cluster (HPC)
 
 ### Requesting access
