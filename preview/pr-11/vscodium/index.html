@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>CNH-Specific Onboarding - CNH BTI Bioinformatics</title>
+    <title>Using VSCodium for Code Reviews - CNH BTI Bioinformatics</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "CNH-Specific Onboarding";
-        var mkdocs_page_input_path = "cnh-onboarding.md";
+        var mkdocs_page_name = "Using VSCodium for Code Reviews";
+        var mkdocs_page_input_path = "vscodium.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,20 +43,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">CNH-Specific Onboarding</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#training-modules">Training modules</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#citi">CITI</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#cornerstone">Cornerstone</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#your-timecard">Your Timecard</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cnh-onboarding/">CNH-Specific Onboarding</a>
                 </li>
               </ul>
               <ul>
@@ -91,8 +79,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../code-review-guide/">Code Review Guidelines</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../vscodium/">Using VSCodium for Code Reviews</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Using VSCodium for Code Reviews</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#connecting-vscodium-to-your-ec2-instance">Connecting VSCodium to your EC2 Instance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-review-with-vscodium">Code Review with VSCodium</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -121,7 +115,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">CNH-Specific Onboarding</li>
+      <li class="breadcrumb-item active">Using VSCodium for Code Reviews</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -130,34 +124,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="cnh-specific-onboarding">CNH-specific onboarding</h1>
-<p>The Children's National Intranet (MS Sharepoint site) can be found <a href="https://cnmc.sharepoint.com/SitePages/Homepage.aspx">here</a> and is relatively easy to navigate.</p>
-<h2 id="training-modules">Training modules</h2>
-<p>As a staff member who will have access to large amounts of genomic data and potentially protected health information (PHI) for patients, we require everyone complete multiple general staff and specific biomedical research traing modules.</p>
-<h3 id="citi">CITI</h3>
-<p>If you do not have an account set up with CITI, please make one <a href="https://www.citiprogram.org/">here</a>. If your account has an old email associated, please update to use your Children's National email address and/or add your affiliation to <code>Children's National Medical Center</code> (CNMC). This way, other staff members can search for you and see whether you had completed certain trainings. Next, you should be able to see a number of courses for CNMC. Please complete the following:</p>
-<ul>
-<li>Biomedical Research (17 modules)</li>
-<li>RCR: BIOMEDICAL RESEARCH (6 modules)</li>
-<li>Conflict of Interest (4 modules)</li>
-</ul>
-<h3 id="cornerstone">Cornerstone</h3>
-<p>Cornerstone is the place where you will complete CNH-related training/learning modules. From the CNMC Sharepoint, navigate to </p>
-<pre><code>Resources --&gt; Apps &amp; Tools --&gt; Cornerstone
+                <h1 id="using-vscodium-for-code-reviews">Using VSCodium for Code Reviews</h1>
+<p>There are multiple free text editors available which can be useful for code review, but I highlight the open-source editor, <a href="https://vscodium.com/">VSCodium</a> here because of ease of use.</p>
+<h2 id="connecting-vscodium-to-your-ec2-instance">Connecting VSCodium to your EC2 Instance</h2>
+<p>In order to connect VSCodium to your EC2 instance, you will need to configure your local SSH profile.
+To do so, you need to update your config file located at <code>~/.ssh/config</code> to include the private SSH key on your instance.</p>
+<ol>
+<li>From your instance, <code>cat ~/.ssh/id_ed25519</code> and copy this into a new text file on your computer, for instance <code>~/.ssh/ec2_key</code>.</li>
+<li>Create a <code>config</code> file in <code>~/.ssh/config</code> if none exists, or simply add to it the information below:</li>
+</ol>
+<pre><code class="language-bash">Host name_here
+    HostName ip_address
+    User ubuntu
+    IdentityFile ~/.ssh/ec2_key
 </code></pre>
-<p>You will periodically see modules assigned. Please complete these before their due dates.</p>
-<h2 id="your-timecard">Your Timecard</h2>
-<p>Kronos is the system used for recording time. From the CNMC Sharepoint, navigate to </p>
-<pre><code>Resources --&gt; Apps &amp; Tools --&gt; Cornerstone
-</code></pre>
-<p>During your first week, please email Dawn Griffiths and Erica Cleary to set your weekly schedule. They manage all timecards for the Department of Childhood Cancer and Immunology Research (CCIR). Once this is completed, you do not need to fill out your timecard weekly, nor approve it. </p>
-<p>Once you are eligible to take time off (ASSLA after 90 days and sick/annual leave after 180 days), you will then log into Kronos and be able to request time off in the right-hand screen. </p>
+<ol>
+<li>Click on the tetris box icon, search <code>Open Remote - SSH</code>, and install the plug-in.</li>
+</ol>
+<p><img alt="open-ssh" src="../img/open-ssh.png" />{width = 200}</p>
+<ol>
+<li>Within VSCodium, Click <code>Connect to</code>, then <code>Connect to Host</code> and Type in <code>ubuntu@ip_address</code>.</li>
+</ol>
+<p><img alt="connect" src="../img/vscodium-connect.png" />
+You should be in!</p>
+<h2 id="code-review-with-vscodium">Code Review with VSCodium</h2>
+<p>You can navigate to the repository of interest within VSCodium and any differences in your branch compared to the branch online will now show up with different color codes as below.
+This is very handy when trying to get an overall view of differences in images and/or files with multiple differences.</p>
+<p><img alt="code-diff" src="../img/Screenshot%202025-03-13%20at%203.14.12PM.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../access/" class="btn btn-neutral float-right" title="Technology Access Requests">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../code-review-guide/" class="btn btn-neutral float-left" title="Code Review Guidelines"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../project-mgmt/" class="btn btn-neutral float-right" title="BTI Project Management">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -180,10 +179,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../code-review-guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../access/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../project-mgmt/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -88,6 +88,10 @@
                 </li>
               </ul>
               <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vscodium/">Using VSCodium for Code Reviews</a>
+                </li>
+              </ul>
+              <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../project-mgmt/">BTI Project Management</a>
                 </li>
               </ul>
@@ -159,14 +163,14 @@ At this point, the instance will start creation and once complete, you will be a
 <li>While on VPN, copy the IP address, and in your local terminal, type <code>ssh ubuntu@ip_address</code>.
 You are now connected to your EC2 instance!</li>
 </ol>
-<p>To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub, per the instructions <a href="docs/github-general.md">here</a>.</p>
+<p>To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see GitHub section).</p>
 <h2 id="stopping-or-terminating-an-ec2-instance">Stopping or Terminating an EC2 Instance</h2>
 <p>To <code>STOP</code> an EC2 instance (or shut it down for later), you can either:</p>
 <ul>
 <li>Type <code>sudo shutdown -h now</code> into your console while inside of the instance OR</li>
 <li>Navigate to the instance within the AWS Console, click on <code>Instance state</code>, and Click <code>Stop instance</code>, as below:</li>
 </ul>
-<p><img alt="instance-state" src="../img/instance-state.png" /></p>
+<p><img alt="instance-state" src="../img/instance-state.png" />{width=200}</p>
 <p>To <code>TERMINATE</code> an EC2 instance (or delete it for good and stop storage charges on it), navigate to the instance within the AWS Console, click on <code>Instance state</code>, and Click <code>Terminate (delete) instance</code>.</p>
               
             </div>
