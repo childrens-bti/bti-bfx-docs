@@ -133,7 +133,8 @@ To do so, you need to update your config file located at <code>~/.ssh/config</co
 <li>From your instance, <code>cat ~/.ssh/id_ed25519</code> and copy this into a new text file on your computer, for instance <code>~/.ssh/ec2_key</code>.</li>
 <li>
 <p>Create a <code>config</code> file in <code>~/.ssh/config</code> if none exists, or simply add to it the information below:</p>
-<p><code>Host name_here
+<p><code>bash
+Host name_here
 HostName ip_address
 User ubuntu
 IdentityFile ~/.ssh/ec2_key</code></p>
