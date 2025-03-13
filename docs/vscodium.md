@@ -11,10 +11,10 @@ To do so, you need to update your config file located at `~/.ssh/config` to incl
 2. Create a `config` file in `~/.ssh/config` if none exists, or simply add to it the information below:
 
     ```
-    Host name_here
-        HostName ip_address
-        User ubuntu
-        IdentityFile ~/.ssh/ec2_key
+Host name_here
+    HostName ip_address
+    User ubuntu
+    IdentityFile ~/.ssh/ec2_key
     ```
 
 3. Click on the tetris box-looking icon, search `Open Remote - SSH`, and install the plug-in.
