@@ -36,9 +36,7 @@ We have created an EC2 instance template with precompiled utilities and tools, a
 4. Enter a name for this product so you'll easily remember why you created it (e.g. "Rokita-code-reviews" or "Rokita-dev").
 Follow the remaining instructions, filling in your GitHub email and username.
 Select an instance type (specs below):
-
   ![instances](img/instances.png)
-
 5. Select the amount of storage you'd like, keeping in mind that this can be expanded later and we pay for the storage we select.
 Typically, you can start at 500 GB or 1 TB.
 6. Click `Launch product`.
