@@ -130,16 +130,21 @@
 <p>In order to connect VSCodium to your EC2 instance, you will need to configure your local SSH profile.
 To do so, you need to update your config file located at <code>~/.ssh/config</code> to include the private SSH key on your instance.</p>
 <ol>
-<li>From your instance,
-    <code>bash
-    cat ~/.ssh/id_ed25519</code>
-    and copy this into a new text file on your computer, for instance <code>~/.ssh/ec2_key</code>.</li>
-<li>Create a <code>config</code> file in <code>~/.ssh/config</code> if none exists, or simply add to it the information below:
-    <code>bash
-    Host name_here
-        HostName ip_address
-        User ubuntu
-        IdentityFile ~/.ssh/ec2_key</code></li>
+<li>From your instance,</li>
+</ol>
+<pre><code class="language-bash">cat ~/.ssh/id_ed25519
+</code></pre>
+<pre><code>and copy this into a new text file on your computer, for instance `~/.ssh/ec2_key`.
+</code></pre>
+<ol>
+<li>Create a <code>config</code> file in <code>~/.ssh/config</code> if none exists, or simply add to it the information below:</li>
+</ol>
+<pre><code class="language-bash">Host name_here
+    HostName ip_address
+    User ubuntu
+    IdentityFile ~/.ssh/ec2_key
+</code></pre>
+<ol>
 <li>Click on the tetris box-looking icon, search <code>Open Remote - SSH</code>, and install the plug-in.
 <img alt="open-ssh" src="../img/open-ssh.png" /></li>
 <li>Within VSCodium, Click <code>Connect to</code>, then <code>Connect to Host</code> and Type in <code>ubuntu@ip_address</code>.
