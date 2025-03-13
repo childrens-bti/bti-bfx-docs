@@ -51,7 +51,12 @@ To begin working with GitHub on the EC2 instance, you must create an SSH key on 
 
 To `STOP` an EC2 instance (or shut it down for later), you can either:
 
-- Type `sudo shutdown -h now` into your console while inside of the instance OR
+- Type 
+```bash
+sudo shutdown -h now
+```
+into your console while inside of the instance OR
+
 - Navigate to the instance within the AWS Console, click on `Instance state`, and Click `Stop instance`, as below:
 
 	![instance-state](img/instance-state.png)
