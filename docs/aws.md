@@ -47,7 +47,7 @@ At this point, the instance will start creation and once complete, you will be a
 8. While on VPN, copy the IP address, and in your local terminal, type `ssh ubuntu@ip_address`.
 You are now connected to your EC2 instance!
 
-To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub, per the instructions [here](docs/github-general.md).
+To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see GitHub section).
 
 ## Stopping or Terminating an EC2 Instance
 
@@ -56,7 +56,7 @@ To `STOP` an EC2 instance (or shut it down for later), you can either:
 - Type `sudo shutdown -h now` into your console while inside of the instance OR
 - Navigate to the instance within the AWS Console, click on `Instance state`, and Click `Stop instance`, as below:
 
-![instance-state](img/instance-state.png)
+![instance-state](img/instance-state.png){width=200}
 
 To `TERMINATE` an EC2 instance (or delete it for good and stop storage charges on it), navigate to the instance within the AWS Console, click on `Instance state`, and Click `Terminate (delete) instance`.
 
