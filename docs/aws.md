@@ -37,7 +37,7 @@ We have created an EC2 instance template with precompiled utilities and tools, a
 Follow the remaining instructions, filling in your GitHub email and username.
 Select an instance type (specs below):
 
-![instances](img/instances.png)
+  ![instances](img/instances.png)
 
 5. Select the amount of storage you'd like, keeping in mind that this can be expanded later and we pay for the storage we select.
 Typically, you can start at 500 GB or 1 TB.
@@ -56,7 +56,7 @@ To `STOP` an EC2 instance (or shut it down for later), you can either:
 - Type `sudo shutdown -h now` into your console while inside of the instance OR
 - Navigate to the instance within the AWS Console, click on `Instance state`, and Click `Stop instance`, as below:
 
-![instance-state](img/instance-state.png){width=200}
+	![instance-state](img/instance-state.png)
 
 To `TERMINATE` an EC2 instance (or delete it for good and stop storage charges on it), navigate to the instance within the AWS Console, click on `Instance state`, and Click `Terminate (delete) instance`.
 
