@@ -49,4 +49,14 @@ You are now connected to your EC2 instance!
 
 To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub, per the instructions [here](docs/github-general.md).
 
+## Stopping or Terminating an EC2 Instance
+
+To `STOP` an EC2 instance (or shut it down for later), you can either:
+
+- Type `sudo shutdown -h now` into your console while inside of the instance OR
+- Navigate to the instance within the AWS Console, click on `Instance state`, and Click `Stop instance`, as below:
+
+![instance-state](img/instance-state.png)
+
+To `TERMINATE` an EC2 instance (or delete it for good and stop storage charges on it), navigate to the instance within the AWS Console, click on `Instance state`, and Click `Terminate (delete) instance`.
 
