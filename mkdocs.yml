@@ -10,6 +10,7 @@ nav:
   - GitHub Repository Guidelines: github-repo-guide.md
   - GitHub Pull Request Guidelines: github-pr-guide.md
   - Code Review Guidelines: code-review-guide.md
+  - Using VSCodium for Code Reviews: vscodium.md
   - BTI Project Management: project-mgmt.md
   - Sprint Planning: sprints.md
   - Docs: docs-resources.md
