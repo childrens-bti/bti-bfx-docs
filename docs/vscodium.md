@@ -9,12 +9,14 @@ To do so, you need to update your config file located at `~/.ssh/config` to incl
 
 1. From your instance, `cat ~/.ssh/id_ed25519` and copy this into a new text file on your computer, for instance `~/.ssh/ec2_key`.
 2. Create a `config` file in `~/.ssh/config` if none exists, or simply add to it the information below:
+
   ```bash
   Host name_here
     HostName ip_address
     User ubuntu
     IdentityFile ~/.ssh/ec2_key
   ```
+  
 {:start="3"}
 3. Click on the tetris box-looking icon, search `Open Remote - SSH`, and install the plug-in.
     ![open-ssh](img/open-ssh.png)
