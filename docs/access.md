@@ -9,7 +9,7 @@ We operate two GitHub organizations, [the Rokita Lab](https://github.com/rokital
 ### Requesting access
 
 Please create a new `Access Request` [issue](https://github.com/childrens-bti/internal-ticket-tracker/issues) and obtain approval from Dr. Rokita.
-Then, create an "Incident type" IS request in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
+While on CNH VPN, create an "Incident type" IS request in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
 
 ### Mapping the L Drive
 
