@@ -45,7 +45,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
 
       To launch RStudio in a browser, enter the IP address in a web browser. The username for login is `rstudio` and the password is `pass` (default) or whatever was specified in the `docker run` command.  
 
-4. Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
+4. (Optional) Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
           docker exec -ti openpedcan bash
         
