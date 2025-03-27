@@ -33,7 +33,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
 
     - Run the Docker container
     
-      __Local development__
+      *Local development*
         
             docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
         
@@ -41,7 +41,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
         
       Mac and Linux users can also run Rstudio in the project docker container from a web browser. After executing the above `docker run` command, navigate to `localhost:8787` in your web browser. The username for login is `rstudio` and the password will be whatever password is set in the `docker run` command above (default: `pass`)
         
-      __Development using Amazon EC2__
+      *Development using Amazon EC2*
       
           docker run --platform linux/amd64 --name <CONTAINER_NAME> -d -e PASSWORD=pass -p 80:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
           
