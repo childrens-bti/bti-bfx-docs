@@ -26,16 +26,16 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
     
 2. **Run project Docker image**
 
-    1. Obtain latest version of project Docker image using Docker or Podman:
+    - Obtain latest version of project Docker image using Docker or Podman:
 
             docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
             podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-    2. Run the Docker container
+    - Run the Docker container
     
       For Local Development:
         
-            docker run --name CONTAINER_NAME --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+            docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
         Alternatively, the container can be initialized through the Docker dashboard on desktop.
         
@@ -43,11 +43,11 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
         
       For development using Amazon EC2:
           
-            docker run --platform linux/amd64 --name CONTAINER_NAME -d -e PASSWORD=pass -p 80:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+            docker run --platform linux/amd64 --name <CONTAINER_NAME> -d -e PASSWORD=pass -p 80:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
         To launch RStudio in a browser, enter the IP address in a web browser. The username for login is `rstudio` and the password is `pass` (default) or whatever was specified in the `docker run` command.  
 
-    3. Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
+    - Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
             docker exec -ti openpedcan bash
         
