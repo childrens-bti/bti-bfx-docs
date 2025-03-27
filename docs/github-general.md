@@ -23,9 +23,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
 1. **Clone remote Github repo onto local computer using SSH:**
     
         git clone git@github.com:rokitalab/OpenPedCan-Project-CNH.git
-        
-**Docker instructions**
-    
+
 2. **Obtain latest version of project Docker image using Docker or Podman:**
 
         docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
@@ -51,7 +49,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
         
           docker exec -ti openpedcan bash
         
-      from here, you can navigate to the module of interest as follows: 
+      From here, you can navigate to the module of interest as follows: 
         
           cd /home/rstudio/OpenPedCan-Project-CNH/analyses/module-of-interest
         
