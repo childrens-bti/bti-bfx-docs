@@ -26,12 +26,12 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
     
 2. **Run project Docker image**
 
-  - Obtain latest version of project Docker image using Docker or Podman:
+  * Obtain latest version of project Docker image using Docker or Podman:
 
             docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
             podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-  - Run the Docker container
+  * Run the Docker container
     
     For Local Development:
         
@@ -47,7 +47,7 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
 
       To launch RStudio in a browser, enter the IP address in a web browser. The username for login is `rstudio` and the password is `pass` (default) or whatever was specified in the `docker run` command.  
 
-  - Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
+  * Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
           docker exec -ti openpedcan bash
         
