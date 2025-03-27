@@ -26,34 +26,34 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
     
 2. **Run project Docker image**
 
-    - Obtain latest version of project Docker image using Docker or Podman:
+  - Obtain latest version of project Docker image using Docker or Podman:
 
             docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
             podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-    - Run the Docker container
+  - Run the Docker container
     
-      For Local Development:
+    For Local Development:
         
-            `docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest`
+          docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-        Alternatively, the container can be initialized through the Docker dashboard on desktop.
+      Alternatively, the container can be initialized through the Docker dashboard on desktop.
         
-        Mac and Linux users can also run Rstudio in the project docker container from a web browser. After executing the above `docker run` command, navigate to `localhost:8787` in your web browser. The username for login is `rstudio` and the password will be whatever password is set in the `docker run` command above (default: `pass`)
+      Mac and Linux users can also run Rstudio in the project docker container from a web browser. After executing the above `docker run` command, navigate to `localhost:8787` in your web browser. The username for login is `rstudio` and the password will be whatever password is set in the `docker run` command above (default: `pass`)
         
-      For development using Amazon EC2:
+    For development using Amazon EC2:
           
-            `docker run --platform linux/amd64 --name <CONTAINER_NAME> -d -e PASSWORD=pass -p 80:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest`
+          docker run --platform linux/amd64 --name <CONTAINER_NAME> -d -e PASSWORD=pass -p 80:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-        To launch RStudio in a browser, enter the IP address in a web browser. The username for login is `rstudio` and the password is `pass` (default) or whatever was specified in the `docker run` command.  
+      To launch RStudio in a browser, enter the IP address in a web browser. The username for login is `rstudio` and the password is `pass` (default) or whatever was specified in the `docker run` command.  
 
-    - Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
+  - Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
-            docker exec -ti openpedcan bash
+          docker exec -ti openpedcan bash
         
-        from here, you can navigate to the module of interest as follows: 
+      from here, you can navigate to the module of interest as follows: 
         
-            cd /home/rstudio/OpenPedCan-Project-CNH/analyses/module-of-interest
+          cd /home/rstudio/OpenPedCan-Project-CNH/analyses/module-of-interest
         
 3. **Download project data**
     
