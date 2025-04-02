@@ -18,34 +18,42 @@ cat ~/.ssh/id_rsa.pub
 Add this new SSH key to your profile in GitHub by following [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 
-## Setting up a Github repository locally
+## Setting up a Github repository
 
 1. **Clone remote Github repo onto local computer using SSH:**
     
         git clone git@github.com:rokitalab/OpenPedCan-Project-CNH.git
+
+2. **Obtain latest version of project Docker image using Docker or Podman:**
+
+        docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+        podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+
+3. **Run the Docker container**
     
-2. **Run project Docker image**
+    **For Local Development**:
+        
+          docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-    - Obtain latest version of project Docker image using Docker or Podman:
+      Alternatively, the container can be initialized through the Docker dashboard on desktop.
+        
+      Mac and Linux users can also run Rstudio in the project docker container from a web browser. After executing the above `docker run` command, navigate to `localhost:8787` in your web browser. The username for login is `rstudio` and the password will be whatever password is set in the `docker run` command above (default: `pass`)
+        
+    **For development using Amazon EC2**:
+          
+          docker run --platform linux/amd64 --name <CONTAINER_NAME> -d -e PASSWORD=pass -p 80:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 
-            docker pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
-            podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+      To launch RStudio in a browser, enter the IP address in a web browser. The username for login is `rstudio` and the password is `pass` (default) or whatever was specified in the `docker run` command.  
 
-    3. Run the Docker container locally (be sure to change <CONTAINER_NAME>): 
+4. (Optional) Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
         
-            docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+          docker exec -ti openpedcan bash
         
-        Alternatively, the container can be initialized through the Docker dashboard on desktop
+      From here, you can navigate to the module of interest as follows: 
         
-    4. Once running, a bash shell can be opened into the container to run analyses. For example if `<CONTAINER NAME>` = openpedcan, run the following command from the root directory: 
+          cd /home/rstudio/OpenPedCan-Project-CNH/analyses/module-of-interest
         
-            docker exec -ti openpedcan bash
-        
-        from here, you can navigate to the module of interest as follows: 
-        
-            cd /home/rstudio/OpenPedCan-Project-CNH/analyses/module-of-interest
-        
-3. **Download project data**
+5. **Download project data**
     
     Data can typically be downloaded via a [download-data.sh](http://download-data.sh) shell script in the project root directory: 
     
