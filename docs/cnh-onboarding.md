@@ -1,7 +1,7 @@
 # CNH-specific onboarding
 
 The Children's National Intranet (MS Sharepoint site) can be found [here](https://cnmc.sharepoint.com/SitePages/Homepage.aspx) and is relatively easy to navigate.
-The administrative team within the Center for Cancer and Immunology Research (CCIR) has done a wonderful job creating a [CCIR-specific Sharepoint site](https://cnmc.sharepoint.com/sites/GRP_CCIRBearNecessities_CtrforCancerImmunologyRsch/SitePages/CCIR-Employee-Support-%26.aspx) for our team as well.
+The administrative team within the Center for Cancer and Immunology Research (CCIR) has done a wonderful job creating a [CCIR-specific Sharepoint site](https://cnmc.sharepoint.com/sites/GRP_CCIRBearNecessities_CtrforCancerImmunologyRsch/SitePages/CCIR-Employee-Support-%26.aspx) for its faculty and staff.
 
 ## Training modules
 
@@ -17,7 +17,7 @@ If you do not have an account set up with CITI, please make one [here](https://w
 
 ### Cornerstone
 
-Cornerstone is the place where you will complete CNH-related training/learning modules. From the CNMC Sharepoint, navigate to 
+Cornerstone is the place where you will complete CNH-related training/learning modules. From the CNH Sharepoint, navigate to 
 
 ```
 Resources --> Apps & Tools --> Cornerstone
@@ -27,7 +27,7 @@ You will periodically see modules assigned. Please complete these before their d
 
 ### Your Timecard
 
-Kronos is the system used for recording time. From the CNMC Sharepoint, navigate to 
+Kronos is the system used for recording time. From the CNH Sharepoint, navigate to 
 
 ```
 Resources --> Apps & Tools --> Cornerstone
