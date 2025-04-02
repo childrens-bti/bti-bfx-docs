@@ -1,6 +1,7 @@
 # CNH-specific onboarding
 
 The Children's National Intranet (MS Sharepoint site) can be found [here](https://cnmc.sharepoint.com/SitePages/Homepage.aspx) and is relatively easy to navigate.
+The administrative team within the Center for Cancer and Immunology Research (CCIR) has done a wonderful job creating a [CCIR-specific Sharepoint site](https://cnmc.sharepoint.com/sites/GRP_CCIRBearNecessities_CtrforCancerImmunologyRsch/SitePages/CCIR-Employee-Support-%26.aspx) for our team as well.
 
 ## Training modules
 
@@ -24,7 +25,7 @@ Resources --> Apps & Tools --> Cornerstone
 
 You will periodically see modules assigned. Please complete these before their due dates.
 
-## Your Timecard
+### Your Timecard
 
 Kronos is the system used for recording time. From the CNMC Sharepoint, navigate to 
 
@@ -32,8 +33,19 @@ Kronos is the system used for recording time. From the CNMC Sharepoint, navigate
 Resources --> Apps & Tools --> Cornerstone
 ```
 
-During your first week, please email Dawn Griffiths and Erica Cleary to set your weekly schedule. They manage all timecards for the Department of Childhood Cancer and Immunology Research (CCIR). Once this is completed, you do not need to fill out your timecard weekly, nor approve it. 
+During your first week, please email Dawn Griffiths and Erica Cleary to set your weekly schedule. 
+They manage all timecards for the Center for Cancer and Immunology Research (CCIR). 
+Once this is completed, you do not need to fill out your timecard weekly, nor approve it.
 
-Once you are eligible to take time off (ASSLA after 90 days and sick/annual leave after 180 days), you will then log into Kronos and be able to request time off in the right-hand screen. 
+Once you are eligible to take time off (ASSLA after 90 days and Vacation after 90 days (hourly employees) or 180 days (salaried employees), please follow the instructions below to make a request:
+1. Email Dr. Rokita, cc-ing Dawn Griffiths and Erica Cleary, to make a request for time off.
+2. Once approved, log into Kronos and make an official request for time off within the right-hand screen.
 
+For more information about accruing leave, please see [here](https://cnmc.sharepoint.com/sites/employeeservices/SitePages/Benefits/Leave.aspx).
+
+
+### BTI Bioinformatics Outlook Calendar
+
+We have created a shared calendar in outlook called `BTI Bioinformatics`.  
+Please place your out of office time on this calendar for team awareness.
 
