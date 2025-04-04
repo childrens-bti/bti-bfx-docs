@@ -30,7 +30,7 @@ You will periodically see modules assigned. Please complete these before their d
 Bear Time (Kronos) is the system used for recording time. From the CNH Sharepoint, navigate to 
 
 ```
-Resources --> Apps & Tools --> Cornerstone
+Resources --> Apps & Tools --> Bear Time (Kronos)
 ```
 
 During your first week, please email Dawn Griffiths and Erica Cleary to set your weekly schedule. 
