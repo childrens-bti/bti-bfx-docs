@@ -17,7 +17,7 @@ If you do not have an account set up with CITI, please make one [here](https://w
 
 ### Cornerstone
 
-Cornerstone is the place where you will complete CNH-related training/learning modules. From the CNH Sharepoint, navigate to 
+Cornerstone is the place where you will complete CNH-related training/learning modules. From the [CNH Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), navigate to 
 
 ```
 Resources --> Apps & Tools --> Cornerstone
@@ -27,7 +27,7 @@ You will periodically see modules assigned. Please complete these before their d
 
 ### Your Timecard
 
-Bear Time (Kronos) is the system used for recording time. From the CNH Sharepoint, navigate to 
+Bear Time (Kronos) is the system used for recording time. From the [CNH Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), navigate to 
 
 ```
 Resources --> Apps & Tools --> Bear Time (Kronos)
