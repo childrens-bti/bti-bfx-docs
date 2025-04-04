@@ -96,6 +96,18 @@ Once access is granted, you should be able to access our account using CNH SSO c
 
 If you do not already have an account, you can generate one using your eCommons ID [here](https://cavatica.sbgenomics.com/). If you do not have an eCommons ID, please work with Dr. Rokita to get one.
 
+## Globus
+
+Globus is a file transfer service created by University of Chicago.
+Some sequencing centers may utilize Globus to transfer data to us and they will upload a directory of files to Globus for our retrieval.
+Additionally, we now have an HPC endpoint called `Local FS` (HPC@CNRIC) for transfer and since we can map the L drive here, we can essentially directly transfer from Globus to L drive.
+Each person at CNH should automatically be able to log into Globus [here](https://www.globus.org/) using `Children's National Health System` SSO.
+If you are notified of a project which uses Globus, the user just needs to add your email in order to access the project.
+You can log into Globus, open the Collection in `File Manager`, set up the destination to `Local FS` within your folder of choice (see below), then click on `Transfer or Sync to...`.
+
+![globus.png](img/globus.png)
+
+The transfer window can be closed and you will received an email when the transfer is completed.
 
 ## Self-service password reset
 
