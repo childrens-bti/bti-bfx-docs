@@ -27,7 +27,7 @@ You will periodically see modules assigned. Please complete these before their d
 
 ### Your Timecard
 
-Kronos is the system used for recording time. From the CNH Sharepoint, navigate to 
+Bear Time (Kronos) is the system used for recording time. From the CNH Sharepoint, navigate to 
 
 ```
 Resources --> Apps & Tools --> Cornerstone
