@@ -37,7 +37,7 @@ During your first week, please email Dawn Griffiths and Erica Cleary to set your
 They manage all timecards for the Center for Cancer and Immunology Research (CCIR). 
 Once this is completed, you do not need to fill out your timecard weekly, nor approve it.
 
-Once you are eligible to take time off (ASSLA after 90 days and Vacation after 90 days (hourly employees) or 180 days (salaried employees), please follow the instructions below to make a request:
+Once you are eligible to take time off (ASSLA after 90 days and Vacation after 90 days (hourly employees) or 180 days (salaried employees)), please follow the instructions below to make a request:
 1. Email Dr. Rokita, cc-ing Dawn Griffiths and Erica Cleary, to make a request for time off.
 2. Once approved, log into Kronos and make an official request for time off within the right-hand screen.
 
