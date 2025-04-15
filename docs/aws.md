@@ -2,7 +2,7 @@
 
 ## Setting up AWS Single-sign-on (SSO)
 
-Make sure you have [AWS cli](https://docs.aws.amazon.com/cli/v1/userguide/install-macos.html) installed on your local machine.
+Make sure you have [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed on your local machine.
 
 ```bash
 aws configure sso
