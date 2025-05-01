@@ -76,6 +76,12 @@ esac
 
 After sourcing this file, you should be able to see the folder in `/home/USER/CancerImmunology-BTI`.
 
+In order to transfer files from the L drive to Globus, you must first ssh into the transfer node after completing the above steps. 
+```
+ssh hpc-transfer.cnmc.org
+```
+This is also the node that you should use for conducting large data transfers. 
+
 ## Amazon Web Services (AWS)
 
 For information about our account, please see pinned file in Slack.
