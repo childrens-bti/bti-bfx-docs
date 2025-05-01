@@ -76,7 +76,9 @@ esac
 
 After sourcing this file, you should be able to see the folder in `/home/USER/CancerImmunology-BTI`.
 
-In order to transfer files from the L drive to Globus, you must first ssh into the transfer node after completing the above steps. 
+### Transferring external data onto or from the HPC 
+
+In order to transfer files from Globus to the L drive or vice versa, you must first ssh into the transfer node after completing the above steps:
 ```
 ssh hpc-transfer.cnmc.org
 ```
