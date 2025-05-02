@@ -137,3 +137,9 @@ There is now a beta version of a Microsoft Word plug-in for paperpile, which can
 Instructions for how to use the Word plug-in can be found [here](https://new.paperpile.com/Getting-started-with-Paperpile-and-Word-7ed01d0417a3433f885103ebad04b901).
 Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.
 
+- Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from CNH VPN and toggle to GWU VPN for full functionality.
+
+## GWU ID and HPC Access
+
+Fill out the RedCap form [here](https://is.gd/ColonialOne), which will trigger an email to Adam Wong, who will take care of the request.
+
