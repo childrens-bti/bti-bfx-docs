@@ -76,6 +76,15 @@ esac
 
 After sourcing this file, you should be able to see the folder in `/home/USER/CancerImmunology-BTI`.
 
+### Transferring external data onto or from the HPC 
+
+In order to transfer files from Globus to the L drive or vice versa, you must first ssh into the transfer node after completing the above steps:
+```
+ssh hpc-transfer.cnmc.org
+```
+This is also the node that you should use for conducting large data transfers from external SFTP servers (for example, from sequencing centers).
+If an SFTP server is not accessible from the HPC transfer node, you should fill out a "policy exception" ticket in service now for IT security to whitelist the server and port.
+
 ## Amazon Web Services (AWS)
 
 For information about our account, please see pinned file in Slack.
