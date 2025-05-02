@@ -107,14 +107,14 @@ If you do not already have an account, you can generate one using your eCommons 
 If you do not have an eCommons ID, please work with Dr. Rokita to get one.
 
 - If you have never received pilot funds when you signed up with CAVATICA, please email support@velsera.com, ask for pilot funds, and they will direct your email to Dr. Jared Rozowsky for $100 in credits.
-- If you have a project in which you will utilize NIH Kids First datasets or workflows, or wish to enhance Kids First workflows, you may apply for credits for CAVATICA: https://commonfund.nih.gov/kidsfirst/cloudcredits, which will get you $1,000 in starter credits.
+- If you have a project in which you will utilize NIH Kids First datasets or workflows, or wish to enhance Kids First workflows, you may [apply for Kids First Cloud Credits](https://commonfund.nih.gov/kidsfirst/cloudcredits) for CAVATICA, which will get you $1,000 in starter credits.
 
 ## Cancer Genomics Cloud (CGC)
 
 CGC is an NIH-hosted CAVATICA instance specifically geared toward cancer researchers and can be accessed through eCommons, as above.
 When you first log in, you will be awarded $300 in pilot cloud credits.
 
-- Cancer Genomics Cloud may award up to $10K in cloud credits for bigger project ideas: https://www.cancergenomicscloud.org/cgc-apply-for-collaborative-funds
+- Cancer Genomics Cloud may award up to $10K in cloud credits for bigger project ideas: apply [here](https://www.cancergenomicscloud.org/cgc-apply-for-collaborative-funds).
 
 ## Globus
 
