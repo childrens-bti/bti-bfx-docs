@@ -142,4 +142,3 @@ Please ask Dr. Rokita for a license if you are contributing to grants and/or man
 ## GWU ID and HPC Access
 
 Fill out the RedCap form [here](https://is.gd/ColonialOne), which will trigger an email to Adam Wong, who will take care of the request.
-
