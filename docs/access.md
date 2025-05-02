@@ -106,7 +106,7 @@ Once access is granted, you should be able to access our account using CNH SSO c
 If you do not already have an account, you can generate one using your eCommons ID [here](https://cavatica.sbgenomics.com/). 
 If you do not have an eCommons ID, please work with Dr. Rokita to get one.
 
-- If you have never received pilot funds when you signed up with CAVATICA, please email support@velsera.com, ask for pilot funds, and they will direct your email to Dr. Jared Rozowsky for $100 in credits.
+- If you have never received pilot funds when you signed up with CAVATICA, please email `support@velsera.com`, ask for pilot funds, and they will direct your email to Dr. Jared Rozowsky for $100 in credits.
 - If you have a project in which you will utilize NIH Kids First datasets or workflows, or wish to enhance Kids First workflows, you may [apply for Kids First Cloud Credits](https://commonfund.nih.gov/kidsfirst/cloudcredits) for CAVATICA, which will get you $1,000 in starter credits.
 
 ## Cancer Genomics Cloud (CGC)
