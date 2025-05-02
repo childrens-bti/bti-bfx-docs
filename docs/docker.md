@@ -25,8 +25,8 @@ Log into CAVATICA docker registry using CAVATICA credentials
 docker login http://pgc-images.sbgenomics.com/ -u <USERNAME> -p <YOUR-AUTH-TOKEN>
 ```
 
-<USERNAME> refers to your CAVATICA username.
-<YOUR-AUTH-TOKEN> can be generated from your CAVATICA account under the “Authentication token” section in the Developer tab.
+"USERNAME" refers to your CAVATICA username.
+"YOUR-AUTH-TOKEN" can be generated from your CAVATICA account under the “Authentication token” section in the Developer tab.
 
 **Build Image**
 
@@ -81,7 +81,7 @@ Make any necessary changes to `Dockerfile` and run `docker build` as done previo
 docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<repository_name>:latest .
 ```
 
-Here, <username> should match the namespace used in the existing Docker container. For example, it should be rokita-lab, not your personal CAVATICA username, in the repository below.
+Here, "username" should match the namespace used in the existing Docker container. For example, it should be "rokita-lab", not your personal CAVATICA username, in the repository below.
 
 ```bash
 docker pull pgc-images.sbgenomics.com/rokita-lab/haydar-mirna:v1.0.1
