@@ -132,5 +132,8 @@ We favor Google Drive over OneDrive for collaborative manuscript writing and col
 
 ## Paperpile
 
-We have paperpile licenses for individuals actively writing manuscripts on Google Drive needing to insert references. Please ask Dr. Rokita for a license.
+We have paperpile licenses for individuals actively writing manuscripts on Google Drive needing to insert references. 
+There is now a beta version of a Microsoft Word plug-in for paperpile, which can be downloaded [here](https://paperpile.com/word-plugin/).
+Instructions for how to use the Word plug-in can be found [here](https://new.paperpile.com/Getting-started-with-Paperpile-and-Word-7ed01d0417a3433f885103ebad04b901).
+Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.
 
