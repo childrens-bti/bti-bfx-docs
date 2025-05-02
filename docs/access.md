@@ -150,6 +150,6 @@ Please ask Dr. Rokita for a license if you are contributing to grants and/or man
 
 - Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from CNH VPN and toggle to GWU VPN for full functionality.
 
-## GWU ID and HPC Access
+## GWU ID and GWU HPC Access
 
 Fill out the RedCap form [here](https://is.gd/ColonialOne), which will trigger an email to Adam Wong, who will take care of the request.
