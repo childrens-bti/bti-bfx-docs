@@ -2,7 +2,7 @@
 
 ## Virtual Private Networks (VPNs)
 
-### Children's National 
+### Children's National Hospital (CNH)
 
 CNH has recently switched their VPN to Palo Alto GlobalProtect, is installed on your computer.
 
