@@ -1,5 +1,24 @@
 # CNH-specific onboarding
 
+## Virtual Private Networks (VPNs)
+
+### Children's National Hospital (CNH)
+
+CNH has recently switched their VPN to Palo Alto GlobalProtect, is installed on your computer.
+
+- To connect, enter the CNH portal and you will be asked to enter your credentials.
+- For remote users, GlobalProtect will be on "always on" mode.
+- For more information, see the intranet posting [here](https://cnmc.sharepoint.com/sites/itsupport/SitePages/GlobalProtect-VPN.aspx).
+
+### George Washington University (GWU) 
+
+GWU also uses GlobalProtect.
+
+- To request a GWU ID, please refer to the [access request section](https://childrens-bti.github.io/bti-bfx-docs/access/).
+- To connect, enter the GWU portal `gwvpn.gwu.edu` and you will be asked to enter your credentials.
+
+## CNH Intranet
+
 The Children's National Intranet (MS Sharepoint site) can be found [here](https://cnmc.sharepoint.com/SitePages/Homepage.aspx) and is relatively easy to navigate.
 The administrative team within the Center for Cancer and Immunology Research (CCIR) has done a wonderful job creating a [CCIR-specific Sharepoint site](https://cnmc.sharepoint.com/sites/GRP_CCIRBearNecessities_CtrforCancerImmunologyRsch/SitePages/CCIR-Employee-Support-%26.aspx) for its faculty and staff.
 
