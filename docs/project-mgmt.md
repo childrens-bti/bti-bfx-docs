@@ -2,7 +2,7 @@
 
 ## Scrum
 
-In the Rokita Lab, we are moving towards using Scrum as a project management framework. To get familiar with Scrum please refer to [the Scrum Guide](https://scrumguides.org/scrum-guide.html) or [Scrum Essentials in Under 10 Minutes](https://www.youtube.com/watch?v=RtQ3tpq-RuE).
+In the Rokita Lab, we are implementing Scrum as a project management framework. To get familiar with Scrum please refer to [the Scrum Guide](https://scrumguides.org/scrum-guide.html) or [Scrum Essentials in Under 10 Minutes](https://www.youtube.com/watch?v=RtQ3tpq-RuE).
 
 ## Sprint Planning
 
