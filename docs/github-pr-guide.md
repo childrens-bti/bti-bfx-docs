@@ -71,7 +71,7 @@ We prefer the use of `tidyverse` functions over base R, when possible. The reaso
     
     If authentication is required, the user needs to do the following:
     
-    - Go to github page → personal account/Settings/Developer settings
+    - Go to GitHub page → personal account/Settings/Developer settings
     choose tokens (classic) → Generate new token
     - Once in the terminal and asked for authentication, use the token as password.
     
