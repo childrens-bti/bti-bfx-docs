@@ -18,9 +18,9 @@ cat ~/.ssh/id_rsa.pub
 Add this new SSH key to your profile in GitHub by following [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 
-## Setting up a Github repository
+## Setting up a GitHub repository
 
-1. **Clone remote Github repo onto local computer using SSH:**
+1. **Clone remote GitHub repo onto local computer using SSH:**
     
         git clone git@github.com:rokitalab/OpenPedCan-Project-CNH.git
 

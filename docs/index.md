@@ -38,7 +38,7 @@ CGC has cloud credits available through [application](https://docs.cancergenomic
 ### Responsible Use of Artificial Intelligence (AI) in Bioinformatics
 
 Using AI for bioinformatics (e.g. chatbots, GitHub Copilot) can drastically streamline time to project completion as it can be very useful when converting code from one language to another, developing functions, working out bugs, and more.
-However, it is very important to consider the information and data we enter into a chatbot or AI assistant such as Github Copilot.
+However, it is very important to consider the information and data we enter into a chatbot or AI assistant such as GitHub Copilot.
 
   - Do _not_ paste any identifiable patient data into chatbots, whether in the form of files or free text.
   - Do _not_ utilize any AI software in conjuction with GitHub or your text editor so that private repositories are not exposed.
