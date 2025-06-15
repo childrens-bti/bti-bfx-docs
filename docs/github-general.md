@@ -102,7 +102,7 @@ For generating a new versioned data release, follow the steps below:
 
     Test the updated download script locally to ensure correct download of files:
 
-        bash download_data.sh v1
+        bash download_data.sh
         cd data/v1
         md5sum -c md5sum.txt
 
