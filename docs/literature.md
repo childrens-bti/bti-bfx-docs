@@ -26,7 +26,7 @@ The code for the workflows can be found in the [Kids First GitHub repository](ht
 
 The Open Pediatric Brain Tumor Atlas (OpenPBTA) was a global open-source analysis effort to analyze those first 1,000 PBTA tumors released by the CBTN and the PNOC003 DIPG clinical trial.
 The OpenPBTA was led and maintained by researchers at CHOP and the [Childhood Cancer Data Lab (CCDL)](https://www.ccdatalab.org/) at Alex's Lemonade Stand Foundation.
-Read the OpenPBTA manuscript [here] and visit the archived GitHub repository [here](https://github.com/AlexsLemonade/OpenPBTA-analysis).
+Read the OpenPBTA manuscript [here](https://www.cell.com/cell-genomics/fulltext/S2666-979X(23)00115-5) and visit the archived GitHub repository [here](https://github.com/AlexsLemonade/OpenPBTA-analysis).
 
 The OpenPBTA was later expanded to include additional pediatric cancer genomic data as well as gene expression data from TCGA and GTEx cohorts through the Open Pediatric Cancer (OpenPedcan) Project.
 Read the OpenPedCan manuscript [here](https://www.biorxiv.org/content/10.1101/2024.07.09.599086v2).
