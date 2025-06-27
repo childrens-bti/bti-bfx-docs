@@ -74,10 +74,8 @@ For generating a new versioned data release, follow the steps below:
 
     Add all finalized data files for this release into the versioned folder.
     Use `--dryrun` to test the copy from local to S3, and then remove it once you are sure the copy will go to the correct location.
-
-```bash
-aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
-```
+    
+    aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
 
 2. **Generate MD5 checksums for uploaded files**
 
@@ -88,7 +86,6 @@ aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>
     Upload the md5sum.txt file to the same S3 folder.
 
         aws s3 cp md5sum.txt s3://<bucket-name>/<repo-name>/v1/
-
 
 4. **Update download_data.sh in the GitHub repository**
 
@@ -111,7 +108,6 @@ aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>
         git push origin <branch-name>
 
     Open a Pull Request with a description of the data release changes.
-
 
 ## Creating submodules
 
