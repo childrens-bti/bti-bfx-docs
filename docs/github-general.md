@@ -100,7 +100,7 @@ aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>
 
         git pull origin main
     
-    Edit download_data.sh to add the newly released version folder. For example, for version v1:
+    Edit `download_data.sh` to add the newly released version folder. For example, for version v1:
     
         RELEASE=${RELEASE:-v1}
 
