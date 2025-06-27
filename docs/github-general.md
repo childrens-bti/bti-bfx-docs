@@ -107,8 +107,6 @@ aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>
     Test the updated download script locally to ensure correct download of files:
 
         bash download_data.sh
-        cd data/v1
-        md5sum -c md5sum.txt
 
     Commit and push your changes:
 
