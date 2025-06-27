@@ -88,11 +88,6 @@ aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>
 
         aws s3 cp md5sum.txt s3://<bucket-name>/<repo-name>/v1/
 
-3. **Verify file uploads**
-    (Optional, but recommended)
-
-        aws s3 cp s3://<bucket-name>/<repo-name>/v1/md5sum.txt .
-        md5sum -c md5sum.txt
 
 4. **Update download_data.sh in the GitHub repository**
 
