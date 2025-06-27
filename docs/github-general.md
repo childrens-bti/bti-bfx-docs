@@ -77,6 +77,7 @@ For generating a new versioned data release, follow the steps below:
 
 ```bash
 aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
+```
 
 2. **Generate MD5 checksums for uploaded files**
 
