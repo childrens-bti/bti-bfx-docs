@@ -195,7 +195,8 @@ podman pull pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
 </code></pre>
 <p>Add all finalized data files for this release into the versioned folder.
 Use <code>--dryrun</code> to test the copy from local to S3, and then remove it once you are sure the copy will go to the correct location.</p>
-<p>aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun</p>
+<pre><code>aws s3 --profile cnh-sso sync &lt;local-folder&gt;/v1/  s3://&lt;bucket-name&gt;/&lt;repo-name&gt;/v1/ --dryrun
+</code></pre>
 </li>
 <li>
 <p><strong>Generate MD5 checksums for uploaded files</strong></p>
