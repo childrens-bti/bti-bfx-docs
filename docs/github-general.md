@@ -75,7 +75,7 @@ For generating a new versioned data release, follow the steps below:
     Add all finalized data files for this release into the versioned folder.
     Use `--dryrun` to test the copy from local to S3, and then remove it once you are sure the copy will go to the correct location.
     
-    aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
+        aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
 
 2. **Generate MD5 checksums for uploaded files**
 
