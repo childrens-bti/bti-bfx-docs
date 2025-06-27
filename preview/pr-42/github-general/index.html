@@ -207,11 +207,6 @@ Use <code>--dryrun</code> to test the copy from local to S3, and then remove it 
 
         aws s3 cp md5sum.txt s3://&lt;bucket-name&gt;/&lt;repo-name&gt;/v1/
 
-3. **Verify file uploads**
-    (Optional, but recommended)
-
-        aws s3 cp s3://&lt;bucket-name&gt;/&lt;repo-name&gt;/v1/md5sum.txt .
-        md5sum -c md5sum.txt
 
 4. **Update download_data.sh in the GitHub repository**
 
