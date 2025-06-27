@@ -72,6 +72,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#data-release-instructions">Data release instructions</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#creating-submodules">Creating submodules</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -196,49 +198,40 @@ Use <code>--dryrun</code> to test the copy from local to S3, and then remove it 
 </li>
 </ol>
 <pre><code class="language-bash">aws s3 --profile cnh-sso sync &lt;local-folder&gt;/v1/  s3://&lt;bucket-name&gt;/&lt;repo-name&gt;/v1/ --dryrun
-
-2. **Generate MD5 checksums for uploaded files**
-
-    Run the following command from your local machine where the data files are stored:
-
-        md5sum * &gt; md5sum.txt
-
-    Upload the md5sum.txt file to the same S3 folder.
-
-        aws s3 cp md5sum.txt s3://&lt;bucket-name&gt;/&lt;repo-name&gt;/v1/
-
-
-4. **Update download_data.sh in the GitHub repository**
-
-    Pull the latest version of the repository locally:
-
-        git pull origin main
-
-    Edit `download_data.sh` to add the newly released version folder. For example, for version v1:
-
-        RELEASE=${RELEASE:-v1}
-
-    Test the updated download script locally to ensure correct download of files:
-
-        bash download_data.sh
-
-    Commit and push your changes:
-
-        git add download_data.sh
-        git commit -m &quot;Add v1 data release to download_data.sh&quot;
-        git push origin &lt;branch-name&gt;
-
-    Open a Pull Request with a description of the data release changes.
-
-
-## Creating submodules
-
-The following is a good resource: [https://git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-
-Below is documentation from Kelsey Keith at CHOP:
-
-```markdown
-## Git Submodules
+</code></pre>
+<ol>
+<li>
+<p><strong>Generate MD5 checksums for uploaded files</strong></p>
+<p>Run the following command from your local machine where the data files are stored:</p>
+<pre><code>md5sum * &gt; md5sum.txt
+</code></pre>
+<p>Upload the md5sum.txt file to the same S3 folder.</p>
+<pre><code>aws s3 cp md5sum.txt s3://&lt;bucket-name&gt;/&lt;repo-name&gt;/v1/
+</code></pre>
+</li>
+<li>
+<p><strong>Update download_data.sh in the GitHub repository</strong></p>
+<p>Pull the latest version of the repository locally:</p>
+<pre><code>git pull origin main
+</code></pre>
+<p>Edit <code>download_data.sh</code> to add the newly released version folder. For example, for version v1:</p>
+<pre><code>RELEASE=${RELEASE:-v1}
+</code></pre>
+<p>Test the updated download script locally to ensure correct download of files:</p>
+<pre><code>bash download_data.sh
+</code></pre>
+<p>Commit and push your changes:</p>
+<pre><code>git add download_data.sh
+git commit -m "Add v1 data release to download_data.sh"
+git push origin &lt;branch-name&gt;
+</code></pre>
+<p>Open a Pull Request with a description of the data release changes.</p>
+</li>
+</ol>
+<h2 id="creating-submodules">Creating submodules</h2>
+<p>The following is a good resource: <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">https://git-scm.com/book/en/v2/Git-Tools-Submodules</a></p>
+<p>Below is documentation from Kelsey Keith at CHOP:</p>
+<pre><code class="language-markdown">## Git Submodules
 
 Followed the instructions in the git book for setting up a submodule, &lt;https://git-scm.com/book/en/v2/Git-Tools-Submodules&gt;
 
