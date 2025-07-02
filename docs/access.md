@@ -9,7 +9,7 @@ We operate two GitHub organizations, [the Rokita Lab](https://github.com/rokital
 ### Requesting access
 
 Please create a new `Access Request` [issue](https://github.com/childrens-bti/internal-ticket-tracker/issues) and obtain approval from Dr. Rokita.
-While on CNH VPN, create an "Incident type" IS request in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
+While on Children's National VPN, create an "Incident type" IS request in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
 
 ### Mapping the L Drive
 
@@ -48,7 +48,7 @@ FOLDER=$HOME/CancerImmunology-BTI
 CIFS="//cnmc.org/CRI_LAB1/CancerImmunology-BTI"
 GROUP="rokitagrp"
 
-# There settings are generally fine
+# These settings are generally fine
 USER=$(whoami)
 FILE_MODE='0750'
 DIR_MODE='0750'
@@ -99,7 +99,7 @@ For information about our account, please see pinned file in Slack.
 
 ### Accessing AWS through the console
 
-Once access is granted, you should be able to access our account using CNH SSO credentials using [this URL](https://d-9067576cea.awsapps.com/start/). You will have read access to S3 buckets and EC2 Service Catalog launch permissions.
+Once access is granted, you should be able to access our account using Children's National SSO credentials using [this URL](https://d-9067576cea.awsapps.com/start/). You will have read access to S3 buckets and EC2 Service Catalog launch permissions.
 
 ## CAVATICA
 
@@ -121,7 +121,7 @@ When you first log in, you will be awarded $300 in pilot cloud credits.
 Globus is a file transfer service created by University of Chicago.
 Some sequencing centers may utilize Globus to transfer data to us and they will upload a directory of files to Globus for our retrieval.
 Additionally, we now have an HPC endpoint called `Local FS` (HPC@CNRIC) for transfer and since we can map the L drive here, we can essentially directly transfer from Globus to L drive.
-Each person at CNH should automatically be able to log into Globus [here](https://www.globus.org/) using `Children's National Health System` SSO.
+Each person at Children's National should automatically be able to log into Globus [here](https://www.globus.org/) using `Children's National Health System` SSO.
 If you are notified of a project which uses Globus, the user just needs to add your email in order to access the project.
 You can log into Globus, open the Collection in `File Manager`, set up the destination to `Local FS` within your folder of choice (see below), then click on `Transfer or Sync to...`.
 
@@ -135,11 +135,13 @@ On occasion, your password may be reset without warning (!). To reset it, go to 
 
 ## Box
 
-We use Box to store various documents for grants, manuscripts, presentations, and collaborator files. Open a Service Catalog item in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to Box for Children's National.
+We use Box to store various documents for grants, manuscripts, presentations, and collaborator files. 
+Open a Service Catalog item in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to Box for Children's National.
 
 ## Google Drive
 
-We favor Google Drive over OneDrive for collaborative manuscript writing and collaborative documentation. Currently, Google Drive is sometimes (or always?) blocked on PCs, but to date, it is available on Apple devices. 
+We favor Google Drive over OneDrive for collaborative manuscript writing and collaborative documentation. 
+Currently, Google Drive is sometimes (or always?) blocked on PCs, but to date, it is available on Apple devices. 
 
 ## Paperpile
 
@@ -148,7 +150,7 @@ There is now a beta version of a Microsoft Word plug-in for paperpile, which can
 Instructions for how to use the Word plug-in can be found [here](https://new.paperpile.com/Getting-started-with-Paperpile-and-Word-7ed01d0417a3433f885103ebad04b901).
 Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.
 
-- Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from CNH VPN and toggle to GWU VPN for full functionality.
+- Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from Children's National VPN and toggle to GWU VPN for full functionality.
 
 ## GWU ID and GWU HPC Access
 
