@@ -62,6 +62,70 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
     This will download all project data from the associated Amazon S3 bucket and create symlinks in `data/` to the latest data release version. This command can be re-run to ensure that the most updated files are downloaded. 
     
 
+## Data release instructions
+
+For generating a new versioned data release, follow the steps below:
+
+1. **Create a release-notes.md file**
+
+    This file should document the contents of the release, including:
+
+        - Version name (e.g., v1)
+        - Release date
+        - Description of each data file
+        - Any relevant changelog-style notes
+
+    Use the format from the OpenPedCan project as a reference:
+    
+    [OpenPedCan release-notes.md example](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/doc/release-notes.md)
+
+    Place a copy of release-notes.md in the GitHub repo under:
+
+        doc/release-notes.md
+
+2. **Create a versioned folder in S3**
+
+    Create the new version folder in the designated S3 bucket:
+
+        s3://<bucket-name>/<repo-name>/v1/
+
+    Add all finalized data files for this release into the versioned folder.
+    Use `--dryrun` to test the copy from local to S3, and then remove it once you are sure the copy will go to the correct location.
+    
+        aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
+
+3. **Generate MD5 checksums for uploaded files**
+
+    Run the following command from your local machine where the data files are stored:
+
+        md5sum * > md5sum.txt
+
+    Upload the md5sum.txt file to the same S3 folder.
+
+        aws s3 cp md5sum.txt s3://<bucket-name>/<repo-name>/v1/
+
+4. **Update download_data.sh in the GitHub repository**
+
+    Pull the latest version of the repository locally:
+
+        git pull origin main
+    
+    Edit `download_data.sh` to add the newly released version folder. For example, for version v1:
+    
+        RELEASE=${RELEASE:-v1}
+
+    Test the updated download script locally to ensure correct download of files:
+
+        bash download_data.sh
+
+    Commit and push your changes:
+
+        git add download_data.sh
+        git commit -m "Add v1 data release to download_data.sh"
+        git push origin <branch-name>
+
+    Open a Pull Request with a description of the data release changes.
+
 ## Creating submodules
 
 The following is a good resource: [https://git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
