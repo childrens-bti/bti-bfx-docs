@@ -66,7 +66,24 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
 
 For generating a new versioned data release, follow the steps below:
 
-1. **Create a versioned folder in S3**
+1. **Create a release-notes.md file**
+
+This file should document the contents of the release, including:
+
+    - Version name (e.g., v1)
+    - Release date
+    - Description of each data file
+    - Any relevant changelog-style notes
+
+Use the format from the OpenPedCan project as a reference:
+    
+    [OpenPedCan release-notes.md example](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/doc/release-notes.md)
+
+Place a copy of release-notes.md in the GitHub repo under:
+
+        doc/release-notes.md
+
+2. **Create a versioned folder in S3**
 
     Create the new version folder in the designated S3 bucket:
 
@@ -77,7 +94,7 @@ For generating a new versioned data release, follow the steps below:
     
         aws s3 --profile cnh-sso sync <local-folder>/v1/  s3://<bucket-name>/<repo-name>/v1/ --dryrun
 
-2. **Generate MD5 checksums for uploaded files**
+3. **Generate MD5 checksums for uploaded files**
 
     Run the following command from your local machine where the data files are stored:
 
