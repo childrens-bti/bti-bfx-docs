@@ -68,18 +68,18 @@ For generating a new versioned data release, follow the steps below:
 
 1. **Create a release-notes.md file**
 
-This file should document the contents of the release, including:
+    This file should document the contents of the release, including:
 
-    - Version name (e.g., v1)
-    - Release date
-    - Description of each data file
-    - Any relevant changelog-style notes
+        - Version name (e.g., v1)
+        - Release date
+        - Description of each data file
+        - Any relevant changelog-style notes
 
-Use the format from the OpenPedCan project as a reference:
+    Use the format from the OpenPedCan project as a reference:
     
-    [OpenPedCan release-notes.md example](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/doc/release-notes.md)
+        [OpenPedCan release-notes.md example](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/doc/release-notes.md)
 
-Place a copy of release-notes.md in the GitHub repo under:
+    Place a copy of release-notes.md in the GitHub repo under:
 
         doc/release-notes.md
 
