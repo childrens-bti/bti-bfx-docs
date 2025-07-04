@@ -1,4 +1,4 @@
-site_name: CNH BTI Bioinformatics
+site_name: Children's National BTI Bioinformatics
 nav:
   - Home: index.md
   - CNH-Specific Onboarding: cnh-onboarding.md

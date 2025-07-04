@@ -9,7 +9,7 @@ To file an issue, please see the docs repo [here](https://github.com/childrens-b
 ### Ethical Considerations
 
 Please be sure to work with your PI and/or Dr. Rokita to understand which metadata, clinical data, and genomic data types are allowed to be stored in public and private spaces.
-Please do not share our AWS account number or IP addresses externally or within GitHub. 
+Please do not share any passwords, tokens, account numbers (e.g. AWS), or IP addresses externally or within GitHub comments, issues, or commits. 
 If you have questions, please ask us!
 
 ### Submitting Jobs or Tasks
