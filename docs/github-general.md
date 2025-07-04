@@ -77,7 +77,7 @@ For generating a new versioned data release, follow the steps below:
 
     Use the format from the OpenPedCan project as a reference:
     
-        [OpenPedCan release-notes.md example](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/doc/release-notes.md)
+    [OpenPedCan release-notes.md example](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/doc/release-notes.md)
 
     Place a copy of release-notes.md in the GitHub repo under:
 
