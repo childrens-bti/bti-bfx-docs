@@ -2,13 +2,15 @@
 
 We will containerize all packages which can be redistributed without licenses using Docker containers. You can work with these using either [Docker](https://www.docker.com/) or [Podman](https://podman.io/).
 
-## Creating a Dockerfile and Docker Image 
+## Creating a New Dockerfile and Docker Image 
+
+Create a local `Dockerfile` that loads/installs necessary packages (and their versions) necessary to run the code in the Github repo.
 
 **How to create a docker registry in CAVATICA**
 
 Create a repository
 
-- Log into [CAVATICA](https://cavatica.sbgenomics.com/)
+- Log into [CAVATICA](https://cavatica.sbgenomics.com/) using one of the lab accounts[^1]
 - Click on `Developer` tab -> `Docker registry`
 - Click `+ Create repository` (top right)
 - Type repository name and choose visibility and click `create`.
@@ -16,10 +18,11 @@ Create a repository
 ![create-new-repo](img/Screenshot 2025-02-22 at 2.35.29PM.png)
 
 - Assign admin rights to Jo Lynne Rokita (`harenzaj`) and Alex Sickler (`sicklera`) by clicking on: `<Name of Repository>/ Members`
+- Assign admin rights to yourself so that you can push the image once it's built
 
 **Docker Login**
 
-Log into CAVATICA docker registry using CAVATICA credentials
+From the directory where your Docekrfile lives, log into CAVATICA docker registry using your CAVATICA credentials. 
 
 ```bash
 docker login http://pgc-images.sbgenomics.com/ -u <USERNAME> -p <YOUR-AUTH-TOKEN>
@@ -51,7 +54,7 @@ docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<rep
 docker build --platform=linux/amd64 -t  pgc-images.sbgenomics.com/naqvia/autopvs1:latest .
 ```
 
-## Pushing the Docker Image
+**Push the Docker Image**
 
 ```bash
 docker push pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]
@@ -98,4 +101,4 @@ For more, please review the [full documentation](https://docs.sevenbridges.com/d
 
 For more about Docker using M1/M2/M3 chip macs, ([see here](https://tutorials.tinkink.net/en/mac/how-to-use-docker-on-m1-mac.html)).
 
-CAVATICA logins for Children's BTI and Rokita Lab are pinned to #rokita-lab-internal slack channel.
+[^1]: CAVATICA logins for Children's BTI and Rokita Lab are pinned to #rokita-lab-internal slack channel.
