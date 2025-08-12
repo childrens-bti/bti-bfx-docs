@@ -10,7 +10,7 @@ Create a local `Dockerfile` that loads/installs necessary packages (and their ve
 
 Create a repository
 
-- Log into [CAVATICA](https://cavatica.sbgenomics.com/) using one of the lab accounts[^1]
+- Log into [CAVATICA](https://cavatica.sbgenomics.com/) using one of the lab accounts. CAVATICA logins for Children's BTI and Rokita Lab are pinned to #rokita-lab-internal slack channel.
 - Click on `Developer` tab -> `Docker registry`
 - Click `+ Create repository` (top right)
 - Type repository name and choose visibility and click `create`.
@@ -100,5 +100,3 @@ docker push pgc-images.sbgenomics.com/<username>/<repository_name>:[tag]
 For more, please review the [full documentation](https://docs.sevenbridges.com/docs/manage-docker-repositories-advance-access).
 
 For more about Docker using M1/M2/M3 chip macs, ([see here](https://tutorials.tinkink.net/en/mac/how-to-use-docker-on-m1-mac.html)).
-
-[^1]: CAVATICA logins for Children's BTI and Rokita Lab are pinned to #rokita-lab-internal slack channel.
