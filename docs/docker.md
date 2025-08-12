@@ -22,7 +22,7 @@ Create a repository
 
 **Docker Login**
 
-From the directory where your Docekrfile lives, log into CAVATICA docker registry using your CAVATICA credentials. 
+From the directory where your Dockerfile lives, log into CAVATICA docker registry using your CAVATICA credentials. 
 
 ```bash
 docker login http://pgc-images.sbgenomics.com/ -u <USERNAME> -p <YOUR-AUTH-TOKEN>
