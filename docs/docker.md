@@ -86,10 +86,6 @@ docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<rep
 
 Here, "username" should match the namespace used in the existing Docker container. For example, it should be "rokita-lab", not your personal CAVATICA username, in the repository below.
 
-```bash
-docker pull pgc-images.sbgenomics.com/rokita-lab/haydar-mirna:v1.0.1
-```
-
 Once complete, the output will print `Successfully built <image ID>`. Tag this image ID to the remote repo and push using these steps: 
 
 ```bash
