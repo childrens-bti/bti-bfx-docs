@@ -17,6 +17,10 @@ CBTN model descriptions, genomics, and characteristics can be viewed [here](http
 
 The [PNOC](https://pnoc.us/) is an international consortium dedicated to advancing clinical paradigms and therapy for children and young adults with brain tumors.
 
+### Clinical Proteomic Tumor Analysis Consortium (CPTAC) 
+The CPTAC is an NCI effort "to accelerate the understanding of the molecular basis of cancer through the application of large-scale proteome and genome analysis, or proteogenomics".
+For more information, see [here](https://gdc.cancer.gov/about-gdc/contributed-genomic-data-cancer-research/clinical-proteomic-tumor-analysis-consortium-cptac). 
+
 ## Open Source Platforms and Tools
 
 ### Gabriella Miller Kids First Data Resource Center (GMKF DRC)
@@ -37,6 +41,12 @@ Read the OpenPedCan manuscript [here](https://www.biorxiv.org/content/10.1101/20
 
 ALSF supported data generation, deposition, and harmonization of multiple pediatric cancer single cell studies, which are now housed in the [Single-cell Pediatric Cancer Atlas Portal](https://scpca.alexslemonade.org/). 
 The CCDL created the Open Single-cell Pediatric Cell Atlas (OpenScPCA) [analysis project](https://github.com/AlexsLemonade/OpenScPCA-analysis) to analyze these data.
+
+### CPTAC Data Portals
+CPTAC raw data files can be explored on the [Proteomic Data Commons (PDC)](https://proteomic.datacommons.cancer.gov/pdc/).
+A manifest can be generated from the PDC and files may be imported to CAVATICA for easy access.
+In support of the collaborative publication between CBTN and CPTAC, ["Integrated Proteogenomic Characterization across Major Histological Types of Pediatric Brain Cancer"](https://pubmed.ncbi.nlm.nih.gov/33242424/), a web portal was created for easy multi-omic visualization and data download.
+The portal can be found [here](https://pbt.cptac-data-view.org/). 
 
 ## CNS Tumor Literature
 
