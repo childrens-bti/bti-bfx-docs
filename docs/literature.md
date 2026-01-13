@@ -11,7 +11,7 @@ The [CBTN](https://cbtn.org/) is a multi-institutional international clinical re
 In 2018, the CBTN released WGS and RNA-Seq for ~1,000 tumors for researchers without embargo.
 Read the CBTN manuscript [here](https://www.sciencedirect.com/science/article/pii/S1476558622000720).
 The CBTN also has many cell line and organoid models available to researchers.
-CBTN model descriptions, genomics, and characteristics can be viewed [here](https://d3b-rstudio-connect-public-prd.d3b.io/connect/#/apps/299b004f-d8a1-4b04-bb32-bc30dd538152/access).
+CBTN model descriptions, genomics, and characteristics can be viewed [here](https://d3b-rstudio-connect-public-prd.d3b.io/cbtn-preclinical-tumor-models/).
 
 ### The Pediatric Neuro-Oncology Consortium (PNOC)
 
