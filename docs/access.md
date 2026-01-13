@@ -33,7 +33,8 @@ While on VPN, fill out [this](https://criowiki.cnmc.org/doku.php?id=hpc:access) 
 
 ### HPC basics 
 
-The HPC Wiki can be found [here](https://criowiki.cnmc.org/doku.php?id=hpc:start). 
+The HPC Wiki can be found [here](https://criowiki.cnmc.org/doku.php?id=hpc:start).
+You can log into the hpc using `ssh hpc.cnmc.org` or alternatively to a specific login node using `ssh pphpcln01.cnmc.org` or ssh `pphpcln02.cnmc.org`.
 
 - To view available modules, use `module avail`.
 - To load modules, use module load xxx
