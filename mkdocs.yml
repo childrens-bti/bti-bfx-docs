@@ -11,6 +11,7 @@ nav:
   - GitHub Pull Request Guidelines: github-pr-guide.md
   - Code Review Guidelines: code-review-guide.md
   - Using VSCodium for Code Reviews: vscodium.md
+  - Github Tokens: github-tokens.md
   - BTI Project Management: project-mgmt.md
   - Sprint Planning: sprints.md
   - Literature: literature.md
