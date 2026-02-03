@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>CAVATICA Compute - Children's National BTI Bioinformatics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CAVATICA Compute";
+        var mkdocs_page_input_path = "cavatica.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Children's National BTI Bioinformatics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cnh-onboarding/">CNH-Specific Onboarding</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../access/">Technology Access Requests</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../aws/">AWS Compute</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">CAVATICA Compute</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-mount-an-aws-volume-in-cavatica">How to mount an AWS volume in CAVATICA</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sop_cwl_cavatica/">CAVATICA workflow SOP</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker/">Using Docker or Podman</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-general/">Using GitHub</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-repo-guide/">GitHub Repository Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-pr-guide/">GitHub Pull Request Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code-review-guide/">Code Review Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vscodium/">Using VSCodium for Code Reviews</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-tokens/">Github Tokens</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project-mgmt/">BTI Project Management</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sprints/">Sprint Planning</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../literature/">Literature</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docs-resources/">Docs</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Children's National BTI Bioinformatics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">CAVATICA Compute</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cavatica-computing">CAVATICA Computing</h1>
+<p>CAVATICA is a platform which enables users to run AWS compute jobs through Common Workflow Language (CWL). As such, we have to pay for analyses run on CAVATICA <em>and</em> storage of data on CAVATICA which is not mounted to any of our AWS S3 buckets. Keeping this in mind, we will discuss as a team what can be run when and with what money.</p>
+<p>We will generally use CAVATICA to:</p>
+<ol>
+<li>Run upstream processing workflows on raw data files, for example, those created through the Kids First Data Resource Center (KF DRC) at CHOP.</li>
+<li>Benchmark and implement new workflows specific to the needs of the BTI, for example, CITE-Seq, miRNA-Seq, pangenome analyses, etc.</li>
+<li>Small-scale merges/quick analyses of many data files to avoid downloads, such as through Data Studio.</li>
+</ol>
+<h2 id="how-to-mount-an-aws-volume-in-cavatica">How to mount an AWS volume in CAVATICA</h2>
+<p>In order to mount an AWS volume, you need to have access keys to our AWS account. We will not give these out to everyone, so generally, Alex Sickler and Jo Lynne Rokita will be the ones with keys for mounting. Lordley Okarter, who is the AWS account admin, is the only one who can create these.</p>
+<p>Once you have keys:</p>
+<ol>
+<li>Go to Data —&gt; Volumes</li>
+<li>Follow the instructions for the bucket you would like to mount</li>
+<li>Copy the IAM policy, save it as a JSON file, and add it via PR to the <a href="https://github.com/childrens-bti/bti-aws-bucket-policies">BTI bucket policy repository</a>. Then, send this JSON file to Lordley Okarter (cc Jo Lynne), as he is currently the only person who can add these to the IAM policy for our AWS account. Once Lordley confirms this was added, you can proceed.</li>
+<li>Add your access keys.</li>
+<li>For FIPS, use <code>s3-fips.us-east-1.amazonaws.com</code></li>
+<li>For encryption, use <code>default 256</code>.</li>
+</ol>
+<p>Note: we usually will mount these as read/write if we desire to export data back to the bucket.</p>
+<p>Additional documentation on mounting volumes inside of CAVATICA can be found <a href="https://docs.cavatica.org/docs/volumes">here</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../aws/" class="btn btn-neutral float-left" title="AWS Compute"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sop_cwl_cavatica/" class="btn btn-neutral float-right" title="CAVATICA workflow SOP">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../aws/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sop_cwl_cavatica/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
