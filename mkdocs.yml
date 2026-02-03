@@ -5,6 +5,7 @@ nav:
   - Technology Access Requests: access.md
   - AWS Compute: aws.md
   - CAVATICA Compute: cavatica.md
+  - CAVATICA workflow SOP: sop_cwl_cavatica.md
   - Using Docker or Podman: docker.md
   - Using GitHub: github-general.md
   - GitHub Repository Guidelines: github-repo-guide.md
