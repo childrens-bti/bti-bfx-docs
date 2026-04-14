@@ -26,6 +26,19 @@ You can now use this new single-sign on profile as
 aws s3 ls --profile cnh-sso
 ```
 
+## Install the AWS Session Manager plugin on macOS
+Follow the instructions [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-macos-overview.html) to install the plugin required to connect using AWS Sessions Manager.
+Instructions below for Mac with x86_64:
+
+```bash
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"`
+```
+
+```bash
+sudo installer -pkg session-manager-plugin.pkg -target /
+sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
+```
+
 ## Launching an EC2 Instance from AWS Service Catalog
 
 We have created an EC2 instance template with precompiled utilities and tools, available within the AWS `Service Catalog`.
@@ -42,7 +55,8 @@ Typically, you can start at 500 GB or 1 TB.
 6. Click `Launch product`.
 At this point, the instance will start creation and once complete, you will be able to see the instance ID (`i-###################`).
 7. Click the instance ID link and navigate to the top right of the page, where you will see the `Private IPv4 addresses`.
-8. While on VPN, copy the IP address, and in your local terminal, type `ssh ubuntu@ip_address`.
+8. Using the profile set up above, type in `aws --profile cnh-sso ssm --region us-east-1 start-session --target i-###################`.
+9. Once you are in the sessions manager, type `sudo -iu ubuntu`.
 You are now connected to your EC2 instance!
 
 To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see GitHub section).
