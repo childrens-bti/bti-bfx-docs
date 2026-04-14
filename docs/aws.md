@@ -57,8 +57,18 @@ Typically, you can start at 500 GB or 1 TB.
 6. Click `Launch product`.
 At this point, the instance will start creation and once complete, you will be able to see the instance ID (`i-###################`).
 7. Click the instance ID link and navigate to the top right of the page, where you will see the `Private IPv4 addresses`.
-8. Using the profile set up above, type in `aws --profile cnh-sso ssm --region us-east-1 start-session --target i-###################`.
-9. Once you are in the sessions manager, type `sudo -iu ubuntu`.
+8. Using the profile set up above, type:
+
+```bash
+aws --profile cnh-sso ssm --region us-east-1 start-session --target i-###################
+```
+
+9. Once you are in the sessions manager, type:
+
+```bash
+sudo -iu ubuntu
+```
+
 You are now connected to your EC2 instance!
 
 To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see GitHub section).
