@@ -27,6 +27,7 @@ aws s3 ls --profile cnh-sso
 ```
 
 ## Install the AWS Session Manager plugin on macOS
+
 Follow the instructions [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-macos-overview.html) to install the plugin required to connect using AWS Sessions Manager.
 Instructions below for Mac with x86_64:
 
@@ -41,6 +42,7 @@ sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local
 
 ## Launching an EC2 Instance from AWS Service Catalog
 
+First, make sure your region is set to `us-east-1`; all work should be performed within this region.
 We have created an EC2 instance template with precompiled utilities and tools, available within the AWS `Service Catalog`.
 
 1. Navigate to the `Service Catalog`.
