@@ -32,7 +32,7 @@ Follow the instructions [here](https://docs.aws.amazon.com/systems-manager/lates
 Instructions below for Mac with x86_64:
 
 ```bash
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"`
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
 ```
 
 ```bash
