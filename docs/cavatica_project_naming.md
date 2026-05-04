@@ -2,7 +2,9 @@
 
 During a harmonization project, after the harmonization ticket has been made, the manifest created and reviewed, and the data have been imported to AWS; the next step is to create the Cavatica project.
 
-Cavatica projects must be named using the following format: `{pi}-{experimental_strategy}-{non-human-marker}-itt-{harmonization_ticket_number}-{harmonization or relatedness}`
+Cavatica projects must be named using the following format:
+
+`{pi}-{experimental_strategy}-{non-human-marker}-itt-{harmonization_ticket_number}-{harmonization or relatedness}`
 
 Studies such as the Impact Trial or other future trials may use a different naming scheme and will be documented separately.
 
@@ -33,6 +35,7 @@ Cavatica projects must be created by making a Project Creation issue in the [cav
 ## Example Project Names
 
 rokita-rnaseq-itt-1516-harmonization
+
 rood-rnaseq-pdx-itt-815-harmonization
 
 ## Development Projects
