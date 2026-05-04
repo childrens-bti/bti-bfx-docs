@@ -84,11 +84,13 @@ ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
 3. Add a host entry to your local SSH config:
 ```
 Host bti-ec2
-	HostName i-###################
-	User ubuntu
-	IdentityFile ~/.ssh/ec2_ed25519
-	IdentitiesOnly yes
-	ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
+    HostName i-###################
+    User ubuntu
+    IdentityFile ~/.ssh/ec2_ed25519
+    IdentitiesOnly yes
+	StrictHostKeyChecking accept-new
+	UserKnownHostsFile ~/.ssh/known_hosts
+    ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
 ```
 
 4. In VS Code, open the Command Palette and choose:
