@@ -30,4 +30,5 @@ rokita-itt-1516
 
 ## Development Projects
 
-In generatal, dev projects should have a short helpful name and end in `-dev`. They do not need to be as strict as harmonization projects, but should still generally be helpful to you and fellow developers. Dev projects still must be created via the cavatica_api_wrappers project creation issues.
+In general, dev projects should have a short helpful name and end in `-dev`. They do not need to be as strict as harmonization projects, but should still generally be helpful to you and fellow developers. 
+Dev projects still must be created via the [cavatica_api_wrappers](https://github.com/childrens-bti/cavatica_api_wrappers/issues) Project Creation issue.
