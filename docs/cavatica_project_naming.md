@@ -8,7 +8,7 @@ Studies such as the Impact Trial or other future trials may use a different nami
 
 ## Definitions
 
-PI is the name of the principal investigator of the lab that will be responsible for the study the data are for.
+PI is the name of the principal investigator of the lab that will be responsible for the study data.
 
 The abbreviation "itt" stands for internal-ticket-tracker and is the central repo we use for large scale issues within the BTI. If for some reason requests are made outside of the internal-ticket-tracker, the project name should use a similarly helpful abbreviation for the repo.
 
