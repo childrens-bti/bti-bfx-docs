@@ -19,7 +19,8 @@ Issue Number is the issue number of the work epic within the internal-ticket-tra
 
 If relatedness is being checked across multiple cohorts or harmonizations, use the newest PI and epic or ticket numbers.
 
-If an epic has a large number of samples and will create or has created too many files (roughly 2 million) it must be split up. New projects should be created with `-batch-#` ie -batch-1 -batch-2. This should be exceptionally rare.
+If an epic has a large number of samples and will create or has created too many files (roughly 2 million), it must be split up. 
+New projects should be created with `-batch-#` ie -batch-1 -batch-2. This should be exceptionally rare.
 
 ## Creating Projects
 
