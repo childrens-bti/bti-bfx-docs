@@ -1,10 +1,8 @@
 # Cavatica Project Naming
 
-During a harmonization project, after the harmonization ticket has been made, the manifest created and reviewed, and the data have been imported to AWS; the next step is to create the Cavatica project.
-
 Cavatica projects must be named using the following format:
 
-`{pi}-{experimental_strategy}-{non-human-marker}-itt-{harmonization_ticket_number}-{harmonization or relatedness}`
+`{pi}-itt-{issue number}`
 
 Studies such as the Impact Trial or other future trials may use a different naming scheme and will be documented separately.
 
@@ -12,32 +10,24 @@ Studies such as the Impact Trial or other future trials may use a different nami
 
 PI is the name of the principal investigator of the lab that will be responsible for the study the data are for.
 
-Experimental strategy is the sequencing strategy used to generate the data. Should be wgs, wxs, rnaseq, scrna, proteomics, or similar.
-
-The "non-human maker" is an explanation for special case harmonizations such as pdx or non-human studies.
-
 The abbreviation "itt" stands for internal-ticket-tracker and is the central repo we use for large scale issues within the BTI. If for some reason requests are made outside of the internal-ticket-tracker, the project name should use a similarly helpful abbreviation for the repo.
 
-Harmonization ticket number is the issue number within the internal-ticket-tracker repo.
+Issue Number is the issue number of the work epic within the internal-ticket-tracker repo. If a project is being created for stand alone work outside of an epic, use the issue number.
 
-Finally, the project name will end in "harmonization" for harmonization projects or "relatedness" for projects where multiple samples are being checked to determine if they come from the same patient.
+## Explanation
 
-## Explanations
+If relatedness is being checked across multiple cohorts or harmonizations, use the newest PI and epic or ticket numbers.
 
-If a project has multiple data types, create one project for each experimental strategy using the same harmonization ticket.
-
-If relatedness is being checked across a harmonization(s) with multiple data types, "multi" can be used for this type of project only.
+If an epic has a large number of samples and will create or has created too many files (roughly 2 million) it must be split up. New projects should be created with `-batch-#` ie -batch-1 -batch-2. This should be exceptionally rare.
 
 ## Creating Projects
 
 Cavatica projects must be created by making a Project Creation issue in the [cavatica_api_wrappers](https://github.com/childrens-bti/cavatica_api_wrappers/issues) repo.
 
-## Example Project Names
+## Example Project Name
 
-rokita-rnaseq-itt-1516-harmonization
-
-rood-rnaseq-pdx-itt-815-harmonization
+rokita-itt-1516
 
 ## Development Projects
 
-In generatal, dev projects should have a short helpful name and end in `-dev`. They do not need to be as strict as harmonization and relatedness projects, but should still generally be helpful to you and fellow developers. Dev projects still must be created via the cavatica_api_wrappers project creation issues.
+In generatal, dev projects should have a short helpful name and end in `-dev`. They do not need to be as strict as harmonization projects, but should still generally be helpful to you and fellow developers. Dev projects still must be created via the cavatica_api_wrappers project creation issues.
