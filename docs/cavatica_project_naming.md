@@ -10,7 +10,8 @@ Studies such as the Impact Trial or other future trials may use a different nami
 
 PI is the name of the principal investigator of the lab that will be responsible for the study data.
 
-The abbreviation "itt" stands for internal-ticket-tracker and is the central repo we use for large scale issues within the BTI. If for some reason requests are made outside of the internal-ticket-tracker, the project name should use a similarly helpful abbreviation for the repo.
+The abbreviation "itt" stands for [internal-ticket-tracker](https://github.com/childrens-bti/internal-ticket-tracker) and is the central repo we use for large scale issues within the BTI. 
+If requests are made outside of the [internal-ticket-tracker](https://github.com/childrens-bti/internal-ticket-tracker), the project name should use a similarly helpful abbreviation for the repo.
 
 Issue Number is the issue number of the work epic within the internal-ticket-tracker repo. If a project is being created for stand alone work outside of an epic, use the issue number.
 
