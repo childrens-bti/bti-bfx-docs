@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Technology Access Requests - Children's National BTI Bioinformatics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Technology Access Requests";
+        var mkdocs_page_input_path = "access.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Children's National BTI Bioinformatics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cnh-onboarding/">CNH-Specific Onboarding</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Technology Access Requests</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#qumulo-l-drive">Qumulo (L Drive)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#requesting-access">Requesting access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mapping-the-l-drive">Mapping the L Drive</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#instructions-for-depositing-data-into-cancerimmunology-bti">Instructions for depositing data into CancerImmunology-BTI</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#high-performance-cluster-hpc">High Performance Cluster (HPC)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#requesting-access_1">Requesting access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hpc-basics">HPC basics</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transferring-external-data-onto-or-from-the-hpc">Transferring external data onto or from the HPC</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#amazon-web-services-aws">Amazon Web Services (AWS)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#requesting-access_2">Requesting access</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accessing-aws-through-the-console">Accessing AWS through the console</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cavatica">CAVATICA</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cancer-genomics-cloud-cgc">Cancer Genomics Cloud (CGC)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#globus">Globus</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#self-service-password-reset">Self-service password reset</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#box">Box</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#google-drive">Google Drive</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#paperpile">Paperpile</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gwu-id-and-gwu-hpc-access">GWU ID and GWU HPC Access</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../aws/">AWS Compute</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cavatica/">CAVATICA Compute</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sop_cwl_cavatica/">CAVATICA workflow SOP</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker/">Using Docker or Podman</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-general/">Using GitHub</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-repo-guide/">GitHub Repository Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-pr-guide/">GitHub Pull Request Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code-review-guide/">Code Review Guidelines</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vscodium/">Using VSCodium for Code Reviews</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-tokens/">Github Tokens</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project-mgmt/">BTI Project Management</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sprints/">Sprint Planning</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../literature/">Literature</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docs-resources/">Docs</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Children's National BTI Bioinformatics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Technology Access Requests</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="access-to-resources-and-tools">Access to Resources and Tools</h1>
+<h2 id="github">GitHub</h2>
+<p>We operate two GitHub organizations, <a href="https://github.com/rokitalab">the Rokita Lab</a> and <a href="https://github.com/childrens-bti">BTI Bioinformatics Core</a>. All Rokita Lab and BTI Bioinformatics Core staff should be added to both.</p>
+<h2 id="qumulo-l-drive">Qumulo (L Drive)</h2>
+<h3 id="requesting-access">Requesting access</h3>
+<p>Please create a new <code>Access Request</code> <a href="https://github.com/childrens-bti/internal-ticket-tracker/issues">issue</a> and obtain approval from Dr. Rokita.
+While on Children's National VPN, create an "Incident type" IS request in <a href="https://childrensnational.service-now.com/esc?id=ec_pro_dashboard">Service Now</a> and request access to <code>smb://cnmc.org/cri/Lab/CancerImmunology-BTI</code>.</p>
+<h3 id="mapping-the-l-drive">Mapping the L Drive</h3>
+<p>To map the L drive on a macbook:
+- While on VPN, Go to the Finder --&gt; Go --&gt; Connect to server and add the path: <code>smb://cnmc.org/cri/Lab/CancerImmunology-BTI</code>.</p>
+<h3 id="instructions-for-depositing-data-into-cancerimmunology-bti">Instructions for depositing data into <code>CancerImmunology-BTI</code></h3>
+<ol>
+<li>Use this ONLY for raw genomics data which will need to be processed by the BTI Bioinformatics Core and file manifests for those raw data. 
+Please, no word docs, ppts, etc.</li>
+<li>Create one root folder per lab (eg: <code>FonsecaLab</code>)</li>
+<li>Within the lab folder, create project-specific folders.</li>
+<li>Within project-specific folders, feel free to organize how you'd like (for now 🙂).</li>
+<li>We can now access the data via HPC and/or upload to AWS very quickly.</li>
+</ol>
+<h2 id="high-performance-cluster-hpc">High Performance Cluster (HPC)</h2>
+<h3 id="requesting-access_1">Requesting access</h3>
+<p>While on VPN, fill out <a href="https://criowiki.cnmc.org/doku.php?id=hpc:access">this</a> form for HPC access.</p>
+<h3 id="hpc-basics">HPC basics</h3>
+<p>The HPC Wiki can be found <a href="https://criowiki.cnmc.org/doku.php?id=hpc:start">here</a>.
+You can log into the hpc using <code>ssh hpc.cnmc.org</code> or alternatively to a specific login node using <code>ssh pphpcln01.cnmc.org</code> or <code>ssh pphpcln02.cnmc.org</code>.</p>
+<ul>
+<li>To view available modules, use <code>module avail</code>.</li>
+<li>To load modules, use module load xxx</li>
+<li>To mount L drive folders (e.g. to mount the L Drive folder <code>CancerImmunology-BTI</code>), follow the instructions below, changing the group to the group to which you belong.</li>
+</ul>
+<pre><code class="language-bash">#!/bin/bash
+
+# Add this file under $HOME/.bashrc.d/ with permission '0640'
+
+FOLDER=$HOME/CancerImmunology-BTI
+CIFS=&quot;//cnmc.org/CRI_LAB1/CancerImmunology-BTI&quot;
+GROUP=&quot;rokitagrp&quot;
+
+# These settings are generally fine
+USER=$(whoami)
+FILE_MODE='0750'
+DIR_MODE='0750'
+
+
+case $(hostname) in
+    pphpcln*|pphpcdtn* )
+
+    if [ ! -d $FOLDER ]; then
+        mkdir -p $FOLDER
+    fi
+
+    if ! mountpoint -q $FOLDER
+    then
+
+        echo $FOLDER is not mounted
+        echo Mounting it...
+
+        sudo /usr/sbin/mount.cifs -o username=${USER},domain=cnmc.org,uid=${USER},gid=${GROUP},dir_mode=${DIR_MODE},file_mode=${FILE_MODE} $CIFS $FOLDER
+
+    fi
+
+esac
+</code></pre>
+<p>After sourcing this file, you should be able to see the folder in <code>/home/USER/CancerImmunology-BTI</code>.</p>
+<h3 id="transferring-external-data-onto-or-from-the-hpc">Transferring external data onto or from the HPC</h3>
+<p>In order to transfer files from Globus to the L drive or vice versa, you must first ssh into the transfer node after completing the above steps:</p>
+<pre><code>ssh hpc-transfer.cnmc.org
+</code></pre>
+<p>This is also the node that you should use for conducting large data transfers from external SFTP servers (for example, from sequencing centers).
+If an SFTP server is not accessible from the HPC transfer node, you should fill out a "policy exception" ticket in service now for IT security to whitelist the server and port.</p>
+<h2 id="amazon-web-services-aws">Amazon Web Services (AWS)</h2>
+<p>For information about our account, please see pinned file in Slack.</p>
+<h3 id="requesting-access_2">Requesting access</h3>
+<ol>
+<li>First, obtain email approval from Dr. Jo Lynne Rokita for access to the BTI Bioinformatics AWS account. </li>
+<li>
+<p>Open a Service Catalog item in <a href="https://childrensnational.service-now.com/esc?id=ec_pro_dashboard">Service Now</a> using the "Add user to existing Access Group for AWS" template.</p>
+</li>
+<li>
+<p>AWS account name and number = <code>&lt;see slack for account number&gt;</code></p>
+</li>
+<li>Request ReadOnly access</li>
+</ol>
+<h3 id="accessing-aws-through-the-console">Accessing AWS through the console</h3>
+<p>Once access is granted, you should be able to access our account using Children's National SSO credentials using <a href="https://d-9067576cea.awsapps.com/start/">this URL</a>. You will have read access to S3 buckets and EC2 Service Catalog launch permissions.</p>
+<h2 id="cavatica">CAVATICA</h2>
+<p>If you do not already have an account, you can generate one using your eCommons ID <a href="https://cavatica.sbgenomics.com/">here</a>. 
+If you do not have an eCommons ID, please work with Dr. Rokita to get one.</p>
+<ul>
+<li>If you have never received pilot funds when you signed up with CAVATICA, please email <code>support@velsera.com</code>, ask for pilot funds, and they will direct your email to Dr. Jared Rozowsky for $100 in credits.</li>
+<li>If you have a project in which you will utilize NIH Kids First datasets or workflows, or wish to enhance Kids First workflows, you may <a href="https://commonfund.nih.gov/kidsfirst/cloudcredits">apply for Kids First Cloud Credits</a> for CAVATICA, which will get you $1,000 in starter credits.</li>
+</ul>
+<h2 id="cancer-genomics-cloud-cgc">Cancer Genomics Cloud (CGC)</h2>
+<p>CGC is an NIH-hosted CAVATICA instance specifically geared toward cancer researchers and can be accessed through eCommons, as above.
+When you first log in, you will be awarded $300 in pilot cloud credits.</p>
+<ul>
+<li>Cancer Genomics Cloud may award up to $10K in cloud credits for bigger project ideas: apply <a href="https://www.cancergenomicscloud.org/cgc-apply-for-collaborative-funds">here</a>.</li>
+</ul>
+<h2 id="globus">Globus</h2>
+<p>Globus is a file transfer service created by University of Chicago.
+Some sequencing centers may utilize Globus to transfer data to us and they will upload a directory of files to Globus for our retrieval.
+Additionally, we now have an HPC endpoint called <code>Local FS</code> (HPC@CNRIC) for transfer and since we can map the L drive here, we can essentially directly transfer from Globus to L drive.
+Each person at Children's National should automatically be able to log into Globus <a href="https://www.globus.org/">here</a> using <code>Children's National Health System</code> SSO.
+If you are notified of a project which uses Globus, the user just needs to add your email in order to access the project.
+You can log into Globus, open the Collection in <code>File Manager</code>, set up the destination to <code>Local FS</code> within your folder of choice (see below), then click on <code>Transfer or Sync to...</code>.</p>
+<p><img alt="globus.png" src="../img/globus.png" /></p>
+<p>The transfer window can be closed and you will received an email when the transfer is completed.</p>
+<h2 id="self-service-password-reset">Self-service password reset</h2>
+<p>On occasion, your password may be reset without warning (!). To reset it, go to <a href="https://cnh.identitynow.com/r/default/reset-password">this url</a> and follow the instructions.</p>
+<h2 id="box">Box</h2>
+<p>We use Box to store various documents for grants, manuscripts, presentations, and collaborator files. 
+Open a Service Catalog item in <a href="https://childrensnational.service-now.com/esc?id=ec_pro_dashboard">Service Now</a> and request access to Box for Children's National.</p>
+<h2 id="google-drive">Google Drive</h2>
+<p>We favor Google Drive over OneDrive for collaborative manuscript writing and collaborative documentation. 
+Currently, Google Drive is sometimes (or always?) blocked on PCs, but to date, it is available on Apple devices. </p>
+<h2 id="paperpile">Paperpile</h2>
+<p>We have paperpile licenses for individuals actively writing manuscripts on Google Drive needing to insert references. 
+There is now a beta version of a Microsoft Word plug-in for paperpile, which can be downloaded <a href="https://paperpile.com/word-plugin/">here</a>.
+Instructions for how to use the Word plug-in can be found <a href="https://new.paperpile.com/Getting-started-with-Paperpile-and-Word-7ed01d0417a3433f885103ebad04b901">here</a>.
+Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.</p>
+<ul>
+<li>Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from Children's National VPN and toggle to GWU VPN for full functionality.</li>
+</ul>
+<h2 id="gwu-id-and-gwu-hpc-access">GWU ID and GWU HPC Access</h2>
+<p>Fill out the RedCap form <a href="https://is.gd/ColonialOne">here</a>, which will trigger an email to Adam Wong, who will take care of the request.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../cnh-onboarding/" class="btn btn-neutral float-left" title="CNH-Specific Onboarding"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../aws/" class="btn btn-neutral float-right" title="AWS Compute">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cnh-onboarding/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../aws/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
