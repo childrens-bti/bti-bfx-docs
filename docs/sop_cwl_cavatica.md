@@ -21,7 +21,8 @@
 6. [Task Planning & Execution on Cavatica](#6-task-planning--execution-on-cavatica)  
    - [Small-Batch Validation](#61-small-batch-validation)  
    - [Peer Review](#62-peer-review)  
-   - [Criteria Before Full Launch](#63-criteria-before-full-launch)  
+   - [Criteria Before Full Launch](#63-criteria-before-full-launch)
+   - [Output Basename Scheme](#64-basename-scheme)  
 7. [Preventing Reruns](#7-preventing-reruns)  
 8. [Preventing Task Deletion](#8-preventing-task-deletion-cavatica-best-practices)  
 9. [Exporting Data Safely](#9-exporting-data-safely-from-cavatica)  
@@ -106,6 +107,9 @@ Another engineer reviews inputs, versions, references.
 
 ## **6.3 Criteria Before Full Launch**
 All validations passed, parameters confirmed.
+
+## **6.4 Output Basename Scheme**
+When creating tasks, the output basename is typically the baid of the sample being analyzed. For the somatic and consensus workflows which use both tumor and normal samples, the basename should be in the format `{tumor_id}_{normal_id}`. For the impact workflow, which using both tumor and RNA data, the basename format should be `{tumor_id}_{rna_id}`. When creating workflows using the cli, the task id is automatically added during task creation.
 
 ---
 
