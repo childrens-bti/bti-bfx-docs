@@ -39,6 +39,10 @@ If you do not have an account set up with CITI, please make one [here](https://w
 - RCR: BIOMEDICAL RESEARCH (6 modules)
 - Conflict of Interest (4 modules)
 
+Note: since we manage L drive with raw data for many users, Bailey will request CITI certifications for each user prior to adding them to the folder to ensure compliance.
+
+Once completed, all certificates should be stored in the Rokita Lab box folder: `Rokita-Lab/trainings/citi`.
+
 ### Cornerstone
 
 Cornerstone is the place where you will complete Children's National-related training/learning modules. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), navigate to 
