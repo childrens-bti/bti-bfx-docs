@@ -57,16 +57,21 @@ Bear Time (Kronos) is the system used for recording time. From the [Children's N
 Resources --> Apps & Tools --> Bear Time (Kronos)
 ```
 
-During your first week, please email Erica Cleary and Colby Rymes to set your weekly schedule. 
+During your first week, please email Erica Cleary and Colby Rymes to set your weekly schedule.
+This can be any set of 40 hours. 
 They manage all timecards for the Center for Cancer and Immunology Research (CCIR). 
 Once this is completed, you do not need to fill out your timecard weekly, nor approve it.
 
-Once you are eligible to take time off (ASSLA after 90 days and Vacation after 90 days (hourly employees) or 180 days (salaried employees)), please follow the instructions below to make a request:
+Once you are eligible to take time off (ASSLA/Vacation after 90 days), please follow the instructions below to make a request:
 1. Email Dr. Rokita, cc-ing Erica Cleary and Colby Rymes, to make a request for time off.
 2. Once approved, log into Kronos and make an official request for time off within the right-hand screen.
+3. You do not need to do anything else biweekly to approve the timecard.
 
 For more information about accruing leave, please see [here](https://cnmc.sharepoint.com/sites/employeeservices/SitePages/Benefits/Leave.aspx).
 
+### Employee Handbook
+
+Please see the full employee handbook [here](https://cnmc.sharepoint.com/sites/employeeservices/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Femployeeservices%2FShared+Documents%2Femployee-handbook.pdf&parent=%2Fsites%2Femployeeservices%2FShared+Documents).
 
 ### BTI Bioinformatics Outlook Calendar
 
