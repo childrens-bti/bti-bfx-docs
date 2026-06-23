@@ -39,6 +39,10 @@ If you do not have an account set up with CITI, please make one [here](https://w
 - RCR: BIOMEDICAL RESEARCH (6 modules)
 - Conflict of Interest (4 modules)
 
+Note: since we manage L drive with raw data for many users, Bailey will request CITI certifications for each user prior to adding them to the folder to ensure compliance.
+
+Once completed, all certificates should be stored in the Rokita Lab box folder: `Rokita-Lab/trainings/citi`.
+
 ### Cornerstone
 
 Cornerstone is the place where you will complete Children's National-related training/learning modules. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), navigate to 
@@ -57,16 +61,21 @@ Bear Time (Kronos) is the system used for recording time. From the [Children's N
 Resources --> Apps & Tools --> Bear Time (Kronos)
 ```
 
-During your first week, please email Dawn Griffiths and Erica Cleary to set your weekly schedule. 
+During your first week, please email Erica Cleary and Colby Rymes to set your weekly schedule.
+This can be any set of 40 hours. 
 They manage all timecards for the Center for Cancer and Immunology Research (CCIR). 
 Once this is completed, you do not need to fill out your timecard weekly, nor approve it.
 
-Once you are eligible to take time off (ASSLA after 90 days and Vacation after 90 days (hourly employees) or 180 days (salaried employees)), please follow the instructions below to make a request:
-1. Email Dr. Rokita, cc-ing Dawn Griffiths and Erica Cleary, to make a request for time off.
+Once you are eligible to take time off (ASSLA/Vacation after 90 days), please follow the instructions below to make a request:
+1. Email Dr. Rokita, cc-ing Erica Cleary and Colby Rymes, to make a request for time off.
 2. Once approved, log into Kronos and make an official request for time off within the right-hand screen.
+3. You do not need to do anything else biweekly to approve the timecard.
 
 For more information about accruing leave, please see [here](https://cnmc.sharepoint.com/sites/employeeservices/SitePages/Benefits/Leave.aspx).
 
+### Employee Handbook
+
+Please see the full employee handbook [here](https://cnmc.sharepoint.com/sites/employeeservices/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Femployeeservices%2FShared+Documents%2Femployee-handbook.pdf&parent=%2Fsites%2Femployeeservices%2FShared+Documents).
 
 ### BTI Bioinformatics Outlook Calendar
 

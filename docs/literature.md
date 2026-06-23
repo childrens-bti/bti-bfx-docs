@@ -48,6 +48,16 @@ A manifest can be generated from the PDC and files may be imported to CAVATICA f
 In support of the collaborative publication between CBTN and CPTAC, ["Integrated Proteogenomic Characterization across Major Histological Types of Pediatric Brain Cancer"](https://pubmed.ncbi.nlm.nih.gov/33242424/), a web portal was created for easy multi-omic visualization and data download.
 The portal can be found [here](https://pbt.cptac-data-view.org/). 
 
+### The Childhood Cancer Data Initiative (CCDI)
+The Childhood Cancer Data Initiative (CCDI), launched by the National Cancer Institute in 2019, is a coordinated national effort to accelerate progress in pediatric, adolescent, and young adult oncology.
+By bringing together a highly collaborative research community, CCDI supports the generation, integration, and sharing of patient-level clinical and molecular data. 
+A central goal is to enable a learning health system in which both clinical trial data and real-world evidence can be leveraged to improve research efficiency and inform patient care.
+
+The Molecular Characterization Initiative (MCI) is a major component of CCDI, established in 2022 through partnership with the Children’s Oncology Group (COG). 
+This program focuses on delivering comprehensive genomic and molecular profiling for children, adolescents, and young adults diagnosed with cancer, expanding access to high-quality data that can guide biological discovery and clinical decision-making.
+
+For additional details, see the [CCDI](https://ascopubs.org/doi/10.1200/JCO.22.02208) and [MCI](https://pmc.ncbi.nlm.nih.gov/articles/PMC12360469/) publications.
+
 ## CNS Tumor Literature
 
 ### Pediatric CNS Tumor Classification
