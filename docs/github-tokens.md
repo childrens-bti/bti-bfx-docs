@@ -11,9 +11,8 @@ GitHub token documentation can be found [here](https://docs.github.com/en/authen
 
 ## Token Table
 
-| Token Name | Organization | Expiration Date | Repos | Name in Repo | Action | Permissions | Notes |
+| Token Name | Organization | Expiration Time | Repos | Name in Repo | Action | Permissions | Notes |
 | ---------- | ------------ | --------------- | ----- | ------------ | ------ | ----------- | ----- |
-| github_add_item_token | childrens-bti | July 1, 2026 | All | ADD_TO_PROJECT_PAT | add-issues-to-project | Organization permissions: Read and Write access to organization projects. Repository permissions: Read access to metadata; Read and Write access to issues and pull requests. | This is an organization level token stored within childrens-bti and rokita-lab
-| cavatica_api_wrappers_my_repo_pat | childrens-bti | July 1, 2026 | cavatica_api_wrappers | MY_REPO_PAT | make-cavatica-project | Repository permissions: Read access to code and metadata. |  |
+| github_add_item_token | childrens-bti | 90 days starting July 1, 2026 | All | ADD_TO_PROJECT_PAT | add-issues-to-project | Organization permissions: Read and Write access to organization projects. Repository permissions: Read access to metadata; Read and Write access to issues and pull requests. | This is an organization level token stored within childrens-bti and rokita-lab
 | CAVATICA_TOKEN | rokitalab | NA | OpenPedCan-Project-CNH | CAVATICA_TOKEN | build and build_and_push | Repository permissions: log into CAVATICA and push docker image. | Value is created on Cavatica not in github.
 | CAVATICA_USERNAME | rokitalab | NA | OpenPedCan-Project-CNH | CAVATICA_USERNAME | build and build_and_push | Repository permissions: log into CAVATICA and push docker image. |  Value is created on Cavatica not in github.
