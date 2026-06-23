@@ -54,6 +54,10 @@ New projects should be created with `-batch-##` ie -batch-1 -batch-2. This shoul
 
 Cavatica projects must be created by making a Project Creation issue in the [cavatica_api_wrappers](https://github.com/childrens-bti/cavatica_api_wrappers/issues) repo.
 
+Note: In some cases, we will iteratively add samples to projects already created.
+This may be the case for larger cohorts in which samples are sequenced incrementally (e.g. PBTA, RBT, MCI).
+Double check this with the core leadership team before creating a new project.
+
 ### Example Project Name
 
 rokita-itt-1516
