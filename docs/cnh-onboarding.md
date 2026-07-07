@@ -55,7 +55,7 @@ Resources --> Workday
 You will periodically see training modules assigned. 
 Please complete these before their due dates.
 
-### Your Timecard
+## Your Timecard
 
 [UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
 
@@ -76,21 +76,21 @@ Once you are eligible to take time off (ASSLA/Vacation after 90 days), please fo
 
 For more information about accruing leave, please see [here](https://cnmc.sharepoint.com/sites/employeeservices/SitePages/Benefits/Leave.aspx).
 
-### Employee Handbook
+## Employee Handbook
 
 Please see the full employee handbook [here](https://cnmc.sharepoint.com/sites/employeeservices/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Femployeeservices%2FShared+Documents%2Femployee-handbook.pdf&parent=%2Fsites%2Femployeeservices%2FShared+Documents).
 
-### BTI Bioinformatics Outlook Calendar
+## BTI Bioinformatics Outlook Calendar
 
 We have created a shared calendar in outlook called `BTI Bioinformatics`.  
 Please place your out of office time on this calendar for team awareness.
 
-### Travel
+## Travel
 
 The system for booking travel is called [Navan](https://app.navan.com/app/user2).
 Follow the instructions on the [Sharepoint site](https://cnmc.sharepoint.com/sites/Initiatives/SitePages/Navan.aspx) to book travel. 
 
-### Other Reimbursements
+## Other Reimbursements
 
 Non-travel-related reimbursements are be completed through Workday. 
 Log in and search "Create Expense Report" to start a new expense report.
