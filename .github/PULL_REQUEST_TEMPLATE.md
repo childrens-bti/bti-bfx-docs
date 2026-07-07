@@ -20,5 +20,5 @@ Closes (remove this and insert ticket number)
 
 
 
-#### Is the analysis in a mature enough form that the resulting figure(s) and/or table(s) are ready for review?
+#### Is the PR ready for review?
 
