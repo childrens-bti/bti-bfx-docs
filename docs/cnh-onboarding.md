@@ -69,6 +69,7 @@ They manage final approvals timecards for the Center for Cancer and Immunology R
 Once this is completed, you do not need to fill out your timecard weekly, nor approve it.
 
 Once you are eligible to take time off (ASSLA/Vacation after 90 days), please follow the instructions below to make a request:
+
 1. Seek approval from Dr. Rokita for time off.
 2. Log into UKG and make an official request.
 3. Dr. Rokita and/or Bailey Farrow will approve these requests in UKG.
