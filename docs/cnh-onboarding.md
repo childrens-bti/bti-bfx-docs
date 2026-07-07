@@ -31,7 +31,7 @@ The administrative team within the Center for Cancer and Immunology Research (CC
 
 As a staff member who will have access to large amounts of genomic data and potentially protected health information (PHI) for patients, we require everyone complete multiple general staff and specific biomedical research traing modules.
 
-### CITI
+### CITI Certifications
 
 If you do not have an account set up with CITI, please make one [here](https://www.citiprogram.org/). If your account has an old email associated, please update to use your Children's National email address and/or add your affiliation to `Children's National Medical Center` (CNMC). This way, other staff members can search for you and see whether you had completed certain trainings. Next, you should be able to see a number of courses for CNMC. Please complete the following:
 
@@ -43,33 +43,36 @@ Note: since we manage L drive with raw data for many users, Bailey will request 
 
 Once completed, all certificates should be stored in the Rokita Lab box folder: `Rokita-Lab/trainings/citi`.
 
-### Cornerstone
+### Workday
 
-Cornerstone is the place where you will complete Children's National-related training/learning modules. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), navigate to 
+[Workday](https://wd108.myworkday.com/childrensnational/d/home.htmld) is the place where you will complete Children's National-related training/learning modules, submit reimbursements, enter performance goals, and monitor grant funding.
+From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
 
 ```
-Resources --> Apps & Tools --> Cornerstone
+Resources --> Workday
 ```
 
-You will periodically see modules assigned. Please complete these before their due dates.
+You will periodically see training modules assigned. 
+Please complete these before their due dates.
 
 ### Your Timecard
 
-Bear Time (Kronos) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), navigate to 
+[UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
 
 ```
-Resources --> Apps & Tools --> Bear Time (Kronos)
+Resources --> UKG
 ```
 
 During your first week, please email Erica Cleary and Colby Rymes to set your weekly schedule.
 This can be any set of 40 hours. 
-They manage all timecards for the Center for Cancer and Immunology Research (CCIR). 
+They manage final approvals timecards for the Center for Cancer and Immunology Research (CCIR). 
 Once this is completed, you do not need to fill out your timecard weekly, nor approve it.
 
 Once you are eligible to take time off (ASSLA/Vacation after 90 days), please follow the instructions below to make a request:
-1. Email Dr. Rokita, cc-ing Erica Cleary and Colby Rymes, to make a request for time off.
-2. Once approved, log into Kronos and make an official request for time off within the right-hand screen.
-3. You do not need to do anything else biweekly to approve the timecard.
+1. Seek approval from Dr. Rokita for time off.
+2. Log into UKG and make an official request.
+3. Dr. Rokita and/or Bailey Farrow will approve these requests in UKG.
+4. Add your time off in the calendar (below).
 
 For more information about accruing leave, please see [here](https://cnmc.sharepoint.com/sites/employeeservices/SitePages/Benefits/Leave.aspx).
 
@@ -81,4 +84,16 @@ Please see the full employee handbook [here](https://cnmc.sharepoint.com/sites/e
 
 We have created a shared calendar in outlook called `BTI Bioinformatics`.  
 Please place your out of office time on this calendar for team awareness.
+
+### Travel
+
+The system for booking travel is called [Navan](https://app.navan.com/app/user2).
+Follow the instructions on the [Sharepoint site](https://cnmc.sharepoint.com/sites/Initiatives/SitePages/Navan.aspx) to book travel. 
+
+### Other Reimbursements
+
+Non-travel-related reimbursements are be completed through Workday. 
+Log in and search "Create Expense Report" to start a new expense report.
+Be sure to fill in the appropriate funding codes for your reports.
+
 
