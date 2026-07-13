@@ -98,6 +98,57 @@ You can use VS Code to connect to the EC2 instance through AWS Session Manager u
 
 4. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
 
+## Hooking up Codex to your EC2 VS Code Instance
+
+The IT team at CNH provides a proprietary GPT model that can be used with Codex in VS Code. Follow the steps below to connect Codex to your EC2-based VS Code instance. The instructions are based on [IT team's internal documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/codex-vscode-setup/).
+
+1. Configure Codex to use the CNH GPT model:
+
+    - Open terminal and create the Codex configuration directory:
+
+        ```bash
+        mkdir -p ~/.codex
+        ```
+
+    - Create the Codex configuration file:
+
+        ```bash
+        touch ~/.codex/config.toml
+        ```
+
+    - Add the following configuration to the `config.toml` file:
+
+        ```toml
+        model = "gpt-5.5-aiml"
+        model_provider = "azure"
+        model_reasoning_effort = "medium"
+
+        approval_policy = "on-request"
+        sandbox_mode = "workspace-write"
+
+        [model_providers.azure]
+        name = "Azure OpenAI"
+        base_url = "https://aif-aiml-dev.openai.azure.com/openai/v1"
+        env_key = "AZURE_OPENAI_API_KEY"
+        wire_api = "responses"
+        ```
+
+    - Set the `AZURE_OPENAI_API_KEY` environment variable in your shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`):
+
+        ```bash
+        export AZURE_OPENAI_API_KEY="<your_api_key_here>"
+        ```
+
+        This API key can be requested from Dr. Rokita or the IT team at CNH.
+
+    - Restart VS Code to apply the changes.
+
+2. Install the Codex extension from the VS Code marketplace.
+
+    - From the extensions view, search for "Codex - OpenAI's coding agent".
+
+3. Codex pane should now be available in your VS Code instance! Feel free to explore configuring custom agent instructions and skills to personalize your Codex set up. For more information, refer to the [Codex documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/agents-and-skills/).
+
 ## Stopping or Terminating an EC2 Instance
 
 To `STOP` an EC2 instance (or shut it down for later), you can either:
