@@ -116,7 +116,7 @@ touch ~/.codex/config.toml
 
 3\. Add the following configuration to the `config.toml` file:
 
-```toml
+```
 model = "gpt-5.5-aiml"
 model_provider = "azure"
 model_reasoning_effort = "medium"
