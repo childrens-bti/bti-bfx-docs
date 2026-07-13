@@ -72,82 +72,78 @@ To begin working with GitHub on the EC2 instance, you must create an SSH key on 
 
 You can use VS Code to connect to the EC2 instance through AWS Session Manager using SSH `ProxyCommand` (no separate port forward required).
 
-1. Create an SSH key (if you do not already have one) and add the public key to `~/.ssh/authorized_keys` on the instance.
+1\. Create an SSH key (if you do not already have one) and add the public key to `~/.ssh/authorized_keys` on the instance.
 
-   ```bash
-   ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
-   ```
+```bash
+ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
+```
 
-2. Open your SSH config in VS Code:
+2\. Open your SSH config in VS Code:
 
-   - Command Palette: `Remote-SSH: Open SSH Configuration File...`
-   - Select `~/.ssh/config`
+- Command Palette: `Remote-SSH: Open SSH Configuration File...`
+- Select `~/.ssh/config`
 
-3. Add a host entry to your local SSH config:
+3\. Add a host entry to your local SSH config:
 
-   ```sshconfig
-   Host bti-ec2
-       HostName i-###################
-       User ubuntu
-       IdentityFile ~/.ssh/ec2_ed25519
-       IdentitiesOnly yes
-       StrictHostKeyChecking accept-new
-       UserKnownHostsFile ~/.ssh/known_hosts
-       ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
-   ```
+```sshconfig
+Host bti-ec2
+    HostName i-###################
+    User ubuntu
+    IdentityFile ~/.ssh/ec2_ed25519
+    IdentitiesOnly yes
+    StrictHostKeyChecking accept-new
+    UserKnownHostsFile ~/.ssh/known_hosts
+    ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
+```
 
-4. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
+4\. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
 
 ## Hooking up Codex to your EC2 VS Code Instance
 
 The IT team at CNH provides a proprietary GPT model that can be used with Codex in VS Code. Follow the steps below to connect Codex to your EC2-based VS Code instance. The instructions are based on [IT team's internal documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/codex-vscode-setup/).
 
-1. Configure Codex to use the CNH GPT model:
+1\. Open a terminal and create the Codex configuration directory:
 
-    - Open terminal and create the Codex configuration directory:
+```bash
+mkdir -p ~/.codex
+```
 
-        ```bash
-        mkdir -p ~/.codex
-        ```
+2\. Create the Codex configuration file:
 
-    - Create the Codex configuration file:
+```bash
+touch ~/.codex/config.toml
+```
 
-        ```bash
-        touch ~/.codex/config.toml
-        ```
+3\. Add the following configuration to the `config.toml` file:
 
-    - Add the following configuration to the `config.toml` file:
+```toml
+model = "gpt-5.5-aiml"
+model_provider = "azure"
+model_reasoning_effort = "medium"
 
-        ```bash
-        model = "gpt-5.5-aiml"
-        model_provider = "azure"
-        model_reasoning_effort = "medium"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
 
-        approval_policy = "on-request"
-        sandbox_mode = "workspace-write"
+[model_providers.azure]
+name = "Azure OpenAI"
+base_url = "https://aif-aiml-dev.openai.azure.com/openai/v1"
+env_key = "AZURE_OPENAI_API_KEY"
+wire_api = "responses"
+```
 
-        [model_providers.azure]
-        name = "Azure OpenAI"
-        base_url = "https://aif-aiml-dev.openai.azure.com/openai/v1"
-        env_key = "AZURE_OPENAI_API_KEY"
-        wire_api = "responses"
-        ```
+4\. Set the `AZURE_OPENAI_API_KEY` environment variable in your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
 
-    - Set the `AZURE_OPENAI_API_KEY` environment variable in your shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`):
+```bash
+export AZURE_OPENAI_API_KEY="<your_api_key_here>"
+```
 
-        ```bash
-        export AZURE_OPENAI_API_KEY="<your_api_key_here>"
-        ```
+This API key can be requested from Dr. Rokita or the IT team at CNH.
 
-        This API key can be requested from Dr. Rokita or the IT team at CNH.
+5\. Restart VS Code to apply the changes.
 
-    - Restart VS Code to apply the changes.
+6\. Install the Codex extension from the VS Code marketplace. From the extensions view, search for "Codex - OpenAI's coding agent".
 
-2. Install the Codex extension from the VS Code marketplace.
-
-    - From the extensions view, search for "Codex - OpenAI's coding agent".
-
-3. Codex pane should now be available in your VS Code instance! Feel free to explore configuring custom agent instructions and skills to personalize your Codex set up. For more information, refer to the [Codex documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/agents-and-skills/).
+7\. The Codex pane should now be available in your VS Code instance. Feel free to explore configuring custom agent instructions and skills to personalize your Codex setup. For more information, refer to the [Codex documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/agents-and-skills/).
 
 ## Stopping or Terminating an EC2 Instance
 
