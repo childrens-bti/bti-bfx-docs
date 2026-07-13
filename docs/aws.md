@@ -118,7 +118,7 @@ The IT team at CNH provides a proprietary GPT model that can be used with Codex 
 
     - Add the following configuration to the `config.toml` file:
 
-        ```toml
+        ```bash
         model = "gpt-5.5-aiml"
         model_provider = "azure"
         model_reasoning_effort = "medium"
