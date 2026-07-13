@@ -73,28 +73,30 @@ To begin working with GitHub on the EC2 instance, you must create an SSH key on 
 You can use VS Code to connect to the EC2 instance through AWS Session Manager using SSH `ProxyCommand` (no separate port forward required).
 
 1. Create an SSH key (if you do not already have one) and add the public key to `~/.ssh/authorized_keys` on the instance.
-```bash
-ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
-```
+
+   ```bash
+   ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
+   ```
 
 2. Open your SSH config in VS Code:
+
    - Command Palette: `Remote-SSH: Open SSH Configuration File...`
    - Select `~/.ssh/config`
 
 3. Add a host entry to your local SSH config:
-```
-Host bti-ec2
-    HostName i-###################
-    User ubuntu
-    IdentityFile ~/.ssh/ec2_ed25519
-    IdentitiesOnly yes
-	StrictHostKeyChecking accept-new
-	UserKnownHostsFile ~/.ssh/known_hosts
-    ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
-```
 
-4. In VS Code, open the Command Palette and choose:
-`Remote-SSH: Connect to Host...` then select `bti-ec2`.
+   ```sshconfig
+   Host bti-ec2
+       HostName i-###################
+       User ubuntu
+       IdentityFile ~/.ssh/ec2_ed25519
+       IdentitiesOnly yes
+       StrictHostKeyChecking accept-new
+       UserKnownHostsFile ~/.ssh/known_hosts
+       ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
+   ```
+
+4. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
 
 ## Stopping or Terminating an EC2 Instance
 
@@ -111,4 +113,3 @@ into your console while inside of the instance OR
 	![instance-state](img/instance-state.png)
 
 To `TERMINATE` an EC2 instance (or delete it for good and stop storage charges on it), navigate to the instance within the AWS Console, click on `Instance state`, and Click `Terminate (delete) instance`.
-
