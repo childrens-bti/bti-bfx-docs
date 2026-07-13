@@ -85,7 +85,7 @@ ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
 
 3\. Add a host entry to your local SSH config:
 
-```sshconfig
+```
 Host bti-ec2
     HostName i-###################
     User ubuntu
