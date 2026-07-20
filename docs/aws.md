@@ -1,5 +1,7 @@
 # AWS Computing
 
+If you are setting up Codex in VS Code on your local computer, you do not need to create or connect to an EC2 instance. Skip ahead to [Hooking up Codex to VS Code](#hooking-up-codex-to-vs-code).
+
 ## Setting up AWS Single-sign-on (SSO)
 
 Make sure you have [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed on your local machine.
@@ -70,6 +72,8 @@ To begin working with GitHub on the EC2 instance, you must create an SSH key on 
 
 ## Configure VS Code with AWS Session Manager
 
+The direct SSH setup in the VSCodium instructions is retained for historical reference and does not work while connected to the VPN. Use VS Code with AWS Session Manager as described below.
+
 You can use VS Code to connect to the EC2 instance through AWS Session Manager using SSH `ProxyCommand` (no separate port forward required).
 
 1\. Create an SSH key (if you do not already have one) and add the public key to `~/.ssh/authorized_keys` on the instance.
@@ -98,9 +102,9 @@ Host bti-ec2
 
 4\. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
 
-## Hooking up Codex to your EC2 VS Code Instance
+## Hooking up Codex to VS Code
 
-The IT team at CNH provides a proprietary GPT model that can be used with Codex in VS Code. Follow the steps below to connect Codex to your EC2-based VS Code instance. The instructions are based on [IT team's internal documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/codex-vscode-setup/).
+The IT team at CNH provides a proprietary GPT model that can be used with Codex in VS Code. Follow the steps below from either your local computer or your EC2-based VS Code instance. This setup requires VS Code and does not work with VSCodium. The instructions are based on [IT team's internal documentation](https://sacnhaimldocsdev.z20.web.core.windows.net/code-assistants/codex-vscode-setup/).
 
 1\. Open a terminal and create the Codex configuration directory:
 
