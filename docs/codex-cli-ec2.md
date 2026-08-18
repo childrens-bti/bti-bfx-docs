@@ -11,7 +11,7 @@ steps below address the EC2-specific authentication flow.
 
 ## Prerequisites
 
-- Codex CLI is installed on the EC2 instance.
+- Codex CLI version 0.146.0 is installed on the EC2 instance. (version 0.147 does not work with our Azure models.)
 - Python 3.12 or later is available on the instance.
 - The `cnh-token.py` script has been downloaded from the CNH setup guide.
 - You can connect to the instance over SSH from your local computer.
