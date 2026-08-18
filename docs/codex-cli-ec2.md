@@ -88,22 +88,15 @@ or `code_challenge` from an earlier attempt.
 
 ## 3. Forward the current callback port over SSH
 
-Open a second terminal on your local computer. The command below prompts for
-the port shown in the current authentication attempt's published-port message,
-then forwards that same port to the EC2 instance:
+Open a second terminal on your local computer. Fill in the port number shown in the current authentication attempt's published-port message. Then ssh forwards that same port to the EC2 instance. `<user>@<ec2-host>` is your host name for the ssh profile that you set up for your EC2 instance e.g. `ubuntu@bti-ec2`
 
 ```bash
-printf 'Port published by the current auth run: '
-read -r PORT
 ssh -N -o ExitOnForwardFailure=yes \
   -L "${PORT}:127.0.0.1:${PORT}" \
   <user>@<ec2-host>
 ```
 
-Replace `<user>@<ec2-host>` with your SSH destination. Do not replace `PORT`
-with a port from a previous run. The `-L` option maps the local port to the
-same callback port on the EC2 instance, and `-N` keeps this terminal dedicated
-to forwarding. Leave the SSH command running.
+Do not replace `PORT` with a port from a previous run. The `-L` option maps the local port to the same callback port on the EC2 instance, and `-N` keeps this terminal dedicated to forwarding. Leave the SSH command running.
 
 If you use an SSH host alias, substitute that alias for `<user>@<ec2-host>`.
 
