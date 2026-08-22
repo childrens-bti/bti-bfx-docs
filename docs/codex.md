@@ -1,3 +1,5 @@
+# Using Codex
+
 ## Running Codex Locally
 
 The AI/ML team at Children's National maintains internal coding agents for our use. 
