@@ -160,7 +160,7 @@ Quarterly reviews, post-mortems.
 
 ## 13. Appendices
 
-#### A. Sample Task Description Template
+### A. Sample Task Description Template
 ```
 Workflow: WGS Alignment v2.4.0  
 Commit: f1c2e7a  
@@ -172,10 +172,10 @@ QC reviewer: name
 Run date: YYYY-MM-DD
 ```
 
-#### B. Metadata Schema Template  
+### B. Metadata Schema Template  
 (To be filled per workflow)
 
-#### C. Output Contract Example  
+### C. Output Contract Example  
 (To be added per workflow)
 
 ---
