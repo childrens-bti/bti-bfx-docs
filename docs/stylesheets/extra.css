@@ -1,28 +1,24 @@
 /*
   Children's National Hospital brand colors (from brand guidelines):
   primary purple #784d96 (PMS 2082), accent orange #e67200 (PMS 152).
-  Material's built-in named palettes ("deep purple"/"orange" in
-  mkdocs.yml) are close but not an exact hex match, so we override
-  the CSS variables directly to hit the brand colors precisely.
+
+  mkdocs.yml sets theme.palette.primary/accent to "custom" (rather
+  than a built-in Material color name) specifically so these rules
+  are the only ones targeting [data-md-color-primary="custom"] /
+  [data-md-color-accent="custom"] - Material's own generated
+  palette.css defines same-specificity rules for every real color
+  name (e.g. [data-md-color-primary=deep-purple]), which silently
+  overrode a same-specificity override keyed to a real color name.
 */
-[data-md-color-scheme="default"] {
+[data-md-color-primary="custom"] {
   --md-primary-fg-color: #784d96;
   --md-primary-fg-color--light: #a78bbb;
   --md-primary-fg-color--dark: #543669;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffffb3;
-  --md-accent-fg-color: #e67200;
-  --md-accent-fg-color--transparent: #e672001a;
-  --md-accent-bg-color: #ffffff;
-  --md-accent-bg-color--light: #ffffffb3;
 }
 
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #784d96;
-  --md-primary-fg-color--light: #a78bbb;
-  --md-primary-fg-color--dark: #543669;
-  --md-primary-bg-color: #ffffff;
-  --md-primary-bg-color--light: #ffffffb3;
+[data-md-color-accent="custom"] {
   --md-accent-fg-color: #e67200;
   --md-accent-fg-color--transparent: #e672001a;
   --md-accent-bg-color: #ffffff;
