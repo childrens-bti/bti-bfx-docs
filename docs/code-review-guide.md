@@ -2,7 +2,7 @@
 
 All pull requests will undergo peer review, and we do so while maintaining a culture of positive peer review.
 
-## Our Code Review model, based on [OpenPedCan](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/CONTRIBUTING.md#pull-requests).
+## Our Code Review model, based on [OpenPedCan](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/CONTRIBUTING.md#pull-requests)
 
 The review intends to ensure that a pull request conforms to the following basic requirements:
 
@@ -24,7 +24,7 @@ But, why?
 - To have all code, figures, and tables ready for future manuscript submission.
 
 
-## Rules of thumb:
+## Rules of thumb
 
 1. Always rerun the module to ensure it works and outputs can be reproduced identically.
 2. Review ≤ 400 lines of code (LOC) at a time
