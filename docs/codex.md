@@ -35,7 +35,9 @@ The steps below address the EC2-specific authentication flow.
 - You can connect to the instance over SSH from your local computer.
 - You are in an approved user group for the CNH coding-assistant endpoint.
 
-### 1. Create a Python virtual environment
+### Steps
+
+#### 1. Create a Python virtual environment
 
 Ubuntu may prevent packages from being installed into its system Python
 environment because of [PEP 668](https://peps.python.org/pep-0668/). Install the
@@ -72,7 +74,7 @@ timeout_ms = 120000
 
 Replace `<user>` with the EC2 instance user, such as `ubuntu` or `ec2-user`.
 
-### 2. Start authentication on the EC2 instance
+#### 2. Start authentication on the EC2 instance
 
 Open a terminal connected to the EC2 instance and run:
 
@@ -104,7 +106,7 @@ redirect_uri=http%3A%2F%2Flocalhost%3A<PORT>
 Use the complete `Auth URI` from the current run. Do not reuse a port, `state`,
 or `code_challenge` from an earlier attempt.
 
-### 3. Forward the current callback port over SSH
+#### 3. Forward the current callback port over SSH
 
 Open a second terminal on your local computer. Fill in the port number shown in the current authentication attempt's published-port message. Then ssh forwards that same port to the EC2 instance. `<user>@<ec2-host>` is your host name for the ssh profile that you set up for your EC2 instance e.g. `ubuntu@bti-ec2`
 
@@ -118,7 +120,7 @@ Do not replace `PORT` with a port from a previous run. The `-L` option maps the 
 
 If you use an SSH host alias, substitute that alias for `<user>@<ec2-host>`.
 
-### 4. Sign in from your local browser
+#### 4. Sign in from your local browser
 
 1. Copy the entire `Auth URI` printed in the EC2 terminal.
 2. Paste it into a browser on your local computer and sign in with your
@@ -135,7 +137,7 @@ create the tunnel again with that new port.
 
 After the authentication script exits, the tunnel terminal can be closed.
 
-### 5. Run Codex CLI
+#### 5. Run Codex CLI
 
 Back on the EC2 instance, change to the project directory and start Codex:
 
