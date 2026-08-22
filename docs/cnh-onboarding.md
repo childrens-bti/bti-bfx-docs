@@ -91,9 +91,9 @@ Please place your out of office time on this calendar for team awareness.
 The system for booking travel is called [Navan](https://app.navan.com/app/user2).
 Follow the instructions on the [Sharepoint site](https://cnmc.sharepoint.com/sites/Initiatives/SitePages/Navan.aspx) to book travel. 
 
-## Other Reimbursements
+## Reimbursements
 
-Non-travel-related reimbursements are be completed through Workday. 
+All reimbursements are to be completed through Workday. 
 Log in and search "Create Expense Report" to start a new expense report.
 Be sure to fill in the appropriate funding codes for your reports.
 
