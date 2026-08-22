@@ -89,12 +89,18 @@ Please place your out of office time on this calendar for team awareness.
 ## Travel
 
 The system for booking travel is called [Navan](https://app.navan.com/app/user2).
+Use the per diem rates [here](https://www.gsa.gov/travel/plan-book/per-diem-rates) to estimate your allowances.
 Follow the instructions on the [Sharepoint site](https://cnmc.sharepoint.com/sites/Initiatives/SitePages/Navan.aspx) to book travel. 
 
 ## Reimbursements
 
 All reimbursements are to be completed through Workday. 
 Log in and search "Create Expense Report" to start a new expense report.
-Be sure to fill in the appropriate funding codes for your reports.
+
+## Checklist
+- Add a copy of the Schedule/Agenda if you attended a conference.
+- Add _per diem_ for each meal not provided if you traveled. You do not need to upload receipts for food.
+- For any external bookings/expenses not booked in Navan, add a copy of your receipt and your credit card statement showing that you paid (e.g. a membership fee or poster printing).
+- Fill in the appropriate funding codes, which can be obtained from Dr. Rokita.
 
 
