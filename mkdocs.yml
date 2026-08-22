@@ -6,13 +6,13 @@ nav:
   - AWS Compute: aws.md
   - Codex CLI on an AWS EC2 Instance: codex-cli-ec2.md
   - CAVATICA Compute: cavatica.md
-  - CAVATICA workflow SOP: sop_cwl_cavatica.md
+  - CAVATICA workflow SOP: sop-cwl-cavatica.md
   - Using Docker or Podman: docker.md
   - Using GitHub: github-general.md
   - GitHub Repository Guidelines: github-repo-guide.md
   - GitHub Pull Request Guidelines: github-pr-guide.md
   - Code Review Guidelines: code-review-guide.md
-  - Using VSCodium for Code Reviews: vscodium.md
+  - Using VS Code for Code Reviews: vs-code.md
   - Github Tokens: github-tokens.md
   - BTI Project Management: project-mgmt.md
   - Sprint Planning: sprints.md
