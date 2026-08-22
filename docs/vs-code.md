@@ -2,6 +2,8 @@
 
 There are multiple free text editors available which can be useful for code review, but I highlight [VS Code](https://code.visualstudio.com/) here because of ease of use.
 
+---
+
 ## Connecting VS Code to your EC2 Instance
 
 In order to connect VS Code to your EC2 instance, you will need to configure your local SSH profile.
@@ -21,6 +23,8 @@ Host name_here
     ![connect](img/vs-code-connect.png)
 
 You should be in!
+
+---
 
 ## Code Review with VS Code
 

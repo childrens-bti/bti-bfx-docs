@@ -2,6 +2,8 @@
 
 We will containerize all packages which can be redistributed without licenses using Docker containers. You can work with these using either [Docker](https://www.docker.com/) or [Podman](https://podman.io/).
 
+---
+
 ## Creating a New Dockerfile and Docker Image 
 
 Create a local `Dockerfile` that loads/installs necessary packages (and their versions) necessary to run the code in the Github repo.
@@ -64,6 +66,8 @@ where `<username>/<repository_name>[:tag]` refers to the image that you have alr
 
 *Example*: `docker push pgc-images.sbgenomics.com/naqvia/autopvs1:latest`
 
+---
+
 ## Pulling the Docker Image
 
 ```bash
@@ -74,6 +78,8 @@ docker pull pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]:<tagnam
 ```
 docker pull pgc-images.sbgenomics.com/naqvia/autopvs1:latest
 ```
+
+---
 
 ## Updating the Docker Image
 

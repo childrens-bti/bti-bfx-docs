@@ -6,6 +6,8 @@ We prefer the use of `tidyverse` functions over base R, when possible. The reaso
     - We follow the [tidyverse style guide](https://style.tidyverse.org/index.html) for writing code.
     - Avoid `CamelCase` unless already in a package function being used.
 
+---
+
 ## Preparing Code for a Pull Request (PR) and Review - Some Principles
 
 ### 1. Create quantifiable and transparent analysis goals
@@ -41,6 +43,8 @@ Usually this is a shell script which runs all of the module scripts in order.
 ### 8. Clearly document your goals within the PR template
 
 Remember, a reviewer may not have the background of your project or previous analyses leading up to the PR in question, so it is very helpful to the reviewer when the PR is clearly described.
+
+---
 
 ## Check out a new branch
 
@@ -85,6 +89,8 @@ If authentication is required, the user needs to do the following:
 - Go to GitHub page → personal account/Settings/Developer settings choose tokens (classic) → Generate new token
 - Once in the terminal and asked for authentication, use the token as password.
 
+---
+
 ## Update local git repo
 
 - To download all changes from remote repo to local repo, use:
@@ -94,6 +100,8 @@ If authentication is required, the user needs to do the following:
 - To download changes AND merge them into current branch, use:
 
         git pull
+
+---
 
 ## Submitting a Pull Request (PR)
 
@@ -132,6 +140,8 @@ There is a sidebar on the “Open a pull request” page and PR page that allows
 To add reviewers, click “Reviewers” and type in GitHub username of desired reviewer.
 
 To add labels, click “Labels” and add desired label (e.g., “Ready for Review”, “Blocked”, “Stacked”). 
+
+---
 
 ## Stacking PRs
 

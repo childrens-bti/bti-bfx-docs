@@ -1,5 +1,7 @@
 # AWS Computing
 
+---
+
 ## Setting up AWS Single-sign-on (SSO)
 
 Make sure you have [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed on your local machine.
@@ -26,6 +28,8 @@ You can now use this new single-sign on profile as
 aws s3 ls --profile cnh-sso
 ```
 
+---
+
 ## Install the AWS Session Manager plugin on macOS
 
 Follow the instructions [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-macos-overview.html) to install the plugin required to connect using AWS Sessions Manager.
@@ -39,6 +43,8 @@ curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/sessi
 sudo installer -pkg session-manager-plugin.pkg -target /
 sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
 ```
+
+---
 
 ## Launching an EC2 Instance from AWS Service Catalog
 
@@ -67,6 +73,8 @@ sudo -iu ubuntu
 You are now connected to your EC2 instance!
 
 To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see GitHub section).
+
+---
 
 ## Configuring VS Code with SSH (Deprecated)
 
@@ -100,6 +108,8 @@ Host bti-ec2
 ```
 
 4\. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
+
+---
 
 ## Stopping or Terminating an EC2 Instance
 

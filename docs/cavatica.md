@@ -8,6 +8,8 @@ We will generally use CAVATICA to:
 2. Benchmark and implement new workflows specific to the needs of the BTI, for example, CITE-Seq, miRNA-Seq, pangenome analyses, etc.
 3. Small-scale merges/quick analyses of many data files to avoid downloads, such as through Data Studio.
 
+---
+
 ## How to mount an AWS volume in CAVATICA
 
 In order to mount an AWS volume, you need to have access keys to our AWS account. We will not give these out to everyone, so generally, Alex Sickler and Jo Lynne Rokita will be the ones with keys for mounting. Lordley Okarter, who is the AWS account admin, is the only one who can create these.
@@ -24,6 +26,8 @@ Once you have keys:
 Note: we usually will mount these as read/write if we desire to export data back to the bucket.
 
 Additional documentation on mounting volumes inside of CAVATICA can be found [here](https://docs.cavatica.org/docs/volumes).
+
+---
 
 ## Project Naming
 
