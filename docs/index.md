@@ -41,5 +41,5 @@ Using AI for bioinformatics (e.g. chatbots, GitHub Copilot) can drastically stre
 However, it is very important to consider the information and data we enter into a chatbot or AI assistant such as GitHub Copilot.
 
   - Do _not_ paste any identifiable patient data into chatbots, whether in the form of files or free text.
-  - Do _not_ utilize any AI software in conjuction with GitHub or your text editor so that private repositories are not exposed.
+  - Do _not_ utilize unapproved AI software in conjunction with GitHub or your text editor, so that private repositories are not exposed. Approved CNH coding agents, such as Codex, may be used with GitHub and your text editor - see [Using Codex](codex.md) for setup instructions.
 
