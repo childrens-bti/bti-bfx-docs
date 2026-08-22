@@ -1,16 +1,14 @@
 /*
   Children's National Hospital brand colors (from brand guidelines):
-  primary blue #0077cd (PMS 3005), accent orange #e67200 (PMS 152).
-  Blue/orange is a colorblind-safe pairing - far apart on both the
-  red-green and blue-yellow confusion axes - unlike blue/teal.
-  Material's built-in named palettes ("blue"/"orange" in mkdocs.yml)
-  are close but not an exact hex match, so we override the CSS
-  variables directly to hit the brand colors precisely.
+  primary purple #784d96 (PMS 2082), accent orange #e67200 (PMS 152).
+  Material's built-in named palettes ("deep purple"/"orange" in
+  mkdocs.yml) are close but not an exact hex match, so we override
+  the CSS variables directly to hit the brand colors precisely.
 */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #0077cd;
-  --md-primary-fg-color--light: #4d9fdb;
-  --md-primary-fg-color--dark: #005a9e;
+  --md-primary-fg-color: #784d96;
+  --md-primary-fg-color--light: #a78bbb;
+  --md-primary-fg-color--dark: #543669;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffffb3;
   --md-accent-fg-color: #e67200;
@@ -20,9 +18,9 @@
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #0077cd;
-  --md-primary-fg-color--light: #4d9fdb;
-  --md-primary-fg-color--dark: #005a9e;
+  --md-primary-fg-color: #784d96;
+  --md-primary-fg-color--light: #a78bbb;
+  --md-primary-fg-color--dark: #543669;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffffb3;
   --md-accent-fg-color: #e67200;
