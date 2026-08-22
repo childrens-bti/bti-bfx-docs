@@ -1,4 +1,7 @@
 site_name: Children's National BTI Bioinformatics
+repo_url: https://github.com/childrens-bti/bti-bfx-docs
+repo_name: childrens-bti/bti-bfx-docs
+edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - CNH-Specific Onboarding: cnh-onboarding.md
@@ -18,4 +21,37 @@ nav:
   - Sprint Planning: sprints.md
   - Literature: literature.md
   - Docs: docs-resources.md
-theme: readthedocs
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
