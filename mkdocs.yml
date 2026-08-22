@@ -4,7 +4,7 @@ nav:
   - CNH-Specific Onboarding: cnh-onboarding.md
   - Technology Access Requests: access.md
   - AWS Compute: aws.md
-  - Codex CLI on an AWS EC2 Instance: codex-cli-ec2.md
+  - Using Codex: codex.md
   - CAVATICA Compute: cavatica.md
   - CAVATICA workflow SOP: sop-cwl-cavatica.md
   - Using Docker or Podman: docker.md
