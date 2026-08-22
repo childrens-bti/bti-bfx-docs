@@ -1,6 +1,6 @@
 # Documentation for the Rokita Lab and BTI Bioinformatics Core
 
-Welcome to ReadtheDocs for Children's National Hospital Rokita Lab and Brain Tumor Institute (BTI) Bioinformatics team members.
+Welcome to documentation website for Children's National Hospital Rokita Lab and Brain Tumor Institute (BTI) Bioinformatics team members.
 This website is a centralized location that contains information about tool accessibility as well as general guidance for utilizing compute infrastructure and using reproducible practices for analytical projects.
 To file an issue, please see the docs repo [here](https://github.com/childrens-bti/bti-bfx-docs/issues).
 
