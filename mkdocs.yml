@@ -1,4 +1,4 @@
-site_name: Children's National BTI Bioinformatics
+site_name: Rokita Lab and BTI Bioinformatics Documentation
 repo_url: https://github.com/childrens-bti/bti-bfx-docs
 repo_name: childrens-bti/bti-bfx-docs
 edit_uri: edit/main/docs/
@@ -44,7 +44,6 @@ theme:
     - content.code.copy
     - content.action.edit
     - toc.follow
-    - toc.integrate
 markdown_extensions:
   - admonition
   - attr_list
