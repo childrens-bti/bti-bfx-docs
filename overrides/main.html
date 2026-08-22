@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{#
+  toc.integrate makes the left nav nest a page's own headings under its
+  link (see partials/nav.html), but upstream base.html then skips
+  rendering the separate right-hand table of contents entirely when
+  toc.integrate is set. We want both: nested headings on the left AND
+  the standalone TOC panel on the right. This block is base.html's
+  site_nav block with that "toc.integrate not in features" guard removed
+  around the secondary sidebar.
+#}
+{% block site_nav %}
+  {% if nav %}
+    {% if page.meta and page.meta.hide %}
+      {% set hidden = "hidden" if "navigation" in page.meta.hide %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          {% include "partials/nav.html" %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% if page.meta and page.meta.hide %}
+    {% set hidden = "hidden" if "toc" in page.meta.hide %}
+  {% endif %}
+  <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        {% include "partials/toc.html" %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

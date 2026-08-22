@@ -28,6 +28,7 @@ nav:
       - Docs: docs-resources.md
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -51,6 +52,7 @@ theme:
     - content.code.copy
     - content.action.edit
     - toc.follow
+    - toc.integrate
 markdown_extensions:
   - admonition
   - attr_list
