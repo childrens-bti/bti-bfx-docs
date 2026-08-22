@@ -1,0 +1,32 @@
+/*
+  Children's National Hospital brand colors (from brand guidelines):
+  primary blue #0077cd (PMS 3005), accent orange #e67200 (PMS 152).
+  Blue/orange is a colorblind-safe pairing - far apart on both the
+  red-green and blue-yellow confusion axes - unlike blue/teal.
+  Material's built-in named palettes ("blue"/"orange" in mkdocs.yml)
+  are close but not an exact hex match, so we override the CSS
+  variables directly to hit the brand colors precisely.
+*/
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0077cd;
+  --md-primary-fg-color--light: #4d9fdb;
+  --md-primary-fg-color--dark: #005a9e;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color: #e67200;
+  --md-accent-fg-color--transparent: #e672001a;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0077cd;
+  --md-primary-fg-color--light: #4d9fdb;
+  --md-primary-fg-color--dark: #005a9e;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color: #e67200;
+  --md-accent-fg-color--transparent: #e672001a;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
