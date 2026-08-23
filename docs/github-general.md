@@ -2,6 +2,8 @@
 
 For general information on using GitHub, [see here](https://git-scm.com/doc).
 
+---
+
 ## Setting up a local SSH Key and adding to GitHub
 
 On your local computer (or EC2 instance for the first time), run the following command to generate your public SSH key.
@@ -17,6 +19,7 @@ cat ~/.ssh/id_rsa.pub
 
 Add this new SSH key to your profile in GitHub by following [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
+---
 
 ## Setting up a GitHub repository
 
@@ -60,7 +63,8 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
         bash download-data.sh
     
     This will download all project data from the associated Amazon S3 bucket and create symlinks in `data/` to the latest data release version. This command can be re-run to ensure that the most updated files are downloaded. 
-    
+
+---
 
 ## Data release instructions
 
@@ -125,6 +129,8 @@ For generating a new versioned data release, follow the steps below:
         git push origin <branch-name>
 
     Open a Pull Request with a description of the data release changes.
+
+---
 
 ## Creating submodules
 

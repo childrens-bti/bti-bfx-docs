@@ -3,6 +3,8 @@
 Here, we have compiled some important literature related to pediatric CNS brain tumors and computational workflows our group utilizes.
 Please review. 
 
+---
+
 ## Consortia
 
 ### The Children's Brain Tumor Network (CBTN)
@@ -20,6 +22,8 @@ The [PNOC](https://pnoc.us/) is an international consortium dedicated to advanci
 ### Clinical Proteomic Tumor Analysis Consortium (CPTAC) 
 The CPTAC is an NCI effort "to accelerate the understanding of the molecular basis of cancer through the application of large-scale proteome and genome analysis, or proteogenomics".
 For more information, see [here](https://gdc.cancer.gov/about-gdc/contributed-genomic-data-cancer-research/clinical-proteomic-tumor-analysis-consortium-cptac). 
+
+---
 
 ## Open Source Platforms and Tools
 
@@ -57,6 +61,8 @@ The Molecular Characterization Initiative (MCI) is a major component of CCDI, es
 This program focuses on delivering comprehensive genomic and molecular profiling for children, adolescents, and young adults diagnosed with cancer, expanding access to high-quality data that can guide biological discovery and clinical decision-making.
 
 For additional details, see the [CCDI](https://ascopubs.org/doi/10.1200/JCO.22.02208) and [MCI](https://pmc.ncbi.nlm.nih.gov/articles/PMC12360469/) publications.
+
+---
 
 ## CNS Tumor Literature
 

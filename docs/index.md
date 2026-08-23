@@ -1,8 +1,10 @@
 # Documentation for the Rokita Lab and BTI Bioinformatics Core
 
-Welcome to ReadtheDocs for Children's National Hospital Rokita Lab and Brain Tumor Institute (BTI) Bioinformatics team members.
+Welcome to documentation website for Children's National Hospital Rokita Lab and Brain Tumor Institute (BTI) Bioinformatics team members.
 This website is a centralized location that contains information about tool accessibility as well as general guidance for utilizing compute infrastructure and using reproducible practices for analytical projects.
 To file an issue, please see the docs repo [here](https://github.com/childrens-bti/bti-bfx-docs/issues).
+
+---
 
 ## Responsible and Ethical Use of Bioinformatics Resources
 
@@ -38,8 +40,9 @@ CGC has cloud credits available through [application](https://docs.cancergenomic
 ### Responsible Use of Artificial Intelligence (AI) in Bioinformatics
 
 Using AI for bioinformatics (e.g. chatbots, GitHub Copilot) can drastically streamline time to project completion as it can be very useful when converting code from one language to another, developing functions, working out bugs, and more.
-However, it is very important to consider the information and data we enter into a chatbot or AI assistant such as GitHub Copilot.
+However, it is very important to consider the information and data we enter into a chatbot or AI assistant.
 
-  - Do _not_ paste any identifiable patient data into chatbots, whether in the form of files or free text.
-  - Do _not_ utilize any AI software in conjuction with GitHub or your text editor so that private repositories are not exposed.
+  - Do _not_ paste any identifiable patient data into non-CNH-approved chatbots or AI assistants, whether in the form of files or free text.
+  - Do _not_ utilize unapproved AI software in conjunction with GitHub or your text editor, so that private repositories are not exposed. 
+  Approved CNH coding agents, such as Codex, may be used with GitHub and your text editor - see [Using Codex](codex.md) for setup instructions.
 

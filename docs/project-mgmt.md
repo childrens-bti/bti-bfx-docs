@@ -1,12 +1,18 @@
 # BTI Project Management
 
+---
+
 ## Scrum
 
 In the Rokita Lab and the BTI Bioinformatics Core, we are implementing Scrum as a project management framework. To get familiar with Scrum please refer to [the Scrum Guide](https://scrumguides.org/scrum-guide.html) or [Scrum Essentials in Under 10 Minutes](https://www.youtube.com/watch?v=RtQ3tpq-RuE).
 
+---
+
 ## Sprint Planning
 
 For an overview on sprints, see [sprints](sprints.md). Sprint Planning along with Review and Retrospective happen bi-weekly on Tuesdays. Review and Retrospective begin at 11 am and Planning is at 1pm. For access to the meetings, please ask either Dr. Rokita or Alex Sickler.
+
+---
 
 ## GitHub Project
 

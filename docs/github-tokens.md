@@ -4,10 +4,13 @@ This page lists the various tokens that are used within the Rokita Lab and the B
 If you are going to be managing tokens, you may need to request additional permission in the organizations and repos in which you plan to use the tokens. 
 The tokens listed here are stored in the repos as secrets and used by different Actions. You don't need to include personal tokens you use locally here.
 
+---
+
 ## Generating Token Documentation
 
 GitHub token documentation can be found [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
+---
 
 ## Token Table
 

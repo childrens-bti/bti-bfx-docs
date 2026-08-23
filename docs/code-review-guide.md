@@ -2,7 +2,9 @@
 
 All pull requests will undergo peer review, and we do so while maintaining a culture of positive peer review.
 
-## Our Code Review model, based on [OpenPedCan](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/CONTRIBUTING.md#pull-requests).
+---
+
+## Our Code Review model, based on [OpenPedCan](https://github.com/rokitalab/OpenPedCan-Project-CNH/blob/dev/CONTRIBUTING.md#pull-requests)
 
 The review intends to ensure that a pull request conforms to the following basic requirements:
 
@@ -23,8 +25,9 @@ But, why?
 - To maintain our high standard of reproducibility and rigor.
 - To have all code, figures, and tables ready for future manuscript submission.
 
+---
 
-## Rules of thumb:
+## Rules of thumb
 
 1. Always rerun the module to ensure it works and outputs can be reproduced identically.
 2. Review ≤ 400 lines of code (LOC) at a time
@@ -49,9 +52,13 @@ Pull requests can be reviewed using [GitHub's review interface](https://help.git
 
 Before a repository maintainer merges a pull request, there must be at least one affirmative review. If there is any unaddressed criticism or disapproval, a repository maintainer will determine how to proceed and may wait for additional feedback.
 
+---
+
 ## Merging approved pull requests
 
 If working on a collaborative repository, and a pull request is approved, please do **not** merge it immediately. Instead, wait for the repository maintainer to coordinate with you on when to merge the pull request and whether the pull request should be updated with the latest `dev` or `main` branch. The coordination can reduce the workload of developers for checking whether the `dev` or `main` branch updates by merging other pull requests will affect their own pull requests.
+
+---
 
 ## Additional Code Review Resources
 

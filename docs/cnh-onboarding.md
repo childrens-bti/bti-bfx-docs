@@ -1,5 +1,7 @@
 # Children's National-specific onboarding
 
+---
+
 ## Virtual Private Networks (VPNs)
 
 ### Children's National Hospital (Children's National)
@@ -22,10 +24,14 @@ GWU also uses GlobalProtect.
 To request to be added to the Active Directory (AD) group for GlobalProtect, allowing VPN disconnect, fill out the RedCap form [here](https://cri-datacap.org/surveys/?s=9H8KDWW7YCCCFY3H) and email Claudio Anselmi to ask him to create an IS Request for Policy Exception for your user.
 Once approved, you should be added to the AD group and can call the Help Desk for the password. 
 
+---
+
 ## Children's National Intranet
 
 The Children's National Intranet (MS Sharepoint site) can be found [here](https://cnmc.sharepoint.com/SitePages/Homepage.aspx) and is relatively easy to navigate.
 The administrative team within the Center for Cancer and Immunology Research (CCIR) has done a wonderful job creating a [CCIR-specific Sharepoint site](https://cnmc.sharepoint.com/sites/GRP_CCIRBearNecessities_CtrforCancerImmunologyRsch/SitePages/CCIR-Employee-Support-%26.aspx) for its faculty and staff.
+
+---
 
 ## Training modules
 
@@ -55,6 +61,8 @@ Resources --> Workday
 You will periodically see training modules assigned. 
 Please complete these before their due dates.
 
+---
+
 ## Your Timecard
 
 [UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
@@ -77,24 +85,40 @@ Once you are eligible to take time off (ASSLA/Vacation after 90 days), please fo
 
 For more information about accruing leave, please see [here](https://cnmc.sharepoint.com/sites/employeeservices/SitePages/Benefits/Leave.aspx).
 
+---
+
 ## Employee Handbook
 
 Please see the full employee handbook [here](https://cnmc.sharepoint.com/sites/employeeservices/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Femployeeservices%2FShared+Documents%2Femployee-handbook.pdf&parent=%2Fsites%2Femployeeservices%2FShared+Documents).
+
+---
 
 ## BTI Bioinformatics Outlook Calendar
 
 We have created a shared calendar in outlook called `BTI Bioinformatics`.  
 Please place your out of office time on this calendar for team awareness.
 
+---
+
 ## Travel
 
 The system for booking travel is called [Navan](https://app.navan.com/app/user2).
+Use the per diem rates [here](https://www.gsa.gov/travel/plan-book/per-diem-rates) to estimate your allowances.
 Follow the instructions on the [Sharepoint site](https://cnmc.sharepoint.com/sites/Initiatives/SitePages/Navan.aspx) to book travel. 
 
-## Other Reimbursements
+---
 
-Non-travel-related reimbursements are be completed through Workday. 
+## Reimbursements
+
+All reimbursements are to be completed through Workday. 
 Log in and search "Create Expense Report" to start a new expense report.
-Be sure to fill in the appropriate funding codes for your reports.
+
+---
+
+## Checklist
+- Add a copy of the Schedule/Agenda if you attended a conference.
+- Add _per diem_ for each meal not provided if you traveled. You do not need to upload receipts for food.
+- For any external bookings/expenses not booked in Navan, add a copy of your receipt and your credit card statement showing that you paid (e.g. a membership fee or poster printing).
+- Fill in the appropriate funding codes, which can be obtained from Dr. Rokita.
 
 

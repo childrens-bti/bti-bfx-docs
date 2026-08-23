@@ -2,11 +2,13 @@
 
 We will containerize all packages which can be redistributed without licenses using Docker containers. You can work with these using either [Docker](https://www.docker.com/) or [Podman](https://podman.io/).
 
+---
+
 ## Creating a New Dockerfile and Docker Image 
 
 Create a local `Dockerfile` that loads/installs necessary packages (and their versions) necessary to run the code in the Github repo.
 
-**How to create a docker registry in CAVATICA**
+### How to create a docker registry in CAVATICA
 
 Create a repository
 
@@ -20,7 +22,7 @@ Create a repository
 - Assign admin rights to Jo Lynne Rokita (`harenzaj`) and Alex Sickler (`sicklera`) by clicking on: `<Name of Repository>/ Members`
 - Assign admin rights to yourself so that you can push the image once it's built
 
-**Docker Login**
+### Docker Login
 
 From the directory where your Dockerfile lives, log into CAVATICA docker registry using your CAVATICA credentials. 
 
@@ -31,7 +33,7 @@ docker login http://pgc-images.sbgenomics.com/ -u <USERNAME> -p <YOUR-AUTH-TOKEN
 "USERNAME" refers to your CAVATICA username.
 "YOUR-AUTH-TOKEN" can be generated from your CAVATICA account under the “Authentication token” section in the Developer tab.
 
-**Build Image**
+### Build Image
 
 ```bash
 docker build -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
@@ -54,7 +56,7 @@ docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<rep
 docker build --platform=linux/amd64 -t  pgc-images.sbgenomics.com/naqvia/autopvs1:latest .
 ```
 
-**Push the Docker Image**
+### Push the Docker Image
 
 ```bash
 docker push pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]
@@ -63,6 +65,8 @@ docker push pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]
 where `<username>/<repository_name>[:tag]` refers to the image that you have already committed
 
 *Example*: `docker push pgc-images.sbgenomics.com/naqvia/autopvs1:latest`
+
+---
 
 ## Pulling the Docker Image
 
@@ -74,6 +78,8 @@ docker pull pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]:<tagnam
 ```
 docker pull pgc-images.sbgenomics.com/naqvia/autopvs1:latest
 ```
+
+---
 
 ## Updating the Docker Image
 

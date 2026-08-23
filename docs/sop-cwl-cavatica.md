@@ -5,45 +5,17 @@
 
 ---
 
-# **Table of Contents**
-1. [Purpose](#1-purpose)  
-2. [Scope](#2-scope)  
-3. [Guiding Principles](#3-guiding-principles)  
-4. [Pre-Run Task Preparation (Cavatica-Specific)](#4-pre-run-task-preparation-cavatica-specific)  
-   - [File Inputs](#41-file-inputs)  
-   - [CWL Workflow Validation](#42-cwl-workflow-validation)  
-   - [Versioning Requirements](#43-versioning-requirements)  
-   - [CWL Runtime Settings](#44-cwl-runtime-settings)  
-5. [Workflow Design Standards](#5-workflow-design-standards)  
-   - [Required Validation Steps](#51-required-validation-steps)  
-   - [Output Contract](#52-output-contract-cavatica)  
-   - [Logging Requirements](#53-logging-requirements)  
-6. [Task Planning & Execution on Cavatica](#6-task-planning--execution-on-cavatica)  
-   - [Small-Batch Validation](#61-small-batch-validation)  
-   - [Peer Review](#62-peer-review)  
-   - [Criteria Before Full Launch](#63-criteria-before-full-launch)
-   - [Output Basename Scheme](#64-basename-scheme)  
-7. [Preventing Reruns](#7-preventing-reruns)  
-8. [Preventing Task Deletion](#8-preventing-task-deletion-cavatica-best-practices)  
-9. [Exporting Data Safely](#9-exporting-data-safely-from-cavatica)  
-10. [Documentation Requirements](#10-documentation-requirements)  
-11. [Continuous Improvement](#11-continuous-improvement)  
-12. [Roles & Responsibilities](#12-roles--responsibilities)  
-13. [Appendices](#13-appendices)
-
----
-
-# **1. Purpose**
+## Purpose
 This SOP defines standards and procedures for designing, validating, launching, and exporting data from **CWL workflows run on Cavatica**, focusing on reducing task deletions, reruns, and increasing workflow reliability.
 
 ---
 
-# **2. Scope**
+## Scope
 This SOP applies to all CWL workflows executed on Cavatica.
 
 ---
 
-# **3. Guiding Principles**
+## Guiding Principles
 - Reproducibility  
 - Validation before execution  
 - Predictable outputs  
@@ -52,44 +24,44 @@ This SOP applies to all CWL workflows executed on Cavatica.
 
 ---
 
-# **4. Pre-Run Task Preparation (Cavatica-Specific)**
+## Pre-Run Task Preparation (Cavatica-Specific)
 
-## **4.1 File Inputs**
+### File Inputs
 - Validate file types and metadata  
 - Confirm file IDs  
 - Verify references  
 
-## **4.2 CWL Workflow Validation (Before Depolying to Cavatica)**
+### CWL Workflow Validation (Before Depolying to Cavatica)
 - Use `cwltool --validate`  
 - Validate input schema  
 
-## **4.3 Versioning Requirements**
+### Versioning Requirements
 - Document CWL version, Docker digest, reference bundle  
 
-## **4.4 CWL Runtime Settings**
+### CWL Runtime Settings
 - Set resource requirements  
 - Avoid hard-coded paths  
 
 ---
 
-# **5. Workflow Design Standards**
+## Workflow Design Standards
 
-## **5.1 Required Validation Steps**
+### Required Validation Steps
 - Input metadata validation  
 - Reference integrity checks  
 - File existence checks  
 
-## **5.2 Output Contract (Cavatica)**
+### Output Contract (Cavatica)
 - Define final outputs  
 - Checksums  
 - Naming conventions  
 
-## **5.3 Logging Requirements**
+### Logging Requirements
 - Structured logs  
 - Summary log  
 - Docker stdout/stderr  
 
-## **5.4 Workflow I/O Documentation (File Types + Globs + Paths)**
+### Workflow I/O Documentation (File Types + Globs + Paths)
 - Document expected input file extensions (e.g., `.fastq.gz`, `.bam{,.bai}`, `.vcf.gz{,.tbi}`, `.json/.tsv`)  
 - Document expected output file extensions and where they land (e.g., `outputs/**`, `logs/**`, `qc/**`, `checksums/**`)  
 - Include canonical glob patterns for discovery/validation (e.g., `inputs/**/*.{fastq,fq}.gz`, `outputs/**/*.vcf.gz{,.tbi}`)  
@@ -97,45 +69,45 @@ This SOP applies to all CWL workflows executed on Cavatica.
 
 ---
 
-# **6. Task Planning & Execution on Cavatica**
+## Task Planning & Execution on Cavatica
 
-## **6.1 Small-Batch Validation**
+### Small-Batch Validation
 Run 1–3 samples end-to-end before full launch.
 
-## **6.2 Peer Review**
+### Peer Review
 Another engineer reviews inputs, versions, references.
 
-## **6.3 Criteria Before Full Launch**
+### Criteria Before Full Launch
 All validations passed, parameters confirmed.
 
-## **6.4 Output Basename Scheme**
+### Output Basename Scheme
 When creating tasks, the output basename is typically the baid of the sample being analyzed. For the somatic and consensus workflows which use both tumor and normal samples, the basename should be in the format `{tumor_id}_{normal_id}`. For the impact workflow, which using both tumor and RNA data, the basename format should be `{tumor_id}_{rna_id}`. When creating workflows using the cli, the task id is automatically added during task creation.
 
 ---
 
-# **7. Preventing Reruns**
+## Preventing Reruns
 Use version-locked references, docker digests, validation scripts.
 
 ---
 
-# **8. Preventing Task Deletion (Cavatica Best Practices)**
+## Preventing Task Deletion (Cavatica Best Practices)
 - Use dev projects for testing  
 - Enforce naming conventions  
 - Avoid overwriting outputs  
 
 ---
 
-# **9. Exporting Data Safely from Cavatica**
+## Exporting Data Safely from Cavatica
 
-## Pre-Export
+### Pre-Export
 Validate outputs, checksums
 
-## Post-Export
+### Post-Export
 Spot QC, document export details
 
 ---
 
-# **10. Documentation Requirements**
+## Documentation Requirements
 - README  
 - Input schema  
 - Output contract  
@@ -143,12 +115,12 @@ Spot QC, document export details
 
 ---
 
-# **11. Continuous Improvement**
+## Continuous Improvement
 Quarterly reviews, post-mortems.
 
 ---
 
-# **12. Roles & Responsibilities**
+## Roles & Responsibilities
 | Role | Responsibility |
 |------|--------------|
 | Engineering | Workflow development |
@@ -158,9 +130,9 @@ Quarterly reviews, post-mortems.
 
 ---
 
-# **13. Appendices**
+## Appendices
 
-### A. Sample Task Description Template
+### Sample Task Description Template
 ```
 Workflow: WGS Alignment v2.4.0  
 Commit: f1c2e7a  
@@ -172,10 +144,10 @@ QC reviewer: name
 Run date: YYYY-MM-DD
 ```
 
-### B. Metadata Schema Template  
+### Metadata Schema Template  
 (To be filled per workflow)
 
-### C. Output Contract Example  
+### Output Contract Example  
 (To be added per workflow)
 
 ---

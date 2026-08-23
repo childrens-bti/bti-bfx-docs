@@ -1,8 +1,12 @@
 # Access to Resources and Tools
 
+---
+
 ## GitHub
 
 We operate two GitHub organizations, [the Rokita Lab](https://github.com/rokitalab) and [BTI Bioinformatics Core](https://github.com/childrens-bti). All Rokita Lab and BTI Bioinformatics Core staff should be added to both.
+
+---
 
 ## Qumulo (L Drive)
 
@@ -24,6 +28,8 @@ Please, no word docs, ppts, etc.
 3. Within the lab folder, create project-specific folders.
 4. Within project-specific folders, feel free to organize how you'd like (for now 🙂).
 5. We can now access the data via HPC and/or upload to AWS very quickly.
+
+---
 
 ## High Performance Cluster (HPC)
 
@@ -86,6 +92,8 @@ ssh hpc-transfer.cnmc.org
 This is also the node that you should use for conducting large data transfers from external SFTP servers (for example, from sequencing centers).
 If an SFTP server is not accessible from the HPC transfer node, you should fill out a "policy exception" ticket in service now for IT security to whitelist the server and port.
 
+---
+
 ## Amazon Web Services (AWS)
 
 For information about our account, please see pinned file in Slack.
@@ -102,6 +110,8 @@ For information about our account, please see pinned file in Slack.
 
 Once access is granted, you should be able to access our account using Children's National SSO credentials using [this URL](https://d-9067576cea.awsapps.com/start/). You will have read access to S3 buckets and EC2 Service Catalog launch permissions.
 
+---
+
 ## CAVATICA
 
 If you do not already have an account, you can generate one using your eCommons ID [here](https://cavatica.sbgenomics.com/). 
@@ -110,12 +120,16 @@ If you do not have an eCommons ID, please work with Dr. Rokita to get one.
 - If you have never received pilot funds when you signed up with CAVATICA, please email `support@velsera.com`, ask for pilot funds, and they will direct your email to Dr. Jared Rozowsky for $100 in credits.
 - If you have a project in which you will utilize NIH Kids First datasets or workflows, or wish to enhance Kids First workflows, you may [apply for Kids First Cloud Credits](https://commonfund.nih.gov/kidsfirst/cloudcredits) for CAVATICA, which will get you $1,000 in starter credits.
 
+---
+
 ## Cancer Genomics Cloud (CGC)
 
 CGC is an NIH-hosted CAVATICA instance specifically geared toward cancer researchers and can be accessed through eCommons, as above.
 When you first log in, you will be awarded $300 in pilot cloud credits.
 
 - Cancer Genomics Cloud may award up to $10K in cloud credits for bigger project ideas: apply [here](https://www.cancergenomicscloud.org/cgc-apply-for-collaborative-funds).
+
+---
 
 ## Globus
 
@@ -130,19 +144,27 @@ You can log into Globus, open the Collection in `File Manager`, set up the desti
 
 The transfer window can be closed and you will received an email when the transfer is completed.
 
+---
+
 ## Self-service password reset
 
 On occasion, your password may be reset without warning (!). To reset it, go to [this url](https://cnh.identitynow.com/r/default/reset-password) and follow the instructions.
+
+---
 
 ## Box
 
 We use Box to store various documents for grants, manuscripts, presentations, and collaborator files. 
 Open a Service Catalog item in [Service Now](https://childrensnational.service-now.com/esc?id=ec_pro_dashboard) and request access to Box for Children's National.
 
+---
+
 ## Google Drive
 
 We favor Google Drive over OneDrive for collaborative manuscript writing and collaborative documentation. 
 Currently, Google Drive is sometimes (or always?) blocked on PCs, but to date, it is available on Apple devices. 
+
+---
 
 ## Paperpile
 
@@ -152,6 +174,8 @@ Instructions for how to use the Word plug-in can be found [here](https://new.pap
 Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.
 
 - Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from Children's National VPN and toggle to GWU VPN for full functionality.
+
+---
 
 ## GWU ID and GWU HPC Access
 

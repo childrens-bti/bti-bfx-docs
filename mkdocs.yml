@@ -1,21 +1,72 @@
-site_name: Children's National BTI Bioinformatics
+site_name: Rokita Lab and BTI Bioinformatics Documentation
+repo_url: https://github.com/childrens-bti/bti-bfx-docs
+repo_name: childrens-bti/bti-bfx-docs
+edit_uri: edit/main/docs/
 nav:
   - Home: index.md
-  - CNH-Specific Onboarding: cnh-onboarding.md
-  - Technology Access Requests: access.md
-  - AWS Compute: aws.md
-  - Codex CLI on an AWS EC2 Instance: codex-cli-ec2.md
-  - CAVATICA Compute: cavatica.md
-  - CAVATICA workflow SOP: sop_cwl_cavatica.md
-  - Using Docker or Podman: docker.md
-  - Using GitHub: github-general.md
-  - GitHub Repository Guidelines: github-repo-guide.md
-  - GitHub Pull Request Guidelines: github-pr-guide.md
-  - Code Review Guidelines: code-review-guide.md
-  - Using VSCodium for Code Reviews: vscodium.md
-  - Github Tokens: github-tokens.md
-  - BTI Project Management: project-mgmt.md
-  - Sprint Planning: sprints.md
-  - Literature: literature.md
-  - Docs: docs-resources.md
-theme: readthedocs
+  - Onboarding:
+      - CNH-Specific Onboarding: cnh-onboarding.md
+      - Technology Access Requests: access.md
+  - Compute:
+      - AWS Compute: aws.md
+      - Using Codex: codex.md
+      - CAVATICA Compute: cavatica.md
+      - CAVATICA workflow SOP: sop-cwl-cavatica.md
+      - Using Docker or Podman: docker.md
+  - GitHub and Code Review:
+      - Using GitHub: github-general.md
+      - GitHub Repository Guidelines: github-repo-guide.md
+      - GitHub Pull Request Guidelines: github-pr-guide.md
+      - Code Review Guidelines: code-review-guide.md
+      - Using VS Code for Code Reviews: vs-code.md
+      - Github Tokens: github-tokens.md
+  - Team and Project Management:
+      - BTI Project Management: project-mgmt.md
+      - Sprint Planning: sprints.md
+  - Resources:
+      - Literature: literature.md
+      - Docs: docs-resources.md
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Barlow
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+    - toc.integrate
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
