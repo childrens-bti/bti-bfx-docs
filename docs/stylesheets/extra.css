@@ -1,6 +1,6 @@
 /*
   Children's National Hospital brand colors (from brand guidelines):
-  primary purple #784d96 (PMS 2082), accent orange #e67200 (PMS 152).
+  primary slate #415569 (PMS 7545), accent orange #e67200 (PMS 152).
 
   mkdocs.yml sets theme.palette.primary/accent to "custom" (rather
   than a built-in Material color name) specifically so these rules
@@ -11,9 +11,9 @@
   overrode a same-specificity override keyed to a real color name.
 */
 [data-md-color-primary="custom"] {
-  --md-primary-fg-color: #784d96;
-  --md-primary-fg-color--light: #a78bbb;
-  --md-primary-fg-color--dark: #543669;
+  --md-primary-fg-color: #415569;
+  --md-primary-fg-color--light: #84919e;
+  --md-primary-fg-color--dark: #2e3c4a;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffffb3;
 }
