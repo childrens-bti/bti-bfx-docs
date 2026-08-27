@@ -23,6 +23,10 @@ nav:
   - Team and Project Management:
       - BTI Project Management: project-mgmt.md
       - Sprint Planning: sprints.md
+  - For Principal Investigators:
+      - Working with the Core: pi-working-with-core.md
+      - Services: pi-services.md
+      - Authorship Guidelines: pi-authorship-guidelines.md
   - Resources:
       - Literature: literature.md
       - Docs: docs-resources.md
