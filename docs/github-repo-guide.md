@@ -13,7 +13,7 @@ In order to facilitate rapid collaboration across many different projects, we ha
 ### Repository Docker Image
 
 - We set up all of our repositories to use project-specific Docker images containing an instance of RStudio and tidyverse (R > 4.4) from the [Rocker project](https://rocker-project.org/).
-    - `rocker/tidyverse` has already installed many R packages and their dependencies’ apt packages. e.g. [the `tidyverse` package](https://www.tidyverse.org/), [the `devtools` package](https://devtools.r-lib.org/), [the `rmarkdown` package](https://rmarkdown.rstudio.com/), some [R Database Interface](https://dbi.r-dbi.org/) packages, [the `data.table` package](https://rdatatable.gitlab.io/data.table/), [the `fst` package](https://www.fstpackage.org/), and [the Apache Arrow R package](https://arrow.apache.org/docs/r/).
+    - `rocker/tidyverse` has already installed many R packages and their dependencies’ apt packages, e.g. [tidyverse](https://www.tidyverse.org/), [devtools](https://devtools.r-lib.org/), [rmarkdown](https://rmarkdown.rstudio.com/), some [DBI](https://dbi.r-dbi.org/) packages, [data.table](https://rdatatable.gitlab.io/data.table/), [fst](https://www.fstpackage.org/), and [Apache Arrow](https://arrow.apache.org/docs/r/).
 - More on docker [here](https://www.notion.so/Docker-b5eb9d8caea84748b8babba71fe8fc65?pvs=21).
 
 ### Repository folder structure
