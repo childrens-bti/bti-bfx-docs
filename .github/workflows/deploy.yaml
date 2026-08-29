@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
           python-version: 3.x
-      - run: pip install "mkdocs<2" "mkdocs-material<10" mkdocs-git-revision-date-localized-plugin
-      - run: mkdocs gh-deploy --clean --force
+      - run: pip install zensical ghp-import
+      - run: zensical build --clean
+      - run: ghp-import --push --force --no-jekyll -m "Deployed ${{ github.sha }} with Zensical" -b gh-pages site
 

@@ -28,11 +28,11 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs and dependencies
-        run: pip install "mkdocs<2" "mkdocs-material<10" mkdocs-git-revision-date-localized-plugin
+      - name: Install Zensical
+        run: pip install zensical
 
-      - name: Build MkDocs site
-        run: mkdocs build --clean
+      - name: Build site
+        run: zensical build --clean
 
       - name: Checkout gh-pages branch
         run: |

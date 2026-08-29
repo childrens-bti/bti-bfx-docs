@@ -58,6 +58,7 @@ nav:
 theme:
   name: material
   custom_dir: overrides
+  variant: modern
   font:
     text: Barlow
     code: Roboto Mono
