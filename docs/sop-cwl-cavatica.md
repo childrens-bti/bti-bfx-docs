@@ -1,3 +1,7 @@
+---
+icon: material/sitemap-outline
+---
+
 # SOP: Quality Assurance & Best Practices for Running CWL Workflows on Cavatica
 **Version:** 1.0  
 **Date:** 2026-01-15  

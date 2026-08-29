@@ -1,3 +1,7 @@
+---
+icon: material/robot-outline
+---
+
 # Using Codex
 
 ---

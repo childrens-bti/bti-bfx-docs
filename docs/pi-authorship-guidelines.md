@@ -1,3 +1,7 @@
+---
+icon: material/account-edit-outline
+---
+
 # Brain Tumor Institute Bioinformatics Core Authorship and Contributor Guideline
 
 **Applies To:** All projects with BTI bioinformatics staff contributors

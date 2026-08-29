@@ -1,3 +1,7 @@
+---
+icon: material/school-outline
+---
+
 # Children's National-specific onboarding
 
 ---

@@ -1,3 +1,7 @@
+---
+icon: simple/github
+---
+
 # Using GitHub
 
 For general information on using GitHub, [see here](https://git-scm.com/doc).

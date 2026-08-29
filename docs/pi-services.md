@@ -1,3 +1,7 @@
+---
+icon: material/rocket-launch
+---
+
 # Services
 
 The [BTI Bioinformatics Core](https://rokitalab.com/core/) offers a range of computational and analytical support for projects involving genomic, transcriptomic, and clinical data. 

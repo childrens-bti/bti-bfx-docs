@@ -1,3 +1,7 @@
+---
+icon: material/dna
+---
+
 # CAVATICA Computing
 
 CAVATICA is a platform which enables users to run AWS compute jobs through Common Workflow Language (CWL). As such, we have to pay for analyses run on CAVATICA _and_ storage of data on CAVATICA which is not mounted to any of our AWS S3 buckets. Keeping this in mind, we will discuss as a team what can be run when and with what money.

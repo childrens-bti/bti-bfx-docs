@@ -1,3 +1,7 @@
+---
+icon: material/key-variant
+---
+
 # Github Tokens
 
 This page lists the various tokens that are used within the Rokita Lab and the BTI Bioinformatics Core organizations through secrets. 

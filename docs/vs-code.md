@@ -1,3 +1,7 @@
+---
+icon: material/microsoft-visual-studio-code
+---
+
 # Using VS Code for Code Reviews 
 
 There are multiple free text editors available which can be useful for code review, but I highlight [VS Code](https://code.visualstudio.com/) here because of ease of use.

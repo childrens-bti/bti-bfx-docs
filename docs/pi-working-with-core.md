@@ -1,3 +1,7 @@
+---
+icon: material/handshake-outline
+---
+
 # Working with the BTI Bioinformatics Core
 
 This page is for Principal Investigators (PIs) who are interested in collaborating with the Brain Tumor Institute (BTI) Bioinformatics Core on a project.

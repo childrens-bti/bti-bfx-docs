@@ -1,3 +1,7 @@
+---
+icon: simple/docker
+---
+
 # Using Docker or Podman for Containerizing Code
 
 We will containerize all packages which can be redistributed without licenses using Docker containers. You can work with these using either [Docker](https://www.docker.com/) or [Podman](https://podman.io/).

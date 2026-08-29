@@ -24,3 +24,14 @@
   --md-accent-bg-color: #ffffff;
   --md-accent-bg-color--light: #ffffffb3;
 }
+
+/*
+  Zensical's "modern" theme.variant decouples .md-header from
+  --md-primary-fg-color (it goes neutral by default), unlike classic
+  Material where the header reads that variable directly. Re-pin it so
+  the header stays branded under either variant.
+*/
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}

@@ -1,3 +1,7 @@
+---
+icon: material/file-document-multiple-outline
+---
+
 # How to update documentation
 
 This documentation was created with [mkdocs.org](https://www.mkdocs.org).

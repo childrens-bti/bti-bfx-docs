@@ -1,3 +1,7 @@
+---
+icon: material/aws
+---
+
 # AWS Computing
 
 ---

@@ -1,3 +1,7 @@
+---
+icon: material/source-repository
+---
+
 # GitHub Repository Guidelines
 
 In order to facilitate rapid collaboration across many different projects, we have adapted guidelines for our analysis projects, including the repository structure, docker image principles, a pull request model, and code review. 

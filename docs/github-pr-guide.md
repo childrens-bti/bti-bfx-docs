@@ -1,3 +1,7 @@
+---
+icon: material/source-pull
+---
+
 # GitHub Code and Pull Request (PR) Guidelines
 
 We prefer the use of `tidyverse` functions over base R, when possible. The reason for this is so that all developers and reviewers are speaking the same language, making coding and reviewing easier across the team. 

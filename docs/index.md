@@ -1,3 +1,7 @@
+---
+icon: material/home
+---
+
 # Documentation for the Rokita Lab and BTI Bioinformatics Core
 
 Welcome to documentation website for Children's National Hospital Rokita Lab and Brain Tumor Institute (BTI) Bioinformatics team members.

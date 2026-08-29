@@ -1,3 +1,7 @@
+---
+icon: material/eye-check-outline
+---
+
 # Code Review Guidelines
 
 All pull requests will undergo peer review, and we do so while maintaining a culture of positive peer review.
