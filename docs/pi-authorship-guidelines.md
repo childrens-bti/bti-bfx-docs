@@ -44,7 +44,7 @@ The PI is responsible for ensuring that all such contributions are appropriately
 All publications arising from projects supported by the Brain Tumor Institute Bioinformatics Core should include the following funding acknowledgment:
 
 !!! quote ""
-    We thank the anonymous investors to the Children's National Hospital Brain Tumor Institute for funding this study, in part.
+    *We thank the anonymous investors to the Children's National Hospital Brain Tumor Institute for funding this study, in part.*
 
 This statement should appear in the Acknowledgments section of all applicable outputs, including manuscripts, preprints, posters, and abstracts where acknowledgment sections are permitted.
 
@@ -52,7 +52,7 @@ If a specific individual or grant provided salary support for a Core staff membe
 For example:
 
 !!! quote ""
-    We additionally thank Dr. Jo Lynne Rokita for supporting this collaboration through resource allocation and staff coordination, and Dr. Catherine Bollard for providing salary support to make this work possible.
+    *We additionally thank Dr. Jo Lynne Rokita for supporting this collaboration through resource allocation and staff coordination, and Dr. Catherine Bollard for providing salary support to make this work possible.*
 
 ## VII. Principal Investigator Responsibility
 
@@ -169,25 +169,25 @@ A supervisor, core director, or operations manager may satisfy Criterion 1 if th
 
 Check each item prior to manuscript submission:
 
-- ☐ All contributors with substantial intellectual contributions (including Core staff and trainees) have been identified.
-- ☐ Each proposed author meets ICMJE Criterion 1.
-- ☐ Eligible contributors were offered the opportunity to draft or critically review the manuscript.
-- ☐ All proposed authors reviewed and approved the final version.
-- ☐ All proposed authors agreed to accountability for the work.
-- ☐ CRediT roles have been accurately assigned.
-- ☐ The PI has reviewed and confirmed the final author list.
-- ☐ The PI has included an acknowledgements statement acknowledging the Core.
-- ☐ The PI has included a funding statement acknowledging the BTI anonymous investors.
+☐ All contributors with substantial intellectual contributions (including Core staff and trainees) have been identified.  
+☐ Each proposed author meets ICMJE Criterion 1.  
+☐ Eligible contributors were offered the opportunity to draft or critically review the manuscript.  
+☐ All proposed authors reviewed and approved the final version.  
+☐ All proposed authors agreed to accountability for the work.  
+☐ CRediT roles have been accurately assigned.  
+☐ The PI has reviewed and confirmed the final author list.  
+☐ The PI has included an acknowledgements statement acknowledging the Core.  
+☐ The PI has included a funding statement acknowledging the BTI anonymous investors.
 
 ## Appendix B: Sample Acknowledgment Language
 
-The following is provided as a template for acknowledging BTI Bioinformatics Core contributions that do not meet ICMJE authorship criteria, including staff support provided in kind. 
+The following statements are provided as templates for acknowledging BTI Bioinformatics Core contributions that do not meet ICMJE authorship criteria, including staff support provided in kind. 
 PIs should adapt this language to accurately reflect the nature of contributions in their specific project.
 
 !!! quote ""
-    The authors thank the Brain Tumor Institute Bioinformatics Core of Children's National Hospital for bioinformatics support, including pipeline development, data processing, figure generation, and computational infrastructure.
+    *The authors thank the Brain Tumor Institute Bioinformatics Core of Children's National Hospital for bioinformatics support, including pipeline development, data processing, figure generation, and computational infrastructure.*
 
-    Bioinformatics staff support was provided in kind through Core operational funding.
+    *Bioinformatics staff support was provided in kind through Core operational funding.*
 
 **Note:** The acknowledgment of any named individual may be included only when that person does not appear as an author.
 If the scope of Brain Tumor Institute Bioinformatics Core contributions differs from the example above — for instance, if support was limited to a specific analysis or did not include infrastructure — the acknowledgment should be revised accordingly. 
