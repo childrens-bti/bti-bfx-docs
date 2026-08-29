@@ -35,3 +35,18 @@
   background-color: var(--md-primary-fg-color);
   color: var(--md-primary-bg-color);
 }
+
+/*
+  Material's default code blocks are square-cornered and flush with
+  the page, with no visual separation from surrounding text. Round
+  them and add a subtle shadow/border so they read as distinct blocks.
+*/
+.md-typeset pre > code {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.05rem var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .highlighttable > tbody > tr > .code > div > pre > code {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

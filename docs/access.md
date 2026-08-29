@@ -31,9 +31,8 @@ To map the L drive on a macbook:
     Please, no word docs, ppts, etc.
 
 1. Create one root folder per lab (eg: `FonsecaLab`)
-2. Within the lab folder, create project-specific folders.
-3. Within project-specific folders, feel free to organize how you'd like (for now 🙂).
-4. We can now access the data via HPC and/or upload to AWS very quickly.
+2. Within the root folder, create one folder per batch, named `YYYYMMDD-strategy` or `YYYYMMDD-project-identifier` (e.g. `20260115-wgs` or `SRR3016289`).
+3. We can now access the data via HPC and/or upload to AWS very quickly.
 
 ---
 
