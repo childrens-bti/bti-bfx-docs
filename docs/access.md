@@ -91,7 +91,7 @@ After sourcing this file, you should be able to see the folder in `/home/USER/Ca
 ### Transferring external data onto or from the HPC 
 
 In order to transfer files from Globus to the L drive or vice versa, you must first ssh into the transfer node after completing the above steps:
-```
+```bash
 ssh hpc-transfer.cnmc.org
 ```
 This is also the node that you should use for conducting large data transfers from external SFTP servers (for example, from sequencing centers).

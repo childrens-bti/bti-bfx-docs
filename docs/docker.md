@@ -79,7 +79,7 @@ docker pull pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]:<tagnam
 ```
 
 *Example*: 
-```
+```bash
 docker pull pgc-images.sbgenomics.com/naqvia/autopvs1:latest
 ```
 
