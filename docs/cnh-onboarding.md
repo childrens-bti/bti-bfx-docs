@@ -57,11 +57,7 @@ Once completed, all certificates should be stored in the Rokita Lab box folder: 
 ### Workday
 
 [Workday](https://wd108.myworkday.com/childrensnational/d/home.htmld) is the place where you will complete Children's National-related training/learning modules, submit reimbursements, enter performance goals, and monitor grant funding.
-From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
-
-```
-Resources --> Workday
-```
+From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to `Resources` → `Workday`.
 
 You will periodically see training modules assigned. 
 Please complete these before their due dates.
@@ -70,11 +66,7 @@ Please complete these before their due dates.
 
 ## Your Timecard
 
-[UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
-
-```
-Resources --> UKG
-```
+[UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to `Resources` → `UKG`.
 
 During your first week, please email Erica Cleary and Colby Rymes to set your weekly schedule.
 This can be any set of 40 hours. 

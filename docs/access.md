@@ -22,7 +22,7 @@ While on Children's National VPN, create an "Incident type" IS request in [Servi
 ### Mapping the L Drive
 
 To map the L drive on a macbook:
-- While on VPN, Go to the Finder --> Go --> Connect to server and add the path: `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
+- While on VPN, go to `Finder` → `Go` → `Connect to Server` and add the path: `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
 
 ### Instructions for depositing data into `CancerImmunology-BTI`
 
