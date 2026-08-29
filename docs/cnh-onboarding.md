@@ -113,9 +113,9 @@ Log in and search "Create Expense Report" to start a new expense report.
 ---
 
 ## Checklist
-- Add a copy of the Schedule/Agenda if you attended a conference.
-- Add _per diem_ for each meal not provided if you traveled. You do not need to upload receipts for food.
-- For any external bookings/expenses not booked in Navan, add a copy of your receipt and your credit card statement showing that you paid (e.g. a membership fee or poster printing).
-- Fill in the appropriate funding codes, which can be obtained from Dr. Rokita.
+- [ ] Add a copy of the Schedule/Agenda if you attended a conference.
+- [ ] Add _per diem_ for each meal not provided if you traveled. You do not need to upload receipts for food.
+- [ ] For any external bookings/expenses not booked in Navan, add a copy of your receipt and your credit card statement showing that you paid (e.g. a membership fee or poster printing).
+- [ ] Fill in the appropriate funding codes, which can be obtained from Dr. Rokita.
 
 
