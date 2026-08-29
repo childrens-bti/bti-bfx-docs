@@ -2,6 +2,31 @@ site_name: Rokita Lab and BTI Bioinformatics Documentation
 repo_url: https://github.com/childrens-bti/bti-bfx-docs
 repo_name: childrens-bti/bti-bfx-docs
 edit_uri: edit/main/docs/
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      exclude:
+        - access.md
+        - aws.md
+        - cavatica.md
+        - cnh-onboarding.md
+        - code-review-guide.md
+        - codex.md
+        - docker.md
+        - docs-resources.md
+        - github-general.md
+        - github-pr-guide.md
+        - github-repo-guide.md
+        - github-tokens.md
+        - index.md
+        - literature.md
+        - pi-services.md
+        - pi-working-with-core.md
+        - project-mgmt.md
+        - sop-cwl-cavatica.md
+        - sprints.md
+        - vs-code.md
 nav:
   - Home: index.md
   - Onboarding:
