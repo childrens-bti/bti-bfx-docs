@@ -11,6 +11,7 @@ icon: material/sitemap-outline
 
 ## Purpose
 This SOP defines standards and procedures for designing, validating, launching, and exporting data from **CWL workflows run on Cavatica**, focusing on reducing task deletions, reruns, and increasing workflow reliability.
+See [CAVATICA Compute](cavatica.md) for account access, project naming, and general usage.
 
 ---
 

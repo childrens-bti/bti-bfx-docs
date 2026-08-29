@@ -26,12 +26,14 @@ To map the L drive on a macbook:
 
 ### Instructions for depositing data into `CancerImmunology-BTI`
 
-1. Use this ONLY for raw genomics data which will need to be processed by the BTI Bioinformatics Core and file manifests for those raw data. 
-Please, no word docs, ppts, etc.
-2. Create one root folder per lab (eg: `FonsecaLab`)
-3. Within the lab folder, create project-specific folders.
-4. Within project-specific folders, feel free to organize how you'd like (for now 🙂).
-5. We can now access the data via HPC and/or upload to AWS very quickly.
+!!! warning "Raw genomics data only"
+    Use this ONLY for raw genomics data which will need to be processed by the BTI Bioinformatics Core and file manifests for those raw data.
+    Please, no word docs, ppts, etc.
+
+1. Create one root folder per lab (eg: `FonsecaLab`)
+2. Within the lab folder, create project-specific folders.
+3. Within project-specific folders, feel free to organize how you'd like (for now 🙂).
+4. We can now access the data via HPC and/or upload to AWS very quickly.
 
 ---
 
@@ -152,7 +154,10 @@ The transfer window can be closed and you will received an email when the transf
 
 ## Self-service password reset
 
-On occasion, your password may be reset without warning (!). To reset it, go to [this url](https://cnh.identitynow.com/r/default/reset-password) and follow the instructions.
+!!! warning
+    On occasion, your password may be reset without warning.
+
+To reset it, go to [this url](https://cnh.identitynow.com/r/default/reset-password) and follow the instructions.
 
 ---
 
@@ -177,7 +182,8 @@ There is now a beta version of a Microsoft Word plug-in for paperpile, which can
 Instructions for how to use the Word plug-in can be found [here](https://new.paperpile.com/Getting-started-with-Paperpile-and-Word-7ed01d0417a3433f885103ebad04b901).
 Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.
 
-- Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from Children's National VPN and toggle to GWU VPN for full functionality.
+!!! note
+    Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnect from Children's National VPN and toggle to GWU VPN for full functionality.
 
 ---
 

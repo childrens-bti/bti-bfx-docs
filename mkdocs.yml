@@ -46,7 +46,7 @@ nav:
       - Using VS Code for Code Reviews: vs-code.md
       - Github Tokens: github-tokens.md
   - Team and Project Management:
-      - BTI Project Management: project-mgmt.md
+      - Project Management: project-mgmt.md
       - Sprint Planning: sprints.md
   - For Principal Investigators:
       - Working with the Core: pi-working-with-core.md

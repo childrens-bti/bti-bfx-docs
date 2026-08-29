@@ -30,7 +30,7 @@ In practice, a review of 200-400 LOC over 60 to 90 minutes should yield 70-90% d
 ### 4. Separate your scripts by purpose, and stack the PRs
 
 Frequently, an analysis module has multiple scripts. Sometimes a module contains a new function. In these cases, you should separate your PRs by script, stacking them in the order in which they should be reviewed. For more on stacking PRs, see below.
-See our repository structure guidelines.
+See our [repository structure guidelines](github-repo-guide.md#repository-folder-structure).
 
 ### 5. Annotate your code
 

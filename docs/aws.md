@@ -76,14 +76,15 @@ sudo -iu ubuntu
 ```
 You are now connected to your EC2 instance!
 
-To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see GitHub section).
+To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see [Using GitHub](github-general.md)).
 
 ---
 
 ## Configuring VS Code with SSH (Deprecated)
 
-The direct SSH setup in the VS Code instructions is retained for historical reference and does not work while connected to the VPN. 
-Use VS Code with AWS Session Manager as described above.
+!!! warning "Deprecated"
+    The direct SSH setup below is retained for historical reference and does not work while connected to the VPN.
+    Use VS Code with AWS Session Manager as described above instead.
 
 You can use VS Code to connect to the EC2 instance through AWS Session Manager using SSH `ProxyCommand` (no separate port forward required).
 

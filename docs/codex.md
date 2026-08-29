@@ -179,14 +179,17 @@ not commit it to a repository.
 
 ### Known endpoint compatibility issue
 
-On the CNH APIM endpoint, newer Codex CLI version 0.147 may fail with `gpt-5.6-*`
-models and report an error like:
+!!! warning
+    On the CNH APIM endpoint, newer Codex CLI version 0.147 may fail with `gpt-5.6-*`
+    models and report an error like:
 
-```text
-Invalid 'input[0].tools[0].description': empty string ...
-```
+    ```text
+    Invalid 'input[0].tools[0].description': empty string ...
+    ```
 
-However this appears to be fixed in version 0.148. If this occurs on every prompt, upgrade your codex to the latest version:
+    This appears to be fixed in version 0.148.
+
+If this occurs on every prompt, upgrade your codex to the latest version:
 
 ```bash
 sudo npm install -g @openai/codex

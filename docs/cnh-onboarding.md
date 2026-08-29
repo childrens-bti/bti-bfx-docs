@@ -20,7 +20,7 @@ Children's National has recently switched their VPN to Palo Alto GlobalProtect, 
 
 GWU also uses GlobalProtect.
 
-- To request a GWU ID, please refer to the [access request section](https://childrens-bti.github.io/bti-bfx-docs/access/).
+- To request a GWU ID, please refer to the [access request section](access.md).
 - To connect, enter the GWU portal `gwvpn.gwu.edu` and you will be asked to enter your credentials.
 
 ### Exception to "Always On" VPN
@@ -49,7 +49,8 @@ If you do not have an account set up with CITI, please make one [here](https://w
 - RCR: BIOMEDICAL RESEARCH (6 modules)
 - Conflict of Interest (4 modules)
 
-Note: since we manage L drive with raw data for many users, Bailey will request CITI certifications for each user prior to adding them to the folder to ensure compliance.
+!!! note
+    Since we manage L drive with raw data for many users, Bailey will request CITI certifications for each user prior to adding them to the folder to ensure compliance.
 
 Once completed, all certificates should be stored in the Rokita Lab box folder: `Rokita-Lab/trainings/citi`.
 

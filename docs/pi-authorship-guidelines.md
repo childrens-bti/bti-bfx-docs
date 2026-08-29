@@ -103,7 +103,8 @@ The Core's review scope includes, but is not limited to:
 - Accuracy of code and data availability section
 - Reviewing acknowledgements and funding section
 
-Failure to provide timely access for review may result in delays to submission or require consultation with the Core Director prior to proceeding.
+!!! warning
+    Failure to provide timely access for review may result in delays to submission or require consultation with the Core Director prior to proceeding.
 
 ### Data Deposition Timelines
 
@@ -193,6 +194,7 @@ PIs should adapt this language to accurately reflect the nature of contributions
 
     *Bioinformatics staff support was provided in kind through Core operational funding.*
 
-**Note:** The acknowledgment of any named individual may be included only when that person does not appear as an author.
-If the scope of Brain Tumor Institute Bioinformatics Core contributions differs from the example above — for instance, if support was limited to a specific analysis or did not include infrastructure — the acknowledgment should be revised accordingly. 
-When in doubt, please consult with the Core before submission.
+!!! note
+    The acknowledgment of any named individual may be included only when that person does not appear as an author.
+    If the scope of Brain Tumor Institute Bioinformatics Core contributions differs from the example above — for instance, if support was limited to a specific analysis or did not include infrastructure — the acknowledgment should be revised accordingly.
+    When in doubt, please consult with the Core before submission.

@@ -27,7 +27,8 @@ Once you have keys:
 5. For FIPS, use `s3-fips.us-east-1.amazonaws.com`
 6. For encryption, use `default 256`.
 
-Note: we usually will mount these as read/write if we desire to export data back to the bucket.
+!!! note
+    We usually will mount these as read/write if we desire to export data back to the bucket.
 
 Additional documentation on mounting volumes inside of CAVATICA can be found [here](https://docs.cavatica.org/docs/volumes).
 
@@ -62,9 +63,12 @@ New projects should be created with `-batch-##` ie -batch-1 -batch-2. This shoul
 
 Cavatica projects must be created by making a Project Creation issue in the [cavatica_api_wrappers](https://github.com/childrens-bti/cavatica_api_wrappers/issues) repo.
 
-Note: In some cases, we will iteratively add samples to projects already created.
-This may be the case for larger cohorts in which samples are sequenced incrementally (e.g. PBTA, RBT, MCI).
-Double check this with the core leadership team before creating a new project.
+!!! note
+    In some cases, we will iteratively add samples to projects already created.
+    This may be the case for larger cohorts in which samples are sequenced incrementally (e.g. PBTA, RBT, MCI).
+    Double check this with the core leadership team before creating a new project.
+
+See also the [CAVATICA workflow SOP](sop-cwl-cavatica.md) for QA and best practices when running CWL workflows on CAVATICA.
 
 ### Example Project Name
 

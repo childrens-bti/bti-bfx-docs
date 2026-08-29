@@ -2,7 +2,7 @@
 icon: material/clipboard-list-outline
 ---
 
-# BTI Project Management
+# Project Management
 
 ---
 
