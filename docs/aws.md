@@ -37,16 +37,28 @@ aws s3 ls --profile cnh-sso
 ## Install the AWS Session Manager plugin on macOS
 
 Follow the instructions [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-macos-overview.html) to install the plugin required to connect using AWS Sessions Manager.
-Instructions below for Mac with x86_64:
 
-```bash
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
-```
+=== "Apple Silicon (ARM64)"
 
-```bash
-sudo installer -pkg session-manager-plugin.pkg -target /
-sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
-```
+    ```bash
+    curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac_arm64/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
+    ```
+
+    ```bash
+    sudo installer -pkg session-manager-plugin.pkg -target /
+    sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
+    ```
+
+=== "Intel (x86_64)"
+
+    ```bash
+    curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
+    ```
+
+    ```bash
+    sudo installer -pkg session-manager-plugin.pkg -target /
+    sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
+    ```
 
 ---
 
@@ -67,52 +79,61 @@ Typically, you can start at 500 GB or 1 TB.
 6. Click `Launch product`.
 At this point, the instance will start creation and once complete, you will be able to see the instance ID (`i-###################`).
 7. Click the instance ID link and navigate to the top right of the page, where you will see the `Private IPv4 addresses`.
-8. Using the profile set up above, type the following two commands to get into Sessions Manager, then your EC2:
-```bash
-aws --profile cnh-sso ssm --region us-east-1 start-session --target i-###################
-```
-```bash
-sudo -iu ubuntu
-```
-You are now connected to your EC2 instance!
-
-To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see [Using GitHub](github-general.md)).
+8. Connect to your instance using one of the methods below.
 
 ---
 
-## Configuring VS Code with SSH (Deprecated)
+## Connecting to Your EC2 Instance
 
-!!! warning "Deprecated"
-    The direct SSH setup below is retained for historical reference and does not work while connected to the VPN.
-    Use VS Code with AWS Session Manager as described above instead.
+=== "SSM"
 
-You can use VS Code to connect to the EC2 instance through AWS Session Manager using SSH `ProxyCommand` (no separate port forward required).
+    Using the profile set up above, type the following two commands to get into Session Manager, then your EC2:
 
-1\. Create an SSH key (if you do not already have one) and add the public key to `~/.ssh/authorized_keys` on the instance.
+    ```bash
+    aws --profile cnh-sso ssm --region us-east-1 start-session --target i-###################
+    ```
 
-```bash
-ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
-```
+    ```bash
+    sudo -iu ubuntu
+    ```
 
-2\. Open your SSH config in VS Code:
+    You are now connected to your EC2 instance!
 
-- Command Palette: `Remote-SSH: Open SSH Configuration File...`
-- Select `~/.ssh/config`
+=== "SSH in VS Code"
 
-3\. Add a host entry to your local SSH config:
+    !!! warning "Deprecated"
+        The direct SSH setup below is retained for historical reference and does not work while connected to the VPN.
+        Use the SSM tab above instead.
 
-```
-Host bti-ec2
-    HostName i-###################
-    User ubuntu
-    IdentityFile ~/.ssh/ec2_ed25519
-    IdentitiesOnly yes
-    StrictHostKeyChecking accept-new
-    UserKnownHostsFile ~/.ssh/known_hosts
-    ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
-```
+    You can use VS Code to connect to the EC2 instance through AWS Session Manager using SSH `ProxyCommand` (no separate port forward required).
 
-4\. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
+    1\. Create an SSH key (if you do not already have one) and add the public key to `~/.ssh/authorized_keys` on the instance.
+
+    ```bash
+    ssh-keygen -t ed25519 -C "ec2" -f ~/.ssh/ec2_ed25519
+    ```
+
+    2\. Open your SSH config in VS Code:
+
+    - Command Palette: `Remote-SSH: Open SSH Configuration File...`
+    - Select `~/.ssh/config`
+
+    3\. Add a host entry to your local SSH config:
+
+    ```
+    Host bti-ec2
+        HostName i-###################
+        User ubuntu
+        IdentityFile ~/.ssh/ec2_ed25519
+        IdentitiesOnly yes
+        StrictHostKeyChecking accept-new
+        UserKnownHostsFile ~/.ssh/known_hosts
+        ProxyCommand aws --profile cnh-sso --region us-east-1 ssm start-session --target %h --document-name AWS-StartSSHSession --parameters "portNumber=%p"
+    ```
+
+    4\. In VS Code, open the Command Palette and choose `Remote-SSH: Connect to Host...`, then select `bti-ec2`.
+
+To begin working with GitHub on the EC2 instance, you must create an SSH key on the instance and add it to GitHub (see [Using GitHub](github-general.md)).
 
 ---
 
