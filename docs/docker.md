@@ -34,31 +34,34 @@ From the directory where your Dockerfile lives, log into CAVATICA docker registr
 docker login http://pgc-images.sbgenomics.com/ -u <USERNAME> -p <YOUR-AUTH-TOKEN>
 ```
 
-"USERNAME" refers to your CAVATICA username.
-"YOUR-AUTH-TOKEN" can be generated from your CAVATICA account under the “Authentication token” section in the Developer tab.
+`<USERNAME>` refers to your CAVATICA username.
+`<YOUR-AUTH-TOKEN>` can be generated from your CAVATICA account under the “Authentication token” section in the Developer tab.
 
 ### Build Image
 
-```bash
-docker build -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
-```
+=== "Apple Silicon (M1-M4)"
 
-*Example*: 
-```bash
-docker build -t pgc-images.sbgenomics.com/naqvia/autopvs1:latest .
-```
+    Apple silicon chips are ARM-based, so you'll need to specify the `linux/amd64` platform to build an image compatible with our (Intel-based) compute environments.
 
-For Mac users with Apple silicon chips (M1-M4 chip), you may need to specify the platform
+    ```bash
+    docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
+    ```
 
-```bash
-docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
-```
+    *Example*:
+    ```bash
+    docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/kidsfirst/autopvs1:latest .
+    ```
 
-*Example*: 
+=== "Intel Mac (x86_64)"
 
-```bash
-docker build --platform=linux/amd64 -t  pgc-images.sbgenomics.com/naqvia/autopvs1:latest .
-```
+    ```bash
+    docker build -t pgc-images.sbgenomics.com/<username>/<repository_name>[:tag] .
+    ```
+
+    *Example*:
+    ```bash
+    docker build -t pgc-images.sbgenomics.com/kidsfirst/autopvs1:latest .
+    ```
 
 ### Push the Docker Image
 
@@ -68,7 +71,7 @@ docker push pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]
 
 where `<username>/<repository_name>[:tag]` refers to the image that you have already committed
 
-*Example*: `docker push pgc-images.sbgenomics.com/naqvia/autopvs1:latest`
+*Example*: `docker push pgc-images.sbgenomics.com/kidsfirst/autopvs1:latest`
 
 ---
 
@@ -80,21 +83,30 @@ docker pull pgc-images.sbgenomics.com/<username>/<repository_name>[:tag]:<tagnam
 
 *Example*: 
 ```bash
-docker pull pgc-images.sbgenomics.com/naqvia/autopvs1:latest
+docker pull pgc-images.sbgenomics.com/kidsfirst/autopvs1:latest
 ```
 
 ---
 
 ## Updating the Docker Image
 
-Make any necessary changes to `Dockerfile` and run `docker build` as done previously. 
+Make any necessary changes to `Dockerfile` and run `docker build` as done previously.
 
-*Example*: 
-```bash
-docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<repository_name>:latest .
-```
+=== "Apple Silicon (M1-M4)"
 
-Here, "username" should match the namespace used in the existing Docker container. For example, it should be "rokita-lab", not your personal CAVATICA username, in the repository below.
+    *Example*:
+    ```bash
+    docker build --platform=linux/amd64 -t pgc-images.sbgenomics.com/<username>/<repository_name>:latest .
+    ```
+
+=== "Intel Mac (x86_64)"
+
+    *Example*:
+    ```bash
+    docker build -t pgc-images.sbgenomics.com/<username>/<repository_name>:latest .
+    ```
+
+Here, `<username>` should match the namespace used in the existing Docker container. For example, it should be "rokita-lab", not your personal CAVATICA username, in the repository below.
 
 Once complete, the output will print `Successfully built <image ID>`. Tag this image ID to the remote repo and push using these steps: 
 
