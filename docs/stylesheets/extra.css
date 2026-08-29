@@ -32,7 +32,7 @@
   the header stays branded under either variant.
 */
 .md-header {
-  background-color: var(--md-primary-fg-color);
+  background: linear-gradient(90deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 50%, var(--md-primary-fg-color--light) 100%);
   color: var(--md-primary-bg-color);
 }
 
@@ -109,4 +109,27 @@
 
 .md-typeset table:not([class]) th {
   background-color: color-mix(in srgb, var(--md-primary-fg-color) 12%, var(--md-default-bg-color));
+}
+
+/*
+  Material sets h3 to font-weight:400 (same as body text) while h4 is
+  bold - so a bigger heading reads lighter than a smaller one below
+  it, and h2/h3 barely stand out from surrounding prose. Bold the
+  section-level headings (h1 already stands out via size+color; h4/h5
+  already have their own distinct treatment).
+*/
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
+}
+
+/*
+  The header title inherits plain body-text weight at a small size, so
+  it reads as a label rather than a site wordmark. Give it more weight
+  and tighter letter-spacing instead of a different font, so it feels
+  intentional without looking inconsistent with the rest of the header.
+*/
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
