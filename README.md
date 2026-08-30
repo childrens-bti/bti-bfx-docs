@@ -9,7 +9,7 @@ Documentation for the **Rokita Lab and BTI Bioinformatics Core** at Children's N
 
 ## What's here
 
-Built with [MkDocs](https://www.mkdocs.org/). Pages live under [`docs/`](docs/) and the site navigation is defined in [`mkdocs.yml`](mkdocs.yml). Topics include:
+Built with [Zensical](https://zensical.org/). Pages live under [`docs/`](docs/) and the site navigation is defined in [`mkdocs.yml`](mkdocs.yml). Topics include:
 
 - Onboarding and technology access requests
 - AWS and CAVATICA compute usage
@@ -20,8 +20,8 @@ Built with [MkDocs](https://www.mkdocs.org/). Pages live under [`docs/`](docs/) 
 ## Local development
 
 ```bash
-pip install mkdocs mkdocs-material
-mkdocs serve
+pip install zensical
+zensical serve
 ```
 
 Then open http://127.0.0.1:8000 to preview the site with live reload.
@@ -29,7 +29,7 @@ Then open http://127.0.0.1:8000 to preview the site with live reload.
 To build the static site into `site/`:
 
 ```bash
-mkdocs build --clean
+zensical build --clean
 ```
 
 ## Contributing a page
