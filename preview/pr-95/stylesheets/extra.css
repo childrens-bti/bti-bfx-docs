@@ -133,3 +133,14 @@
   font-weight: 700;
   letter-spacing: -0.01em;
 }
+
+/*
+  Material dims nav-item icons to opacity:.5 of the link's text color,
+  which reads as too faint in both palettes. The icon's color already
+  tracks the scheme (dark text in light mode, light text in dark
+  mode), so a flat opacity bump makes it read darker in light mode and
+  lighter in dark mode without needing separate per-scheme rules.
+*/
+.md-nav__link svg {
+  opacity: 0.75;
+}
