@@ -1,3 +1,7 @@
+---
+icon: material/book-open-variant
+---
+
 # Background and Literature
 
 Here, we have compiled some important literature related to pediatric CNS brain tumors and computational workflows our group utilizes.

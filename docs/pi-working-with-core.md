@@ -1,3 +1,7 @@
+---
+icon: material/handshake-outline
+---
+
 # Working with the BTI Bioinformatics Core
 
 This page is for Principal Investigators (PIs) who are interested in collaborating with the Brain Tumor Institute (BTI) Bioinformatics Core on a project.
@@ -15,7 +19,7 @@ Early involvement allows the Core to contribute meaningfully to study design, wh
     - Anticipated timeline and any hard deadlines (e.g. grant submissions, conference abstracts).
     - Funding source for the analysis.
 3. **Submit a request.** Once scoped, submit your request through the [BTI Bioinformatics Ticket Tracker](https://bti-bio-tickets.streamlit.app/) so it can be logged and prioritized alongside other Core work.
-Internally, Core staff track the resulting work as an issue in the [Internal Ticket Tracker](https://github.com/childrens-bti/internal-ticket-tracker) (see [BTI Project Management](project-mgmt.md)).
+Internally, Core staff track the resulting work as an issue in the [Internal Ticket Tracker](https://github.com/childrens-bti/internal-ticket-tracker) (see [Project Management](project-mgmt.md)).
 
 ## Prioritization and Scheduling
 

@@ -1,3 +1,7 @@
+---
+icon: material/sitemap-outline
+---
+
 # SOP: Quality Assurance & Best Practices for Running CWL Workflows on Cavatica
 **Version:** 1.0  
 **Date:** 2026-01-15  
@@ -7,6 +11,7 @@
 
 ## Purpose
 This SOP defines standards and procedures for designing, validating, launching, and exporting data from **CWL workflows run on Cavatica**, focusing on reducing task deletions, reruns, and increasing workflow reliability.
+See [CAVATICA Compute](cavatica.md) for account access, project naming, and general usage.
 
 ---
 

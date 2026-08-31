@@ -1,3 +1,7 @@
+---
+icon: simple/github
+---
+
 # Using GitHub
 
 For general information on using GitHub, [see here](https://git-scm.com/doc).
@@ -35,8 +39,20 @@ Add this new SSH key to your profile in GitHub by following [these instructions]
 3. **Run the Docker container**
     
     **For Local Development**:
-        
-          docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+
+    === "Apple Silicon (M1-M4)"
+
+        Apple silicon chips are ARM-based, so you'll need to specify the `linux/amd64` platform to run the (Intel-based) image.
+
+        ```bash
+        docker run --name <CONTAINER_NAME> --platform linux/amd64 -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+        ```
+
+    === "Intel Mac (x86_64)"
+
+        ```bash
+        docker run --name <CONTAINER_NAME> -d -e PASSWORD=pass -p 8787:8787 -v $PWD:/home/rstudio/OpenPedCan-Project-CNH pgc-images.sbgenomics.com/rokita-lab/openpedcanverse:latest
+        ```
 
       Alternatively, the container can be initialized through the Docker dashboard on desktop.
         

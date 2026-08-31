@@ -46,7 +46,7 @@ nav:
       - Using VS Code for Code Reviews: vs-code.md
       - Github Tokens: github-tokens.md
   - Team and Project Management:
-      - BTI Project Management: project-mgmt.md
+      - Project Management: project-mgmt.md
       - Sprint Planning: sprints.md
   - For Principal Investigators:
       - Working with the Core: pi-working-with-core.md
@@ -58,6 +58,7 @@ nav:
 theme:
   name: material
   custom_dir: overrides
+  variant: modern
   font:
     text: Barlow
     code: Roboto Mono
@@ -97,5 +98,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true

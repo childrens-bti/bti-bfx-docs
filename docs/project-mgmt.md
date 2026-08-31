@@ -1,4 +1,8 @@
-# BTI Project Management
+---
+icon: material/clipboard-list-outline
+---
+
+# Project Management
 
 ---
 

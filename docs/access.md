@@ -1,3 +1,7 @@
+---
+icon: material/badge-account-outline
+---
+
 # Access to Resources and Tools
 
 ---
@@ -18,16 +22,17 @@ While on Children's National VPN, create an "Incident type" IS request in [Servi
 ### Mapping the L Drive
 
 To map the L drive on a macbook:
-- While on VPN, Go to the Finder --> Go --> Connect to server and add the path: `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
+- While on VPN, go to `Finder` → `Go` → `Connect to Server` and add the path: `smb://cnmc.org/cri/Lab/CancerImmunology-BTI`.
 
 ### Instructions for depositing data into `CancerImmunology-BTI`
 
-1. Use this ONLY for raw genomics data which will need to be processed by the BTI Bioinformatics Core and file manifests for those raw data. 
-Please, no word docs, ppts, etc.
-2. Create one root folder per lab (eg: `FonsecaLab`)
-3. Within the lab folder, create project-specific folders.
-4. Within project-specific folders, feel free to organize how you'd like (for now 🙂).
-5. We can now access the data via HPC and/or upload to AWS very quickly.
+!!! warning "Raw genomics data only"
+    Use this ONLY for raw genomics data which will need to be processed by the BTI Bioinformatics Core and file manifests for those raw data.
+    Please, no word docs, ppts, etc.
+
+1. Create one root folder per lab (eg: `FonsecaLab`)
+2. Within the root folder, create one folder per batch, named `YYYYMMDD-strategy` or `YYYYMMDD-project-identifier` (e.g. `20260115-wgs` or `SRR3016289`).
+3. We can now access the data via HPC and/or upload to AWS very quickly.
 
 ---
 
@@ -86,7 +91,7 @@ After sourcing this file, you should be able to see the folder in `/home/USER/Ca
 ### Transferring external data onto or from the HPC 
 
 In order to transfer files from Globus to the L drive or vice versa, you must first ssh into the transfer node after completing the above steps:
-```
+```bash
 ssh hpc-transfer.cnmc.org
 ```
 This is also the node that you should use for conducting large data transfers from external SFTP servers (for example, from sequencing centers).
@@ -148,7 +153,10 @@ The transfer window can be closed and you will received an email when the transf
 
 ## Self-service password reset
 
-On occasion, your password may be reset without warning (!). To reset it, go to [this url](https://cnh.identitynow.com/r/default/reset-password) and follow the instructions.
+!!! warning
+    On occasion, your password may be reset without warning.
+
+To reset it, go to [this url](https://cnh.identitynow.com/r/default/reset-password) and follow the instructions.
 
 ---
 
@@ -173,7 +181,8 @@ There is now a beta version of a Microsoft Word plug-in for paperpile, which can
 Instructions for how to use the Word plug-in can be found [here](https://new.paperpile.com/Getting-started-with-Paperpile-and-Word-7ed01d0417a3433f885103ebad04b901).
 Please ask Dr. Rokita for a license if you are contributing to grants and/or manuscripts.
 
-- Note: Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnet from Children's National VPN and toggle to GWU VPN for full functionality.
+!!! note
+    Paperpile "format citations" has a scripting error while on VPN, so you may need to disconnect from Children's National VPN and toggle to GWU VPN for full functionality.
 
 ---
 

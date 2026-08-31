@@ -1,3 +1,7 @@
+---
+icon: material/school-outline
+---
+
 # Children's National-specific onboarding
 
 ---
@@ -16,7 +20,7 @@ Children's National has recently switched their VPN to Palo Alto GlobalProtect, 
 
 GWU also uses GlobalProtect.
 
-- To request a GWU ID, please refer to the [access request section](https://childrens-bti.github.io/bti-bfx-docs/access/).
+- To request a GWU ID, please refer to the [access request section](access.md).
 - To connect, enter the GWU portal `gwvpn.gwu.edu` and you will be asked to enter your credentials.
 
 ### Exception to "Always On" VPN
@@ -45,18 +49,15 @@ If you do not have an account set up with CITI, please make one [here](https://w
 - RCR: BIOMEDICAL RESEARCH (6 modules)
 - Conflict of Interest (4 modules)
 
-Note: since we manage L drive with raw data for many users, Bailey will request CITI certifications for each user prior to adding them to the folder to ensure compliance.
+!!! note
+    Since we manage L drive with raw data for many users, Bailey will request CITI certifications for each user prior to adding them to the folder to ensure compliance.
 
 Once completed, all certificates should be stored in the Rokita Lab box folder: `Rokita-Lab/trainings/citi`.
 
 ### Workday
 
 [Workday](https://wd108.myworkday.com/childrensnational/d/home.htmld) is the place where you will complete Children's National-related training/learning modules, submit reimbursements, enter performance goals, and monitor grant funding.
-From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
-
-```
-Resources --> Workday
-```
+From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to `Resources` → `Workday`.
 
 You will periodically see training modules assigned. 
 Please complete these before their due dates.
@@ -65,11 +66,7 @@ Please complete these before their due dates.
 
 ## Your Timecard
 
-[UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to 
-
-```
-Resources --> UKG
-```
+[UKG](https://childrensnationalt-cnhprodsso.prd.mykronos.com/timekeeping) is the system used for recording time. From the [Children's National Sharepoint](https://cnmc.sharepoint.com/SitePages/Homepage.aspx), you can also navigate to `Resources` → `UKG`.
 
 During your first week, please email Erica Cleary and Colby Rymes to set your weekly schedule.
 This can be any set of 40 hours. 
@@ -116,9 +113,9 @@ Log in and search "Create Expense Report" to start a new expense report.
 ---
 
 ## Checklist
-- Add a copy of the Schedule/Agenda if you attended a conference.
-- Add _per diem_ for each meal not provided if you traveled. You do not need to upload receipts for food.
-- For any external bookings/expenses not booked in Navan, add a copy of your receipt and your credit card statement showing that you paid (e.g. a membership fee or poster printing).
-- Fill in the appropriate funding codes, which can be obtained from Dr. Rokita.
+- [ ] Add a copy of the Schedule/Agenda if you attended a conference.
+- [ ] Add _per diem_ for each meal not provided if you traveled. You do not need to upload receipts for food.
+- [ ] For any external bookings/expenses not booked in Navan, add a copy of your receipt and your credit card statement showing that you paid (e.g. a membership fee or poster printing).
+- [ ] Fill in the appropriate funding codes, which can be obtained from Dr. Rokita.
 
 
