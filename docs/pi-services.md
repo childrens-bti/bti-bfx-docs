@@ -12,7 +12,7 @@ See [Working with the Core](pi-working-with-core.md) for how to initiate a colla
 ## Data Transfers & Management
 
 - Data transfer from external or internal sites
-- Data deposition to repositories (GEO, dbGaP, PRIDE)
+- Data deposition to repositories (GEO, dbGaP, PRIDE, SRA) — see [Data Deposition](pi-data-deposition.md)
 - Data storage — creation and management of AWS buckets or L Drive shares
 - Data Access Agreement support (dbGAP, EGA, CBTN, PNOC expertise)
 - Globus/IT/ServiceNow general support (e.g. - AD group setup, L drive, Box, Slack)
