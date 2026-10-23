@@ -11,7 +11,7 @@ See [Services](pi-services.md) for the repositories we support, or [contact the 
 
 ## SRA (Non-Human Data)
 
-The NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) is the right place for raw, publicly shareable (non-controlled access) sequencing data such as mouse BAMs, CRAMs, and FASTQs.
+The NCBI [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra/docs/submit/) is the right place for raw, publicly shareable (non-controlled access) sequencing data such as mouse BAMs, CRAMs, and FASTQs.
 It is not appropriate for human data that requires controlled access, methylation array data (IDATs), or processed data.
 
 The PI owns the submission in the NCBI wizard, and the Core handles the data files:
@@ -21,9 +21,9 @@ The PI owns the submission in the NCBI wizard, and the Core handles the data fil
 3. **Core:** Uploads the data to the BTI SRA bucket and sends you the bucket name.
 4. **PI:** Enters the bucket name in the wizard, reviews, and clicks **Submit**.
 
-Step-by-step instructions with screenshots: [SRA Submission Instructions (Mouse)](https://docs.google.com/document/d/1CoXNiSS-RsnIlKW3J8cmcBsyWbCPZQeRGT8t_9DhgJM/edit?tab=t.0)
+Step-by-step instructions with screenshots: [SRA Submission Instructions (Mouse)](https://childrensnational.box.com/shared/static/vat919yt8dua0nzlvf2tehho9bpowcyn.pdf)
 
-SRA metadata templates: [BTI SRA Templates on Box](https://childrensnational.app.box.com/folder/429744076340). If you don't have access to this folder, email [Bailey Farrow](mailto:bfarrow@childrensnational.org) to request it.
+SRA metadata templates: [BTI SRA Templates on Box](https://childrensnational.box.com/s/9yavr6rbga2pgnwho2d1ahwfw355ogeo).
 
 ---
 

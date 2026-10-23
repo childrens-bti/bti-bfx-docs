@@ -55,5 +55,5 @@ See [Pre-Submission Review](pi-authorship-guidelines.md#ix-pre-submission-review
 ### Data Deposition
 
 Many journals require sequencing data to be deposited in a public or controlled-access repository (e.g. SRA, GEO, dbGaP) before publication.
-Contact the Core well before submission so deposition can be scheduled alongside other work; repository processing can also take several days to weeks before accession numbers are issued.
+Contact the Core well before submission so deposition can be scheduled alongside other work; repository processing can take several weeks to months before accession numbers are issued and data is deposited.
 See [Data Deposition](pi-data-deposition.md) for the repositories we support and how the submission process works.
