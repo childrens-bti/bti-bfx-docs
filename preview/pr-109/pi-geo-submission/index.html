@@ -1,0 +1,2199 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="prev" href="../pi-data-deposition/">
+      
+      
+        <link rel="next" href="../literature/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.73">
+    
+    
+      
+        <title>GEO Submission Guide - Rokita Lab and BTI Bioinformatics Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.4ab2de0c.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.b60ce83d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
+    <div data-md-component="skip">
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Rokita Lab and BTI Bioinformatics Documentation" class="md-header__button md-logo" aria-label="Rokita Lab and BTI Bioinformatics Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Rokita Lab and BTI Bioinformatics Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GEO Submission Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Search</span>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/childrens-bti/bti-bfx-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    childrens-bti/bti-bfx-docs
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+  
+    
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Rokita Lab and BTI Bioinformatics Documentation" class="md-nav__button md-logo" aria-label="Rokita Lab and BTI Bioinformatics Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+
+    </a>
+    Rokita Lab and BTI Bioinformatics Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/childrens-bti/bti-bfx-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    childrens-bti/bti-bfx-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onboarding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Onboarding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cnh-onboarding/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72 5.18 9 12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    CNH-Specific Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3h-3v2h3v16H7V5h3V3H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-5 4a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m4 8H8v-1c0-1.33 2.67-2 4-2s4 .67 4 2zm0 3H8v-1h8zm-4 2H8v-1h4zm1-15h-2V1h2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Technology Access Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compute
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Compute
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.64 10.38c0 .25.02.45.07.62.05.12.12.28.21.46.04.04.05.1.05.15 0 .07-.04.13-.13.2l-.42.28c-.06.04-.12.06-.17.06-.07 0-.13-.04-.2-.1-.09-.1-.17-.2-.24-.31-.06-.11-.13-.24-.2-.39-.52.61-1.17.92-1.96.92-.56 0-1-.16-1.33-.48-.32-.32-.49-.75-.49-1.29 0-.55.2-1 .6-1.36.41-.34.95-.52 1.63-.52.23 0 .44.02.71.06.23.03.5.08.76.14v-.48c0-.51-.1-.84-.31-1.07-.22-.21-.57-.3-1.08-.3-.24 0-.48.03-.72.08-.25.06-.49.13-.72.23-.11.04-.2.07-.23.08-.05.02-.08.02-.11.02-.09 0-.14-.06-.14-.2v-.33c0-.1.01-.18.05-.23q.045-.075.18-.12c.24-.14.51-.24.84-.32a4 4 0 0 1 1.04-.13q1.185 0 1.74.54c.37.36.55.91.55 1.64v2.15zm-2.7 1.02c.22 0 .44-.04.68-.12s.45-.23.63-.43c.11-.13.19-.27.25-.43 0-.16.05-.35.05-.58v-.27c-.2-.07-.4-.07-.62-.12a7 7 0 0 0-.62-.04c-.45 0-.77.09-.99.27s-.32.43-.32.76c0 .32.07.56.24.71.16.17.39.25.7.25m5.34.71a.6.6 0 0 1-.28-.06c-.03-.05-.08-.14-.12-.26L8.32 6.65c-.04-.15-.06-.22-.06-.27 0-.11.05-.17.16-.17h.65c.13 0 .22.02.26.07.06.04.1.13.14.26l1.11 4.4 1.04-4.4c.03-.13.07-.22.13-.26.05-.04.14-.07.25-.07h.55c.12 0 .21.02.26.07.05.04.1.13.13.26L14 11l1.14-4.46c.04-.13.09-.22.13-.26.06-.04.14-.07.26-.07h.62c.11 0 .17.06.17.17 0 .03-.01.07-.02.12 0 0-.02.08-.04.15l-1.61 5.14c-.04.14-.08.21-.15.26-.04.04-.13.07-.24.07h-.57c-.13 0-.19-.02-.27-.07a.45.45 0 0 1-.12-.26L12.27 7.5l-1.03 4.28q-.045.195-.12.27a.5.5 0 0 1-.27.06zm8.55.18c-.33 0-.7-.04-1.03-.12s-.59-.17-.76-.26a.5.5 0 0 1-.21-.19.4.4 0 0 1-.04-.18v-.34c0-.14.05-.2.15-.2h.12c.04 0 .1.05.17.08.22.1.47.18.73.23.27.05.54.08.79.08.42 0 .75-.07.97-.22.23-.17.35-.36.35-.63 0-.19-.07-.34-.18-.47-.12-.12-.35-.24-.67-.34l-.97-.3c-.48-.16-.84-.38-1.06-.68a1.58 1.58 0 0 1-.33-.97c0-.28.06-.52.18-.73.12-.22.28-.4.46-.55.22-.15.44-.26.71-.34q.39-.12.84-.12.21 0 .45.03c.14.02.28.05.42.07.14.04.26.07.38.11s.2.08.28.12c.09.05.16.1.2.16s.06.13.06.22v.32q0 .21-.15.21c-.05 0-.14-.03-.26-.08-.37-.17-.8-.26-1.27-.26-.38 0-.66.06-.89.19-.2.12-.31.32-.31.59 0 .19.07.35.2.47.13.13.38.25.73.37l.95.3c.48.14.82.36 1.03.64q.3.405.3.93c0 .28-.06.54-.17.77-.12.22-.28.42-.5.58-.19.17-.44.29-.72.38s-.62.13-.95.13m1.25 3.24C17.89 17.14 14.71 18 12 18c-3.85 0-7.3-1.42-9.91-3.77-.21-.19-.02-.44.23-.29 2.82 1.63 6.29 2.62 9.89 2.62 2.43 0 5.1-.5 7.55-1.56.37-.15.68.26.32.53M21 14.5c-.29-.37-1.86-.18-2.57-.1-.21.03-.24-.16-.05-.3 1.25-.87 3.31-.6 3.54-.33.24.3-.06 2.36-1.23 3.34-.19.15-.36.07-.28-.11.27-.68.86-2.16.59-2.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Compute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codex/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.5 15.5c0 1.11-.89 2-2 2s-2-.89-2-2 .9-2 2-2 2 .9 2 2m-9-2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.89 2-2-.89-2-2-2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cavatica/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 2h2v2c0 1.44.68 2.61 1.88 3.78.86.83 2.01 1.63 3.21 2.42l-1.83 1.19C8.27 10.72 7.31 10 6.5 9.21 5.07 7.82 4 6.1 4 4zm14 0h2v2c0 2.1-1.07 3.82-2.5 5.21-1.41 1.38-3.21 2.52-4.96 3.63-1.75 1.12-3.45 2.21-4.66 3.38C6.68 17.39 6 18.56 6 20v2H4v-2c0-2.1 1.07-3.82 2.5-5.21 1.41-1.38 3.21-2.52 4.96-3.63 1.75-1.12 3.45-2.21 4.66-3.38C17.32 6.61 18 5.44 18 4zm-3.26 10.61c.99.67 1.95 1.39 2.76 2.18C18.93 16.18 20 17.9 20 20v2h-2v-2c0-1.44-.68-2.61-1.88-3.78-.86-.83-2.01-1.63-3.21-2.42zM7 3h10v1l-.06.5H7.06L7 4zm.68 3h8.64c-.24.34-.52.69-.9 1.06l-.51.44H9.07l-.49-.44c-.38-.37-.66-.72-.9-1.06m1.41 10.5h5.84l.49.44c.38.37.66.72.9 1.06H7.68c.24-.34.52-.69.9-1.06zm-2.03 3h9.88l.06.5v1H7v-1z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    CAVATICA Compute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sop-cwl-cavatica/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16v-3c0-1.11-.89-2-2-2h-6V8h2V2H9v6h2v3H5c-1.11 0-2 .89-2 2v3H1v6h6v-6H5v-3h6v3H9v6h6v-6h-2v-3h6v3h-2v6h6v-6zM11 4h2v2h-2zM5 20H3v-2h2zm8 0h-2v-2h2zm8 0h-2v-2h2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    CAVATICA workflow SOP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Docker</title><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.186.186 0 0 0-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51q-.508.001-1.01.087c-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.75.75 0 0 0-.75.748 11.4 11.4 0 0 0 .692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137a15.7 15.7 0 0 0 2.93-.266 12.3 12.3 0 0 0 3.823-1.389 10.5 10.5 0 0 0 2.61-2.136c1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Docker or Podman
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub and Code Review
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GitHub and Code Review
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github-general/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Using GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github-repo-guide/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m6.75 11.5c2.75 0 3.49-2.03 3.68-3.1.91-.29 1.57-1.14 1.57-2.15C18 7 17 6 15.75 6S13.5 7 13.5 8.25c0 .94.57 1.75 1.39 2.08C14.67 11 14 12 12 12c-1.38 0-2.34.35-3 .84V8.87c.87-.31 1.5-1.14 1.5-2.12 0-1.25-1-2.25-2.25-2.25S6 5.5 6 6.75c0 .98.63 1.81 1.5 2.12v6.26c-.87.31-1.5 1.14-1.5 2.12 0 1.25 1 2.25 2.25 2.25s2.25-1 2.25-2.25c0-.93-.56-1.75-1.37-2.07.28-.68 1.1-1.68 3.62-1.68m-4.5 3a.75.75 0 0 1 .75.75.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75m0-10.5a.75.75 0 0 1 .75.75.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75m7.5 1.5a.75.75 0 0 1 .75.75.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Repository Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github-pr-guide/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 3a3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v6.34c1.17.41 2 1.52 2 2.83a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V8.83A2.99 2.99 0 0 1 3 6a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m0 12a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m15 1a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7h-2v3.25L10.75 6 15 1.75V5h2a2 2 0 0 1 2 2v8.17c1.17.41 2 1.52 2 2.83m-3-1a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Pull Request Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-review-guide/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-.25.65-.56 1.26-.92 1.85a5.8 5.8 0 0 0-1.9-.73l.64-1.12a9.821 9.821 0 0 0-17.64 0A9.82 9.82 0 0 0 12 17.5l1.21-.07c-.14.5-.21 1.03-.21 1.57v.46l-1 .04c-5 0-9.27-3.11-11-7.5 1.73-4.39 6-7.5 11-7.5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Review Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vs-code/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Using VS Code for Code Reviews
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github-tokens/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 18v4h-4v-3h-3v-3h-3l-2.26-2.26c-.55.17-1.13.26-1.74.26a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6c0 .61-.09 1.19-.26 1.74zM7 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Github Tokens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team and Project Management
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Team and Project Management
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-mgmt/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1M7 7h10V5h2v14H5V5h2zm5 10v-2h5v2zm0-6V9h5v2zm-4 1V9H7V8h2v4zm1.25 2c.41 0 .75.34.75.75 0 .2-.08.39-.21.52L8.12 17H10v1H7v-.92L9 15H7v-1z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprints/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 1v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6.1c1.26 1.24 2.99 2 4.9 2 3.87 0 7-3.13 7-7 0-1.91-.76-3.64-2-4.9V5a2 2 0 0 0-2-2h-1V1h-2v2H8V1M5 5h14v2H5m0 2h14v.67c-.91-.43-1.93-.67-3-.67-3.87 0-7 3.13-7 7 0 1.07.24 2.09.67 3H5m11-7.85c2.68 0 4.85 2.17 4.85 4.85s-2.17 4.85-4.85 4.85-4.85-2.17-4.85-4.85 2.17-4.85 4.85-4.85M15 13v3.69l3.19 1.84.75-1.3-2.44-1.41V13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Principal Investigators
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    For Principal Investigators
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-working-with-core/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71 8.71c1.25-1.25.68-2.71 0-3.42l-3-3c-1.26-1.25-2.71-.68-3.42 0L13.59 4H11C9.1 4 8 5 7.44 6.15L3 10.59v4l-.71.7c-1.25 1.26-.68 2.71 0 3.42l3 3c.54.54 1.12.74 1.67.74.71 0 1.36-.35 1.75-.74l2.7-2.71H15c1.7 0 2.56-1.06 2.87-2.1 1.13-.3 1.75-1.16 2-2C21.42 14.5 22 13.03 22 12V9h-.59zM20 12c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-1v1c0 .45-.19 1-1 1h-4.41l-3.28 3.28c-.31.29-.49.12-.6.01l-2.99-2.98c-.29-.31-.12-.49-.01-.6L5 15.41v-4l2-2V11c0 1.21.8 3 3 3s3-1.79 3-3h7zm.29-4.71L18.59 9H11v2c0 .45-.19 1-1 1s-1-.55-1-1V8c0-.46.17-2 2-2h3.41l2.28-2.28c.31-.29.49-.12.6-.01l2.99 2.98c.29.31.12.49.01.6"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Working with the Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-services/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27zM5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39S16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.55.56 1.37.74 2.12.46A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61m-7.07 7.07c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83s-2.05.78-2.83 0m-5.66 7.07-1.41-1.41zM6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22zM2 22h1.41l4.77-4.76-1.42-1.41L2 20.59zm0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-authorship-guidelines/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 17v3h8v-1.89H3.9V17c0-.64 3.13-2.1 6.1-2.1.96.01 1.91.14 2.83.38l1.52-1.52c-1.4-.47-2.85-.73-4.35-.76-2.67 0-8 1.33-8 4m8-13C7.79 4 6 5.79 6 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m11.7 3.35-1 1-2.05-2 1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 18.94l6.06-6.06 2.05 2-6 6.07H12z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Authorship Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-data-deposition/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20H13q-.82 0-1.41-.59Q11 18.83 11 18v-5.15L9.4 14.4 8 13l4-4 4 4-1.4 1.4-1.6-1.55V18h5.5q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-2.07-1.46-3.54Q14.08 6 12 6 9.93 6 8.46 7.46 7 8.93 7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1H9v2m3-7"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Deposition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="././" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 13.09V7c0-2.21-3.58-4-8-4S4 4.79 4 7v10c0 2.21 3.59 4 8 4 .46 0 .9 0 1.33-.06A6 6 0 0 1 13 19v-.05c-.32.05-.65.05-1 .05-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23.65 0 1.27-.04 1.88-.11A5.99 5.99 0 0 1 19 13c.34 0 .67.04 1 .09m-2-.64c-1.3.95-3.58 1.55-6 1.55s-4.7-.6-6-1.55V9.64c1.47.83 3.61 1.36 6 1.36s4.53-.53 6-1.36zM12 9C8.13 9 6 7.5 6 7s2.13-2 6-2 6 1.5 6 2-2.13 2-6 2m10 9h-2v4h-2v-4h-2l3-3z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    GEO Submission Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Literature
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs-resources/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 0H8C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6zm4 18H8V2h7v5h5zM4 4v18h16v2H4c-1.1 0-2-.9-2-2V4zm6 6v2h8v-2zm0 4v2h5v-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+  
+  
+  <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Overview
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        File types
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raw-data-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Raw data (required)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processed-data-bulk-rna-seq-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Processed data, bulk RNA-seq (required)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processed-data-single-cell-rna-seq-with-cell-ranger-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Processed data, single-cell RNA-seq with Cell Ranger (required)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methylation-arrays-illumina-infinium-epic-v1v2-450k-mouse-mm285" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Methylation arrays (Illumina Infinium: EPIC v1/v2, 450K, mouse MM285)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-identify-the-correct-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Identify the correct data
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-create-the-submission-and-get-upload-credentials-check-geo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Create the submission and get upload credentials (check GEO)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fill-in-the-metadata-spreadsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Fill in the metadata spreadsheet
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Fill in the metadata spreadsheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#study-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Study section
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samples-section-one-row-per-geo-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Samples section (one row per GEO sample)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocols-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Protocols section
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paired-end-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paired-end section
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#md5-checksums-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MD5 Checksums tab
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methylation-array-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Methylation array differences
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-prepare-files-on-the-hpc-transfer-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Prepare files on the HPC transfer node
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Prepare files on the HPC transfer node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy-and-rename-processed-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy and rename processed files
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methylation-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Methylation arrays
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute-checksums" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Compute checksums
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-check-before-uploading" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Final check before uploading
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-upload-the-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Upload the files
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Upload the files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-lftp-from-the-hpc-transfer-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Option A: lftp from the HPC transfer node
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-filezilla-graphical-ftp-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Option B: FileZilla (graphical FTP client)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-submit-the-metadata-and-notify-geo-check-geo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Submit the metadata and notify GEO (check GEO)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        References
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Checklist
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      </div>
+    </div>
+  </div>
+
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
+                
+                  
+
+  
+    <a href="https://github.com/childrens-bti/bti-bfx-docs/edit/main/docs/pi-geo-submission.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="geo-submission-instructions-non-human-rna-seq-and-methylation-arrays">GEO Submission Instructions (Non-Human RNA-seq and Methylation Arrays)</h1>
+<p>How to submit non-human RNA-seq data (bulk or single-cell) and DNA methylation array data (Illumina Infinium) to the NCBI <a href="https://www.ncbi.nlm.nih.gov/geo/info/submission.html" rel="noopener" target="_blank">Gene Expression Omnibus (GEO)</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Check GEO's current pages before each submission.</strong> GEO changes its templates, FTP folder layout and submission steps from time to time. Steps marked <strong>(check GEO)</strong> are especially likely to change. The authoritative pages are <a href="https://www.ncbi.nlm.nih.gov/geo/info/seq.html" rel="noopener" target="_blank">Submitting high-throughput sequence data</a> (RNA-seq), <a href="https://www.ncbi.nlm.nih.gov/geo/info/spreadsheet.html" rel="noopener" target="_blank">Submitting microarray data</a> and <a href="https://www.ncbi.nlm.nih.gov/geo/info/geo_illu.html" rel="noopener" target="_blank">Illumina submission guidelines</a> (methylation arrays), and <a href="https://www.ncbi.nlm.nih.gov/geo/info/submissionftp.html" rel="noopener" target="_blank">Transferring files to GEO</a> (all). See <a href="#references">References</a>.</p>
+</div>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>A GEO submission has three parts, and all three must agree exactly:</p>
+<ol>
+<li><strong>Metadata spreadsheet:</strong> GEO's Excel template describing the study, each sample, the protocols and every file. Sequencing and microarray data use <strong>different templates</strong>.</li>
+<li><strong>Processed data:</strong> e.g. count matrices (RNA-seq) or beta-value matrices (methylation arrays).</li>
+<li><strong>Raw data:</strong> FASTQs for sequencing, which GEO passes to SRA for you so you don't make a separate SRA submission. IDAT files for methylation arrays, which stay in GEO.</li>
+</ol>
+<p>Every file name in the spreadsheet must match an uploaded file exactly, and every uploaded file must be listed in the spreadsheet with its MD5 checksum.</p>
+<p>Rough split of work:</p>
+<table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Does what</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PI / lab</td>
+<td>Study title, summary, design, contributors; wet-lab protocols; sample descriptions; final review</td>
+</tr>
+<tr>
+<td>Core</td>
+<td>Identifies the correct raw and processed files; data-processing protocol; file naming; checksums; upload from the HPC transfer node</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="file-types">File types</h2>
+<p>GEO's requirements for each kind of data are on <a href="https://www.ncbi.nlm.nih.gov/geo/info/seq.html" rel="noopener" target="_blank">Submitting high-throughput sequence data</a>. In short:</p>
+<h3 id="raw-data-required">Raw data (required)</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*_R1_001.fastq.gz</code> / <code>*_R2_001.fastq.gz</code></td>
+<td>Read 1 and read 2 of each paired-end run</td>
+<td>One pair per lane or run. Upload <strong>all</strong> lanes and runs, including top-off or re-sequencing runs that went into the counts.</td>
+</tr>
+<tr>
+<td><code>*_R1_001.fastq.gz</code> only</td>
+<td>Single-end reads</td>
+<td>Mark the sample as single-end in the spreadsheet.</td>
+</tr>
+<tr>
+<td><code>*_I1_001.fastq.gz</code> / <code>*_I2_001.fastq.gz</code></td>
+<td>Index reads (sample barcodes)</td>
+<td>Mostly relevant for single-cell. If you upload them, list them in the paired-end section's file name 3/4 columns.</td>
+</tr>
+<tr>
+<td><code>*.bam</code></td>
+<td>Aligned reads</td>
+<td>Only if FASTQs aren't available. SRA can accept BAM as raw data. Otherwise upload FASTQs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="processed-data-bulk-rna-seq-required">Processed data, bulk RNA-seq (required)</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw counts matrix (<code>.txt</code>/<code>.tsv</code>/<code>.csv</code>, often gzipped)</td>
+<td>Genes × samples integer counts from featureCounts, HTSeq, STAR <code>--quantMode</code>, RSEM or similar</td>
+<td>GEO wants raw counts where possible. Use gene IDs (e.g. Ensembl) as the first column.</td>
+</tr>
+<tr>
+<td>Normalized values (TPM, FPKM, CPM)</td>
+<td>Genes × samples</td>
+<td>Optional, in addition to raw counts. Say which normalization in the protocol.</td>
+</tr>
+<tr>
+<td>Per-sample quantification files (e.g. Salmon <code>quant.sf</code>, RSEM <code>.genes.results</code>)</td>
+<td>One file per sample</td>
+<td>An alternative to a combined matrix. Rename each to include the sample name.</td>
+</tr>
+</tbody>
+</table>
+<p>A combined matrix covering all samples can usually be listed as a series-level supplementary file, or referenced from each sample row. Check <a href="https://www.ncbi.nlm.nih.gov/geo/info/seq.html" rel="noopener" target="_blank">GEO's sequencing page</a> for the current rule.</p>
+<h3 id="processed-data-single-cell-rna-seq-with-cell-ranger-required">Processed data, single-cell RNA-seq with Cell Ranger (required)</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>barcodes.tsv.gz</code>, <code>features.tsv.gz</code>, <code>matrix.mtx.gz</code></td>
+<td>The filtered feature-barcode matrix in Matrix Market format: cell barcodes, genes, sparse counts</td>
+<td>The standard choice. From <code>outs/filtered_feature_bc_matrix/</code> (<code>cellranger count</code>) or <code>outs/per_sample_outs/&lt;sample&gt;/count/sample_filtered_feature_bc_matrix/</code> (<code>cellranger multi</code>). <strong>Rename</strong> to <code>&lt;sample&gt;_barcodes.tsv.gz</code> and so on. All three are needed for each sample.</td>
+</tr>
+<tr>
+<td><code>filtered_feature_bc_matrix.h5</code> (<code>sample_filtered_feature_bc_matrix.h5</code> in multi)</td>
+<td>The same filtered matrix in one HDF5 file</td>
+<td>Acceptable instead of, or as well as, the three MEX files. Rename with the sample name.</td>
+</tr>
+<tr>
+<td><code>raw_feature_bc_matrix/</code> or <code>.h5</code></td>
+<td>Unfiltered matrix with all barcodes, including empty droplets</td>
+<td>Optional. Useful for reanalysis (e.g. ambient RNA correction).</td>
+</tr>
+<tr>
+<td><code>metrics_summary.csv</code>, <code>web_summary.html</code></td>
+<td>Run QC metrics</td>
+<td>Optional supplementary files. Rename per sample if included.</td>
+</tr>
+<tr>
+<td><code>molecule_info.h5</code>, <code>*.cloupe</code>, <code>possorted_genome_bam.bam</code></td>
+<td>Per-molecule info, Loupe Browser file, aligned reads</td>
+<td>Not usually submitted. The BAM is large and redundant with the FASTQs.</td>
+</tr>
+<tr>
+<td><code>config.csv</code> (<code>cellranger multi</code>)</td>
+<td>Run configuration: reference, probe set, sample-to-barcode assignments</td>
+<td>Optional supplementary file. It contains internal file-system paths, so many submitters give a small sample-to-barcode mapping file instead (see section 3).</td>
+</tr>
+<tr>
+<td>Analysis objects (Seurat <code>.rds</code>, AnnData <code>.h5ad</code>)</td>
+<td>Normalized, clustered and annotated data</td>
+<td>Optional supplementary files. Large. Count matrices are still expected.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methylation-arrays-illumina-infinium-epic-v1v2-450k-mouse-mm285">Methylation arrays (Illumina Infinium: EPIC v1/v2, 450K, mouse MM285)</h3>
+<p>GEO treats these as <strong>microarray</strong> submissions, not sequencing. They use the microarray metadata template and a GEO <strong>platform</strong> record (GPL) for the array, and nothing goes to SRA. See GEO's <a href="https://www.ncbi.nlm.nih.gov/geo/info/geo_illu.html" rel="noopener" target="_blank">Illumina submission guidelines</a> for the current required files <strong>(check GEO)</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;SentrixID&gt;_&lt;R0xC0x&gt;_Grn.idat</code> and <code>..._Red.idat</code></td>
+<td>Raw green and red channel intensities from the scanner, two per sample</td>
+<td><strong>Raw data, required.</strong> Upload <strong>both</strong> channels for every sample. Keep the original names. They're already unique, and they record chip and position.</td>
+</tr>
+<tr>
+<td>Processed matrix: beta values + detection p-values</td>
+<td>Probes × samples. One beta-value column per sample, each followed by its detection p-value column</td>
+<td><strong>Processed data, required.</strong> Output of minfi, SeSAMe or similar, after your QC and normalization. Column headers must match the sample names in the spreadsheet. Usually one tab-delimited file for the whole series.</td>
+</tr>
+<tr>
+<td>Signal matrix: methylated + unmethylated intensities</td>
+<td>Probes × samples. Unmethylated and methylated signal columns per sample</td>
+<td>Usually requested alongside the beta-value matrix for Illumina methylation <strong>(check GEO)</strong>.</td>
+</tr>
+<tr>
+<td>M-values or other derived tables</td>
+<td>Further-processed values</td>
+<td>Optional supplementary files.</td>
+</tr>
+</tbody>
+</table>
+<p>Platform (GPL): look up the GPL that matches your array <strong>and manifest version</strong> (e.g. EPIC v1 vs v2, MM285) by searching <a href="https://www.ncbi.nlm.nih.gov/geo/browse/?view=platforms" rel="noopener" target="_blank">GEO platforms</a>. Enter that GPL in the spreadsheet. If none matches, GEO will ask for the manifest and create one.</p>
+<hr />
+<h2 id="1-identify-the-correct-data">1. Identify the correct data</h2>
+<p>Do this first. It's the easiest step to get wrong.</p>
+<ul>
+<li><strong>Use the processed data the paper's analysis used.</strong> If the analysis downloads a versioned data release, or there have been several processing runs (e.g. before and after re-sequencing), confirm which one the analysis used and upload that. Compare MD5s against the release or analysis inputs:
+  <div class="highlight"><pre><span></span><code>md5sum<span class="w"> </span>&lt;candidate_file&gt;<span class="w">                 </span><span class="c1"># compare against the release's checksum list</span>
+</code></pre></div></li>
+<li><strong>Include every FASTQ that went into those counts,</strong> including top-off or re-sequencing runs. Check the pipeline configuration (e.g. Cell Ranger's <code>--fastqs</code> or the <code>[libraries]</code> section of <code>config.csv</code>) and the FASTQ folder. The first line of each FASTQ shows its instrument and run ID, which tells separate runs apart:
+  <div class="highlight"><pre><span></span><code>gzip<span class="w"> </span>-dc<span class="w"> </span>file.fastq.gz<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-1<span class="w">        </span><span class="c1"># @&lt;instrument&gt;:&lt;run number&gt;:&lt;flowcell&gt;:&lt;lane&gt;:...</span>
+</code></pre></div></li>
+<li><strong>Don't rely on folder names alone.</strong> Names like <code>topoff</code>, <code>combined</code> or <code>final</code> don't always describe what's inside. Check the contents (read counts in the run summary, checksums, dates).</li>
+<li><strong>Multiplexed libraries</strong> (10x Flex, cell hashing, CellPlex, pooled bulk libraries demultiplexed after sequencing): the FASTQs contain every sample in the pool, including any that aren't in the study. Raw reads can't be split by sample, so upload the pooled FASTQs once (see section 3).</li>
+</ul>
+<hr />
+<h2 id="2-create-the-submission-and-get-upload-credentials-check-geo">2. Create the submission and get upload credentials (check GEO)</h2>
+<ol>
+<li>Sign in to GEO with an NCBI account (the PI's, or whoever will own the submission).</li>
+<li>Open GEO's file transfer page (<a href="https://www.ncbi.nlm.nih.gov/geo/info/submissionftp.html" rel="noopener" target="_blank">Transferring files to GEO</a>). It shows:</li>
+<li>the FTP host (<code>ftp-private.ncbi.nlm.nih.gov</code>), username (<code>geoftp</code>) and password</li>
+<li>your <strong>personal upload folder</strong>, under <code>uploads/</code> and named after your account</li>
+<li>Inside your personal folder, create <strong>one subfolder for this submission</strong> (e.g. <code>&lt;lab&gt;-&lt;assay&gt;-&lt;year&gt;</code>) and put every file for the submission in it.</li>
+<li>Download the <strong>current</strong> metadata template. Templates change, so don't reuse an old copy:</li>
+<li>RNA-seq: from <a href="https://www.ncbi.nlm.nih.gov/geo/info/seq.html" rel="noopener" target="_blank">GEO's sequencing submission page</a></li>
+<li>Methylation arrays: the microarray template from <a href="https://www.ncbi.nlm.nih.gov/geo/info/spreadsheet.html" rel="noopener" target="_blank">Submitting microarray data</a> (see also <a href="https://www.ncbi.nlm.nih.gov/geo/info/geo_illu.html" rel="noopener" target="_blank">Illumina guidelines</a>)</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Credentials</p>
+<p>Keep the FTP password out of scripts, shared documents, Slack and AI tools. Type it in when prompted, or read it into an environment variable with <code>read -rs</code>.</p>
+</div>
+<hr />
+<h2 id="3-fill-in-the-metadata-spreadsheet">3. Fill in the metadata spreadsheet</h2>
+<p>Work on a copy of the template. Read the EXAMPLE tabs (there are separate ones for RNA-seq and scRNA-seq), and hover over red-triangle cells for GEO's notes. GEO's field-by-field requirements are on <a href="https://www.ncbi.nlm.nih.gov/geo/info/seq.html" rel="noopener" target="_blank">Submitting high-throughput sequence data</a>.</p>
+<h3 id="study-section">Study section</h3>
+<ul>
+<li><strong>Title, summary, experimental design:</strong> from the PI. The design should explain how samples relate to files, especially for pooled or multiplexed libraries.</li>
+<li><strong>Contributors:</strong> one per row, <code>Firstname,Lastname</code>.</li>
+<li><strong>Supplementary files:</strong> study-level files, such as a combined counts matrix or a sample-to-barcode mapping.</li>
+</ul>
+<h3 id="samples-section-one-row-per-geo-sample">Samples section (one row per GEO sample)</h3>
+<ul>
+<li><strong>Library name:</strong> unique. Use the names in the processed file prefixes and the analysis code. Avoid inconsistent internal IDs (e.g. pipeline sample IDs with typos).</li>
+<li><strong>Title:</strong> unique and readable. Use GEO's convention for replicates, <code>&lt;condition&gt;, biol rep 1</code> / <code>&lt;condition&gt;, biol rep 2</code>. Name treatments and constructs consistently, the same way as in the manuscript.</li>
+<li><strong>Characteristics</strong> (tissue, cell line, cell type, genotype, treatment, etc.): fill in at least one of tissue, cell line or cell type.</li>
+<li><strong>Processed data files:</strong> one file per column. Each file name must be <strong>unique across the whole submission</strong>, so never use plain <code>matrix.mtx.gz</code> or <code>counts.txt</code>. Prefix each with the sample or library name.</li>
+<li><strong>Raw files:</strong> if you need more columns than the template has, add them and fill in the header (<code>raw file</code>) for each new column. Otherwise GEO may ignore them.</li>
+<li><strong>Instrument model:</strong> take it from GEO's list. The instrument ID in the FASTQ header helps (e.g. <code>LH…</code> is NovaSeq X, <code>A…</code> is NovaSeq 6000, <code>VH…</code> is NextSeq 2000).</li>
+</ul>
+<p><strong>Multiplexed or pooled libraries:</strong>
+- One row per biological sample, with that sample's <strong>processed files only</strong>.
+- One extra row for the physical pooled library, with the <strong>raw FASTQs only</strong>, listed once. Its description explains that it holds the shared reads and how samples were assigned.
+- A supplementary mapping file (e.g. <code>sample_barcode_mapping.csv</code> with <code>library_name,barcode</code>) so readers can connect the pooled reads to samples.
+- Optional: a sentence noting any pooled samples that aren't part of the study.</p>
+<h3 id="protocols-section">Protocols section</h3>
+<ul>
+<li><strong>Extraction and library construction:</strong> from the lab.</li>
+<li><strong>Data processing:</strong> from whoever ran the analysis. Include each tool and its version (e.g. aligner or Cell Ranger version), the reference genome and annotation version, any probe set or barcode whitelist, filtering and normalization, and how multiplexed samples were assigned.</li>
+<li><strong>Genome build</strong> and a <strong>description of the processed file format</strong> are required.</li>
+</ul>
+<h3 id="paired-end-section">Paired-end section</h3>
+<ul>
+<li>One row per read pair: R1 in <code>file name 1</code>, R2 in <code>file name 2</code>. Index reads (I1/I2) go in columns 3–4 if you upload them. Every file here must also appear in the Samples section.</li>
+</ul>
+<h3 id="md5-checksums-tab">MD5 Checksums tab</h3>
+<ul>
+<li>Raw files on the left, processed and supplementary files on the right. Every uploaded file needs a full 32-character MD5.</li>
+<li>Paste checksums straight from <code>md5sum</code> output rather than retyping them. A dropped character is easy to miss.</li>
+</ul>
+<h3 id="methylation-array-differences">Methylation array differences</h3>
+<p>The microarray template is laid out differently, but the same rules apply (unique sample names and titles, every file listed, full checksums). The main differences:
+- <strong>Platform:</strong> each sample row gives the array's GPL accession instead of an instrument model.
+- <strong>Raw files:</strong> each sample lists its own <strong>two</strong> IDATs (<code>_Grn.idat</code> and <code>_Red.idat</code>). There's no paired-end section.
+- <strong>Processed data:</strong> the matrix files are usually listed once for the series, and each sample's <strong>column headers</strong> in the matrix must match its sample name or title exactly as GEO's template instructs <strong>(check GEO)</strong>.
+- <strong>Characteristics:</strong> include tissue/cell type, sex, and preservation (e.g. fresh frozen vs FFPE). FFPE affects data quality and reviewers expect it.
+- <strong>Protocols:</strong> extraction (DNA isolation), bisulfite conversion kit, hybridization and scanning (scanner model), and data processing: software and version (e.g. minfi, SeSAMe), normalization method, probe and sample filtering (detection p-value threshold, SNP or cross-reactive probes, sex chromosomes), and the manifest version.
+- <strong>Sample sheet:</strong> keep the Illumina sample sheet (Sentrix ID and position per sample) to fill in the IDAT names and check them. A swapped position is the most common mistake.</p>
+<hr />
+<h2 id="4-prepare-files-on-the-hpc-transfer-node">4. Prepare files on the HPC transfer node</h2>
+<p>Run everything on the transfer node, not on a laptop over a network share. The share's path on the transfer node is usually different from its path on your computer (e.g. <code>/Volumes/...</code> on a Mac).</p>
+<h3 id="copy-and-rename-processed-files">Copy and rename processed files</h3>
+<ul>
+<li>Put everything to upload in one folder, renamed to match the spreadsheet.</li>
+<li>Copy, don't move. Keep the original pipeline output untouched.</li>
+<li>After copying, check each copy's MD5 against the source (or the analysis release) to catch bad copies and sample mix-ups.</li>
+<li>For pipeline outputs organized by sample folder (e.g. Cell Ranger), a short script that maps <code>&lt;pipeline_sample_id&gt;</code> → <code>&lt;geo_library_name&gt;</code> and copies <code>&lt;sample_dir&gt;/&lt;file&gt;</code> → <code>&lt;geo_library_name&gt;_&lt;file&gt;</code> avoids manual mistakes. Check the mapping against the pipeline config before copying.</li>
+</ul>
+<h3 id="methylation-arrays">Methylation arrays</h3>
+<ul>
+<li>Copy the IDATs for the samples in the submission into one upload folder, keeping their original names. Check that each sample has both <code>_Grn</code> and <code>_Red</code>:
+  <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>*_Grn.idat<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="p">;</span><span class="w"> </span>ls<span class="w"> </span>*_Red.idat<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="w">      </span><span class="c1"># should both equal the number of samples</span>
+</code></pre></div></li>
+<li>Export the processed matrices as tab-delimited text (gzipped if large). Make sure the column headers match the spreadsheet's sample names.</li>
+<li>IDATs are small (about 8–15 MB each), so even large array studies upload quickly. Option B (FileZilla) in section 5 is fine.</li>
+</ul>
+<h3 id="compute-checksums">Compute checksums</h3>
+<p><code>md5sum</code> uses one CPU core per file, so run several files in parallel:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/path/to/FASTQ/dir<span class="w">                 </span><span class="c1"># or the IDAT folder: use *.idat instead of *.fastq.gz</span>
+nohup<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">'ls *.fastq.gz | xargs -P 8 -n 1 md5sum | sort -k2 &gt; /path/elsewhere/fastq_md5.txt'</span><span class="w"> </span><span class="p">&amp;</span>
+</code></pre></div>
+- Write checksum files <strong>outside</strong> the upload folders so they aren't uploaded.
+- Rough timing: one core hashes about 500–800 MB/s, so in parallel the largest file sets the total time. A few hundred GB usually takes under an hour on a transfer node, but can take many hours over a network share from a laptop.</p>
+<h3 id="final-check-before-uploading">Final check before uploading</h3>
+<ul>
+<li>The upload folders contain <strong>only</strong> files listed in the spreadsheet. Remove checksum files, configs, logs and <code>.DS_Store</code>.</li>
+<li>Every file name in the spreadsheet exists in the folders, and every file in the folders is in the spreadsheet.</li>
+<li>The checksums in the spreadsheet match the files.</li>
+</ul>
+<hr />
+<h2 id="5-upload-the-files">5. Upload the files</h2>
+<p>GEO's FTP instructions are on <a href="https://www.ncbi.nlm.nih.gov/geo/info/submissionftp.html" rel="noopener" target="_blank">Transferring files to GEO</a>. That page gives the host, username, password and your personal upload folder (you need to be signed in), and it covers command-line FTP and graphical clients. There are two ways to upload:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Option A: <code>lftp</code> on the transfer node</th>
+<th>Option B: FileZilla on your computer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Best for</td>
+<td>Large raw data (FASTQs, tens to hundreds of GB)</td>
+<td>Small submissions, or processed/supplementary files only</td>
+</tr>
+<tr>
+<td>Data path</td>
+<td>Storage → transfer node → GEO</td>
+<td>Storage → your computer → GEO</td>
+</tr>
+<tr>
+<td>Survives laptop sleep or disconnect</td>
+<td>Yes (with <code>screen</code>/<code>tmux</code>)</td>
+<td>No: the computer must stay awake and connected</td>
+</tr>
+<tr>
+<td>Resume after failure</td>
+<td><code>mirror -R --continue</code></td>
+<td>Re-queue failed files (see below)</td>
+</tr>
+</tbody>
+</table>
+<p>For large FASTQ sets, use Option A. With FileZilla, every byte passes through your computer, often over a network share first, which is much slower and needs the computer to stay online for hours.</p>
+<h3 id="option-a-lftp-from-the-hpc-transfer-node">Option A: lftp from the HPC transfer node</h3>
+<p>Use <code>lftp</code> rather than plain <code>ftp</code>. It can resume interrupted transfers and upload several files in parallel, which matters for large FASTQs.</p>
+<div class="highlight"><pre><span></span><code>screen<span class="w"> </span>-S<span class="w"> </span>geo<span class="w">                                   </span><span class="c1"># or tmux, so the upload survives a disconnect</span>
+lftp<span class="w"> </span>-u<span class="w"> </span>geoftp<span class="w"> </span>ftp-private.ncbi.nlm.nih.gov<span class="w">     </span><span class="c1"># enter the password when prompted</span>
+lftp&gt;<span class="w"> </span><span class="nb">set</span><span class="w"> </span>ftp:ssl-allow<span class="w"> </span>no<span class="w">                      </span><span class="c1"># only if you get TLS/certificate errors</span>
+lftp&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>uploads/&lt;your_personal_folder&gt;
+lftp&gt;<span class="w"> </span>mkdir<span class="w"> </span>&lt;submission_folder&gt;
+lftp&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>&lt;submission_folder&gt;
+lftp&gt;<span class="w"> </span>mirror<span class="w"> </span>-R<span class="w"> </span>--dry-run<span class="w"> </span>/path/to/processed<span class="w"> </span>.<span class="w">  </span><span class="c1"># preview: lists what would upload</span>
+lftp&gt;<span class="w"> </span>mirror<span class="w"> </span>-R<span class="w"> </span>--parallel<span class="o">=</span><span class="m">4</span><span class="w"> </span>/path/to/processed<span class="w"> </span>.
+lftp&gt;<span class="w"> </span>mirror<span class="w"> </span>-R<span class="w"> </span>--parallel<span class="o">=</span><span class="m">8</span><span class="w"> </span>/path/to/fastqs<span class="w"> </span>.
+lftp&gt;<span class="w"> </span>ls<span class="w"> </span>-l<span class="w">                                     </span><span class="c1"># check file count and sizes</span>
+</code></pre></div>
+<ul>
+<li><code>mirror -R</code> uploads a local folder (local to remote). Without <code>-R</code> it downloads.</li>
+<li>Give the <strong>local</strong> folder as a full path. A bare <code>.</code> means lftp's local working directory (<code>lpwd</code>), probably your home directory.</li>
+<li>The trailing <code>.</code> uploads into the current remote folder rather than creating a subfolder.</li>
+<li>If the connection drops, reconnect, <code>cd</code> back, and rerun the same command with <code>--continue</code>.</li>
+<li>Local commands inside lftp: <code>lpwd</code>, <code>lcd /path</code>, or <code>!ls -l /path</code>.</li>
+<li>Speeds to GEO of tens of MB/s per transfer are typical. At about 70 MB/s, 100 GB takes about 25 minutes per transfer. With parallel transfers, the largest file sets the total time.</li>
+</ul>
+<h3 id="option-b-filezilla-graphical-ftp-client">Option B: FileZilla (graphical FTP client)</h3>
+<p><a href="https://filezilla-project.org/" rel="noopener" target="_blank">FileZilla</a> is a free FTP program for macOS, Windows and Linux. GEO's <a href="https://www.ncbi.nlm.nih.gov/geo/info/submissionftp.html" rel="noopener" target="_blank">Transferring files to GEO</a> page lists graphical FTP clients as an alternative to the command line. Follow that page if its settings differ from the ones below.</p>
+<p><strong>Before you start</strong>
+- Get the files onto (or mounted on) the computer running FileZilla, already renamed and checked as in section 4.
+- Take the FTP host, username, password and personal upload folder from GEO's transfer page. Don't save the password in FileZilla on a shared computer.
+- Stop your computer from sleeping during the upload (macOS: System Settings → Battery/Energy, or run <code>caffeinate -i</code> in Terminal while it runs).</p>
+<p><strong>1. Set up the connection</strong> (File → Site Manager → New site)</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protocol</td>
+<td>FTP - File Transfer Protocol</td>
+</tr>
+<tr>
+<td>Host</td>
+<td><code>ftp-private.ncbi.nlm.nih.gov</code> (as given on GEO's transfer page)</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>leave blank (21)</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td><em>Use explicit FTP over TLS if available</em>. If connecting fails or file listings hang, change this to <em>Only use plain FTP (insecure)</em>, which is the same as <code>set ftp:ssl-allow no</code> in lftp.</td>
+</tr>
+<tr>
+<td>Logon Type</td>
+<td><em>Ask for password</em></td>
+</tr>
+<tr>
+<td>User</td>
+<td><code>geoftp</code></td>
+</tr>
+</tbody>
+</table>
+<p>Then, on the <strong>Transfer Settings</strong> tab, tick <em>Limit number of simultaneous connections</em> and set it to 2–4. Click <strong>Connect</strong> and enter the password from GEO's transfer page when asked.</p>
+<p><strong>2. Change these settings once</strong> (FileZilla → Settings on macOS, Edit → Settings on Windows)
+- <strong>Transfers → File Types:</strong> set the default transfer type to <strong>Binary</strong>. In ASCII mode, <code>.gz</code>, <code>.h5</code> and other binary files get corrupted.
+- <strong>Connection → Timeout:</strong> raise it (e.g. 120 seconds) or set it to 0 (no timeout). Large uploads can sit for a while at the end of a file while the server finishes writing it.
+- <strong>Transfers → File exists action:</strong> for uploads, choose <em>Resume file transfer</em> (or <em>Ask</em>) so a retry continues partial files instead of starting again.</p>
+<p><strong>3. Go to your upload folder</strong>
+- In the right-hand (<strong>Remote site</strong>) panel, type <code>/uploads/&lt;your_personal_folder&gt;</code> in the path box and press Return. Use the folder name exactly as shown on GEO's transfer page.
+- Right-click → <strong>Create directory and enter it</strong>, and name it for this submission.</p>
+<p><strong>4. Upload</strong>
+- In the left-hand (<strong>Local site</strong>) panel, open the folder of prepared files.
+- Select all the files to upload (Cmd/Ctrl+A) and drag them into the remote panel. Drag the files, not their parent folder, unless you want a subfolder on GEO's side.
+- Repeat for each folder (e.g. processed files, then FASTQs). Files are queued at the bottom of the window, and the <strong>Queued files / Failed transfers / Successful transfers</strong> tabs show progress.</p>
+<p><strong>5. Handle failures</strong>
+- If anything appears under <strong>Failed transfers</strong>, select it, right-click → <strong>Reset and requeue selected files</strong>, then <strong>Transfer → Process Queue</strong>. With <em>Resume</em> set in step 2, partial files continue where they stopped.
+- If FileZilla quits or the computer restarts, reconnect, drag the same files again and choose <strong>Resume</strong> for any that already exist.</p>
+<p><strong>6. Verify</strong>
+- In the remote panel, switch to the detailed list view and compare the <strong>file count</strong> and <strong>file sizes</strong> with the local files. Sizes must match exactly. A smaller remote file means the upload was incomplete, so resume it.
+- Ignore the date/time column. GEO's server shows upload times, not the original file dates.</p>
+<p>Once everything is there, go on to section 6.</p>
+<hr />
+<h2 id="6-submit-the-metadata-and-notify-geo-check-geo">6. Submit the metadata and notify GEO (check GEO)</h2>
+<ol>
+<li>Once all files are uploaded and the remote listing shows the expected count and sizes, submit the completed metadata spreadsheet through GEO's submission web page (check GEO for the current method).</li>
+<li>Tell GEO the upload is complete using their submission form, giving the upload subfolder name.</li>
+<li>A GEO curator reviews it and may email questions (common ones: missing software versions, unclear sample relationships, file-name mismatches).</li>
+<li>Once approved, GEO issues a GSE accession and a <strong>reviewer token</strong> for private access during peer review. Set the release date to publication. You can bring it forward later. See the <a href="https://www.ncbi.nlm.nih.gov/geo/info/faq.html" rel="noopener" target="_blank">GEO FAQ</a> for reviewer access and release dates.</li>
+</ol>
+<hr />
+<h2 id="references">References</h2>
+<p>GEO's own documentation is the authority. Check it before each submission, because GEO changes templates, folder layout and submission steps from time to time.</p>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>GEO page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overview of what GEO accepts and how to submit</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/info/submission.html" rel="noopener" target="_blank">Submitting data</a></td>
+</tr>
+<tr>
+<td>High-throughput sequencing submissions: metadata template, raw and processed data requirements, single-cell guidance</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/info/seq.html" rel="noopener" target="_blank">Submitting high-throughput sequence data</a></td>
+</tr>
+<tr>
+<td>Microarray submissions, including methylation arrays: metadata template</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/info/spreadsheet.html" rel="noopener" target="_blank">Submitting microarray data</a></td>
+</tr>
+<tr>
+<td>Illumina arrays (incl. Infinium methylation): required raw IDATs and processed/signal matrices</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/info/geo_illu.html" rel="noopener" target="_blank">Illumina submission guidelines</a></td>
+</tr>
+<tr>
+<td>Finding the platform (GPL) for your array</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/browse/?view=platforms" rel="noopener" target="_blank">GEO platform browser</a></td>
+</tr>
+<tr>
+<td>FTP host, credentials, personal upload folder, command-line and graphical (e.g. FileZilla) clients</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/info/submissionftp.html" rel="noopener" target="_blank">Transferring files to GEO</a></td>
+</tr>
+<tr>
+<td>Reviewer access, release dates, updating records, common questions</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/geo/info/faq.html" rel="noopener" target="_blank">GEO FAQ</a></td>
+</tr>
+<tr>
+<td>Recent GEO changes (new FTP folders, web metadata upload)</td>
+<td><a href="https://ncbiinsights.ncbi.nlm.nih.gov/tag/geo/" rel="noopener" target="_blank">NCBI Insights: GEO posts</a></td>
+</tr>
+</tbody>
+</table>
+<p>Other references:
+- Cell Ranger output files: <a href="https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/outputs/cr-outputs-overview" rel="noopener" target="_blank">10x Genomics: Cell Ranger outputs</a>
+- FileZilla: <a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)" rel="noopener" target="_blank">FileZilla Client tutorial</a> and <a href="https://wiki.filezilla-project.org/Using" rel="noopener" target="_blank">Using FileZilla</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>GEO reorganizes its pages from time to time. If a link above is broken, start from GEO's <a href="https://www.ncbi.nlm.nih.gov/geo/info/submission.html" rel="noopener" target="_blank">Submitting data</a> page.</p>
+</div>
+<hr />
+<h2 id="checklist">Checklist</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Processed files are the ones the analysis used (MD5-checked)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> All FASTQs from all sequencing runs (including top-off or re-sequencing runs) included</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Library names and titles unique; replicates titled <code>biol rep N</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Every processed file name unique and prefixed with its sample name</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Every raw/processed/supplementary file in the sheet matches an uploaded file exactly (case, lane numbers)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Extra raw-file columns have headers</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Paired-end section lists every R1/R2 pair (plus I1/I2 if uploaded)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tool versions, reference genome and annotation in the data-processing steps</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Multiplexed pools: pooled row for FASTQs, sample rows for processed files, mapping file</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Full 32-character MD5 for every file</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Methylation arrays: microarray template used; correct GPL for array and manifest version; both <code>_Grn</code> and <code>_Red</code> IDATs per sample; beta-value (+ detection p-value) and signal matrices with headers matching sample names; bisulfite kit, scanner, normalization and filtering in protocols</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Upload folders contain only submission files</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Upload verified (file count and sizes); metadata submitted; GEO notified</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.sections","navigation.expand","navigation.top","navigation.instant","search.suggest","search.highlight","content.code.copy","content.action.edit","toc.follow","toc.integrate"],"redirect":null,"search":"../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.77dd0ce9.min.js"></script>
+      
+    
+  </body>
+</html>
