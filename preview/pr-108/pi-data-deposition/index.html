@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.73">
+      <meta name="generator" content="zensical-0.0.74">
     
     
       
@@ -1359,21 +1359,24 @@ It is not appropriate for human data that requires controlled access, methylatio
 <p>SRA metadata templates: <a href="https://childrensnational.box.com/s/9yavr6rbga2pgnwho2d1ahwfw355ogeo" rel="noopener" target="_blank">BTI SRA Templates on Box</a>.</p>
 <hr />
 <h2 id="geo">GEO</h2>
-<p>The NCBI <a href="https://www.ncbi.nlm.nih.gov/geo/info/submission.html" rel="noopener" target="_blank">Gene Expression Omnibus (GEO)</a> is the right place for non-human functional genomics data, such as mouse RNA-seq and methylation arrays.
-Unlike SRA, GEO requires both raw and processed data files, plus descriptive metadata.</p>
-<p>The Core handles the data files and submission logistics; your lab supplies the study details and wet lab methods:</p>
+<p>The NCBI <a href="https://www.ncbi.nlm.nih.gov/geo/info/submission.html" rel="noopener" target="_blank">Gene Expression Omnibus (GEO)</a> is the right place for genome-wide functional genomics data, such as RNA-seq (bulk or single-cell), DNA methylation arrays (e.g. EPIC, 450K, MM285), ChIP-seq, and ATAC-seq.
+It is not appropriate for variant calls (VCFs), WGS/WES focused on DNA sequence variants, proteomics, metabolomics, flow cytometry, or imaging data.
+If you're not sure whether your data belongs in GEO, <a href="../pi-working-with-core/">contact the Core</a> before starting.</p>
+<p>GEO requires both raw and processed data files, plus descriptive metadata.
+The Core handles the data files, data processing methods, and submission logistics; your lab supplies the study details, wet lab methods, and sample information:</p>
 <ol>
-<li><strong>Core:</strong> Pre-fills the GEO submission spreadsheet with file metadata (file names, types, checksums) and sends it to you.</li>
-<li><strong>PI:</strong> Completes the remaining fields and returns the spreadsheet to the Core:<ul>
+<li><strong>Core:</strong> Pre-fills the GEO submission spreadsheet with file metadata (file names, types, checksums) and sends it to you. If you're submitting more than one data type (e.g. RNA-seq and methylation), you'll get a separate spreadsheet for each.</li>
+<li><strong>PI:</strong> Completes the remaining fields and returns the spreadsheet(s) to the Core:<ul>
 <li><strong>Study information:</strong> title, summary, overall design, and contributors.</li>
 <li><strong>Wet lab methods:</strong> e.g. DNA extraction through array scanning, or RNA-seq library prep and sequencing. If your paper's methods section is already written, share that.</li>
 <li><strong>Per-sample information:</strong> sample names (must match the processed data files), sex, preservation method (e.g. fresh frozen, FFPE), and which samples to include.</li>
 </ul>
 </li>
-<li><strong>Core:</strong> Writes the data processing methods (if the Core ran the analysis) and gathers and uploads the raw files (IDATs, FASTQs) and processed matrices (beta values, signal intensities, raw counts).</li>
+<li><strong>Core:</strong> Writes the data processing methods, gathers and uploads the raw files (IDATs, FASTQs) and processed matrices (beta values, signal intensities, raw counts), and completes the submission. If a collaborator ran the analysis, they provide the processed data and processing methods instead.</li>
 </ol>
+<p>GEO typically issues accession numbers within 5 business days after the submission is complete.</p>
 <p>For reference, see these example GEO submissions: <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196902" rel="noopener" target="_blank">methylation</a> and <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232692" rel="noopener" target="_blank">RNA-seq</a>.</p>
-<p>Full guide with field-by-field details: <a href="https://docs.google.com/document/d/1pwVkZVikE7Z6rAJliD552ropgRTDvzK4kLLWmCsVqm0/edit" rel="noopener" target="_blank">GEO Submission Instructions - Mouse</a></p>
+<p>Full guide with field-by-field details: <a href="https://childrensnational.box.com/s/455e07lc1ljp3kh34281h62mpei95vko" rel="noopener" target="_blank">GEO Submission Instructions - Mouse</a></p>
 <hr />
 <h2 id="dbgap">dbGaP</h2>
 <div class="admonition note">
@@ -1444,10 +1447,10 @@ Unlike SRA, GEO requires both raw and processed data files, plus descriptive met
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.sections","navigation.expand","navigation.top","navigation.instant","search.suggest","search.highlight","content.code.copy","content.action.edit","toc.follow","toc.integrate"],"redirect":null,"search":"../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.sections","navigation.expand","navigation.top","navigation.instant","search.suggest","search.highlight","content.code.copy","content.action.edit","toc.follow","toc.integrate"],"redirect":null,"search":"../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.77dd0ce9.min.js"></script>
+      <script src="../assets/javascripts/bundle.d31f0ffa.min.js"></script>
       
     
   </body>
