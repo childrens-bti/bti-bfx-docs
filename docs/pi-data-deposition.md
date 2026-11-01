@@ -27,10 +27,10 @@ SRA metadata templates: [BTI SRA Templates on Box](https://childrensnational.box
 
 ---
 
-## GEO
+## GEO (Non-Human Data)
 
-The NCBI [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/info/submission.html){target="_blank" rel="noopener"} is the right place for genome-wide functional genomics data, such as RNA-seq (bulk or single-cell), DNA methylation arrays (e.g. EPIC, 450K, MM285), ChIP-seq, and ATAC-seq.
-It is not appropriate for variant calls (VCFs), WGS/WES focused on DNA sequence variants, proteomics, metabolomics, flow cytometry, or imaging data.
+The NCBI [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/info/submission.html){target="_blank" rel="noopener"} is the right place for non-human, genome-wide functional genomics data, such as RNA-seq (bulk or single-cell), DNA methylation arrays (e.g. EPIC, 450K, MM285), ChIP-seq, and ATAC-seq.
+It is not appropriate for human data that requires controlled access (see [dbGaP](#dbgap)), variant calls (VCFs), WGS/WES focused on DNA sequence variants, proteomics, metabolomics, flow cytometry, or imaging data.
 If you're not sure whether your data belongs in GEO, [contact the Core](pi-working-with-core.md) before starting.
 
 GEO requires both raw and processed data files, plus descriptive metadata.
@@ -41,11 +41,12 @@ The Core handles the data files, data processing methods, and submission logisti
     - **Study information:** title, summary, overall design, and contributors.
     - **Wet lab methods:** e.g. DNA extraction through array scanning, or RNA-seq library prep and sequencing. If your paper's methods section is already written, share that.
     - **Per-sample information:** sample names (must match the processed data files), sex, preservation method (e.g. fresh frozen, FFPE), and which samples to include.
-3. **Core:** Writes the data processing methods, gathers and uploads the raw files (IDATs, FASTQs) and processed matrices (beta values, signal intensities, raw counts), and completes the submission. If a collaborator ran the analysis, they provide the processed data and processing methods instead.
+3. **Core (or the collaborator who ran the analysis):** Writes the data processing methods and provides the processed matrices (beta values, signal intensities, raw counts).
+4. **Core:** Gathers and uploads the raw files (IDATs, FASTQs) and processed matrices, and completes the submission.
 
-GEO typically issues accession numbers within 5 business days after the submission is complete.
+GEO typically issues accession numbers within 5 business days of a complete submission, but plan for at least 2 months end to end (see [Data Deposition Timelines](pi-authorship-guidelines.md#data-deposition-timelines)).
 
-For reference, see these example GEO submissions: [methylation](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196902){target="_blank" rel="noopener"} and [RNA-seq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232692){target="_blank" rel="noopener"}.
+For reference, see these example GEO submissions: [methylation](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196902){target="_blank" rel="noopener"} and [RNA-seq](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232692){target="_blank" rel="noopener"} (a human dataset, shown for file format and metadata structure).
 
 Full guide with field-by-field details: [GEO Submission Instructions - Mouse](https://childrensnational.box.com/s/455e07lc1ljp3kh34281h62mpei95vko){target="_blank" rel="noopener"}
 
