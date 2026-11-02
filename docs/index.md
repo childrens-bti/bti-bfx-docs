@@ -50,8 +50,8 @@ However, it is very important to consider the information and data we enter into
     - Paste any identifiable patient data into non-CNH-approved chatbots or AI assistants, whether in the form of files or free text.
     - Utilize unapproved AI software in conjunction with GitHub or your text editor, so that private repositories are not exposed.
 
-Approved AI tools include Claude Code (through the Rokita Lab Claude Team), CNH Codex, and Microsoft 365 Copilot.
-Claude Code and Codex may be used with GitHub and your text editor.
+Approved AI tools include CNH Codex, Microsoft 365 Copilot, and Claude Code (through the Rokita Lab Claude Team).
+Codex and Claude Code may be used with GitHub and your text editor.
 Each tool has different rules about which data you can use with it. For example, PHI is not allowed in Claude.
 See [Coding Agents](coding-agents.md) for setup instructions and what data each tool can be used with.
 
