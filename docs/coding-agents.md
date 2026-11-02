@@ -2,7 +2,89 @@
 icon: material/robot-outline
 ---
 
-# Using Codex
+# Coding Agents
+
+---
+
+## What Data Can Go Into AI Tools
+
+We have access to three AI tools, and they have different rules about which data you can use with them.
+
+| | Rokita Lab Claude Team | CNH Codex (AI/ML team, HIPAA-compliant) | Microsoft 365 Copilot (HIPAA-compliant) |
+|---|---|---|---|
+| Protected health information (PHI) | **No** | Yes | Yes |
+| Germline variant data | Only pathogenic/likely pathogenic (P/LP) variants that we would release with a manuscript | Yes | Yes |
+| Raw data files (e.g., FASTQ, BAM/CRAM, VCF) | **No** (except creating MD5 checksums); have Claude write code that you run yourself | Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA | **No** |
+| Code, de-identified summary data, documentation | Yes | Yes | Yes |
+
+!!! warning "When in doubt, use Codex"
+    The Rokita Lab Claude Team is not approved for PHI, full germline variant data, or raw files.
+    If your work touches any of these, use CNH Codex, which the Children's National AI/ML team maintains for this purpose.
+
+!!! note "Raw data stays in secure environments"
+    Raw data files should only be stored and processed in our secure environments: [AWS](aws.md) (a HIPAA-compliant environment), the [HPC](access.md#high-performance-cluster-hpc), or [CAVATICA](cavatica.md).
+    Do not upload raw files to any AI tool.
+    Instead, ask the coding agent to write code (for example, a script or workflow), and then run that code on the raw files in one of these environments.
+
+---
+
+## Using Claude Code
+
+The Rokita Lab Claude Team includes [Claude Code](https://code.claude.com/docs/en/overview), which can be run from the terminal or through the VS Code extension.
+See the [Claude Code documentation](https://code.claude.com/docs/en/overview) for installation and setup.
+
+- Sign in with your CNH email address.
+- You must be added to the lab's Claude Team access group before you can sign in. Contact Jo Lynne Rokita to request access.
+- Follow the data rules in [What Data Can Go Into AI Tools](#what-data-can-go-into-ai-tools).
+
+!!! danger "Do not let Claude work on raw data files"
+    Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or germline VCF files.
+    The only exception is creating MD5 checksums (`md5sum`).
+    This also applies when Claude Code runs on an EC2 instance or the HPC, where it can open files directly.
+    Instead, ask Claude to write the code, and then run that code yourself outside of Claude.
+
+### Installing Claude Code (Local or EC2)
+
+The installation steps are the same on your local Mac and on an Ubuntu EC2 instance.
+Node.js is not required.
+
+```bash
+# Install Claude Code (macOS or Linux)
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Check the installation
+claude --version
+```
+
+On a Mac, you can install with Homebrew instead (`brew install --cask claude-code`), but Homebrew installs do not update automatically.
+Run `brew upgrade claude-code` to update.
+
+To start Claude Code, change to your project directory and run `claude`:
+
+```bash
+cd /path/to/your/project
+claude
+```
+
+The first time you run `claude`, it asks you to sign in through your browser.
+Sign in with your CNH email address.
+On an EC2 instance with no browser, open the sign-in link that Claude Code prints in the browser on your local computer.
+To switch accounts later, type `/login` in a Claude Code session.
+
+Run `claude doctor` if the installation is not working.
+
+### VS Code Extension
+
+Install the [Claude Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) from the VS Code Marketplace, or search for "Claude Code" in the Extensions view (`Cmd+Shift+X`).
+To open it, open the Command Palette (`Cmd+Shift+P`), type "Claude Code", and select **Open in New Tab**.
+If you use VS Code Remote-SSH to work on an EC2 instance, install the extension on the remote host when VS Code asks.
+
+---
+
+## Microsoft 365 Copilot
+
+Full-time staff can request a Microsoft 365 Copilot license by submitting a ServiceNow ticket.
+Once you have a license, open Copilot from Outlook in your web browser.
 
 ---
 
