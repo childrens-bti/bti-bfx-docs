@@ -23,8 +23,6 @@ The PI owns the submission in the NCBI wizard, and the Core handles the data fil
 
 Step-by-step instructions with screenshots: [SRA Submission Instructions - Mouse](https://childrensnational.box.com/s/vat919yt8dua0nzlvf2tehho9bpowcyn){target="_blank" rel="noopener"}
 
-SRA metadata templates: [BTI SRA Templates on Box](https://childrensnational.box.com/s/9yavr6rbga2pgnwho2d1ahwfw355ogeo){target="_blank" rel="noopener"}.
-
 ---
 
 ## GEO (Non-Human Data)
@@ -50,8 +48,6 @@ The PI owns the GEO account, and the Core handles the data files and the submiss
 GEO typically issues accession numbers within 5 business days of a complete submission, but plan for at least 2 months end to end (see [Data Deposition Timelines](pi-authorship-guidelines.md#data-deposition-timelines)).
 
 Step-by-step instructions with screenshots: [GEO Submission Instructions](https://childrensnational.box.com/s/ixv13smr5jdegb9co1dmgkucexg3d5f0){target="_blank" rel="noopener"}
-
-GEO metadata templates: [BTI GEO Templates on Box](https://childrensnational.box.com/s/npnnpxrmxob2jysilu50hohib5sw708c){target="_blank" rel="noopener"}.
 
 ---
 
