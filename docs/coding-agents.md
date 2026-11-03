@@ -10,11 +10,11 @@ icon: material/robot-outline
 
 We have access to three AI tools, and they have different rules about which data you can use with them.
 
-| | Rokita Lab Claude Team | CNH Codex (AI/ML team, HIPAA-compliant) | Microsoft 365 Copilot (HIPAA-compliant) |
+| | CNH Codex (AI/ML team, HIPAA-compliant) | Microsoft 365 Copilot (HIPAA-compliant) | Rokita Lab Claude Team (<span class="not-hipaa">NOT HIPAA-compliant</span>) |
 |---|---|---|---|
-| Protected health information (PHI) | **No** | Yes | Yes |
-| Germline variant data | Only pathogenic/likely pathogenic (P/LP) variants that we would release with a manuscript | Yes | Yes |
-| Raw data files (e.g., FASTQ, BAM/CRAM, germline VCF) | **No** (except creating MD5 checksums); have Claude write code that you run yourself | Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA | **No**; do not upload. Raw files stay in AWS, the HPC, or CAVATICA |
+| Protected health information (PHI) | Yes | Yes | **No** |
+| Germline variant data | Yes | Yes | Only pathogenic/likely pathogenic (P/LP) variants that we would release with a manuscript |
+| Raw data files (e.g., FASTQ, BAM/CRAM, germline VCF) | Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA | **No**; do not upload. Raw files stay in AWS, the HPC, or CAVATICA | **No** (except creating MD5 checksums); have Claude write code that you run yourself |
 | Code, de-identified summary data, documentation | Yes | Yes | Yes |
 
 !!! warning "When in doubt, use Codex"
