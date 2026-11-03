@@ -1560,7 +1560,7 @@
 <td>Raw data files (e.g., FASTQ, BAM/CRAM, VCF)</td>
 <td><strong>No</strong> (except creating MD5 checksums); have Claude write code that you run yourself</td>
 <td>Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA</td>
-<td><strong>No</strong></td>
+<td><strong>No</strong>; do not upload. Raw files stay in AWS, the HPC, or CAVATICA</td>
 </tr>
 <tr>
 <td>Code, de-identified summary data, documentation</td>
@@ -1592,7 +1592,7 @@ See the <a href="https://code.claude.com/docs/en/overview">Claude Code documenta
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Do not let Claude work on raw data files</p>
-<p>Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or germline VCF files.
+<p>Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or VCF files.
 The only exception is creating MD5 checksums (<code>md5sum</code>).
 This also applies when Claude Code runs on an EC2 instance or the HPC, where it can open files directly.
 Instead, ask Claude to write the code, and then run that code yourself outside of Claude.</p>
