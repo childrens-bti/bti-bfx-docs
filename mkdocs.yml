@@ -4,6 +4,9 @@ repo_name: childrens-bti/bti-bfx-docs
 edit_uri: edit/main/docs/
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        codex.md: coding-agents.md
   - git-revision-date-localized:
       type: date
       exclude:

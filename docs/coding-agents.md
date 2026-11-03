@@ -14,7 +14,7 @@ We have access to three AI tools, and they have different rules about which data
 |---|---|---|---|
 | Protected health information (PHI) | **No** | Yes | Yes |
 | Germline variant data | Only pathogenic/likely pathogenic (P/LP) variants that we would release with a manuscript | Yes | Yes |
-| Raw data files (e.g., FASTQ, BAM/CRAM, VCF) | **No** (except creating MD5 checksums); have Claude write code that you run yourself | Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA | **No**; do not upload. Raw files stay in AWS, the HPC, or CAVATICA |
+| Raw data files (e.g., FASTQ, BAM/CRAM, germline VCF) | **No** (except creating MD5 checksums); have Claude write code that you run yourself | Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA | **No**; do not upload. Raw files stay in AWS, the HPC, or CAVATICA |
 | Code, de-identified summary data, documentation | Yes | Yes | Yes |
 
 !!! warning "When in doubt, use Codex"
@@ -25,6 +25,10 @@ We have access to three AI tools, and they have different rules about which data
     Raw data files should only be stored and processed in our secure environments: [AWS](aws.md) (a HIPAA-compliant environment), the [HPC](access.md#high-performance-cluster-hpc), or [CAVATICA](cavatica.md).
     Do not upload raw files to any AI tool.
     Instead, ask the coding agent to write code (for example, a script or workflow), and then run that code on the raw files in one of these environments.
+
+!!! tip "Run bulk deletes yourself"
+    Coding agents may refuse, or ask for confirmation, before running bulk cloud deletes such as `aws s3 rm --recursive`.
+    Expect to review and run these commands yourself.
 
 ---
 
@@ -38,7 +42,8 @@ The steps below cover installation; see the [Claude Code documentation](https://
 - Follow the data rules in [What Data Can Go Into AI Tools](#what-data-can-go-into-ai-tools).
 
 !!! danger "Do not let Claude work on raw data files"
-    Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or VCF files.
+    Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or germline VCF files.
+    Somatic VCF files are OK, since we release them openly.
     The only exception is creating MD5 checksums (`md5sum`).
     This also applies when Claude Code runs on an EC2 instance or the HPC, where it can open files directly.
     Instead, ask Claude to write the code, and then run that code yourself outside of Claude.
@@ -95,7 +100,7 @@ Follow the guide at [CNH Codex CLI setup guide](https://aiml-apim-dev.azure-api.
 
 ### Prerequisites
 
-- Codex CLI version 0.146.0 is installed on the EC2 instance. (version 0.147 does not work with our Azure models.)
+- Codex CLI version 0.146.0 is installed on your computer. (version 0.147 does not work with our Azure models.)
 - Python 3.12 or later.
 - The `cnh-token.py` script has been downloaded from the CNH setup guide.
 - You are in an approved user group for the CNH coding-assistant endpoint.
