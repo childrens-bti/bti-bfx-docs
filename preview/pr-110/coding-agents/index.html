@@ -1538,29 +1538,29 @@
 <thead>
 <tr>
 <th></th>
-<th>Rokita Lab Claude Team</th>
 <th>CNH Codex (AI/ML team, HIPAA-compliant)</th>
 <th>Microsoft 365 Copilot (HIPAA-compliant)</th>
+<th>Rokita Lab Claude Team (<span class="not-hipaa">NOT HIPAA-compliant</span>)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Protected health information (PHI)</td>
+<td>Yes</td>
+<td>Yes</td>
 <td><strong>No</strong></td>
-<td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
 <td>Germline variant data</td>
+<td>Yes</td>
+<td>Yes</td>
 <td>Only pathogenic/likely pathogenic (P/LP) variants that we would release with a manuscript</td>
-<td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
 <td>Raw data files (e.g., FASTQ, BAM/CRAM, germline VCF)</td>
-<td><strong>No</strong> (except creating MD5 checksums); have Claude write code that you run yourself</td>
 <td>Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA</td>
 <td><strong>No</strong>; do not upload. Raw files stay in AWS, the HPC, or CAVATICA</td>
+<td><strong>No</strong> (except creating MD5 checksums); have Claude write code that you run yourself</td>
 </tr>
 <tr>
 <td>Code, de-identified summary data, documentation</td>
