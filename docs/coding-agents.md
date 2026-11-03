@@ -30,8 +30,8 @@ We have access to three AI tools, and they have different rules about which data
 
 ## Using Claude Code
 
-The Rokita Lab Claude Team includes [Claude Code](https://code.claude.com/docs/en/overview), which can be run from the terminal or through the VS Code extension.
-See the [Claude Code documentation](https://code.claude.com/docs/en/overview) for installation and setup.
+The Rokita Lab Claude Team includes Claude Code, which can be run from the terminal or through the VS Code extension.
+The steps below cover installation; see the [Claude Code documentation](https://code.claude.com/docs/en/overview) for everything else.
 
 - Sign in with your CNH email address.
 - You must be added to the lab's Claude Team access group before you can sign in. Contact Jo Lynne Rokita to request access.
