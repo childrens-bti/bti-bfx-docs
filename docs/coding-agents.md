@@ -68,7 +68,7 @@ claude
 
 The first time you run `claude`, it asks you to sign in through your browser.
 Sign in with your CNH email address.
-On an EC2 instance with no browser, open the sign-in link that Claude Code prints in the browser on your local computer.
+On an EC2 instance with no browser, Claude Code prints a sign-in link instead. Open the link in the browser on your local computer, sign in, then copy the code it shows and paste it back into the Claude Code prompt on the instance.
 To switch accounts later, type `/login` in a Claude Code session.
 
 Run `claude doctor` if the installation is not working.
