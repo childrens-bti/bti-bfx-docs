@@ -38,7 +38,7 @@ See the [Claude Code documentation](https://code.claude.com/docs/en/overview) fo
 - Follow the data rules in [What Data Can Go Into AI Tools](#what-data-can-go-into-ai-tools).
 
 !!! danger "Do not let Claude work on raw data files"
-    Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or germline VCF files.
+    Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or VCF files.
     The only exception is creating MD5 checksums (`md5sum`).
     This also applies when Claude Code runs on an EC2 instance or the HPC, where it can open files directly.
     Instead, ask Claude to write the code, and then run that code yourself outside of Claude.
