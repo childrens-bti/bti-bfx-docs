@@ -19,7 +19,7 @@ We have access to three AI tools, and they have different rules about which data
 
 !!! warning "When in doubt, use Codex"
     The Rokita Lab Claude Team is not approved for PHI, full germline variant data, or raw files.
-    If your work touches any of these, use CNH Codex, which the Children's National AI/ML team maintains for this purpose.
+    If your work touches any of these, use CNH Codex, which the Children's National AI/ML team maintains for this purpose. See [Running Codex Locally](#running-codex-locally) or [Running Codex CLI on an Ubuntu EC2 Instance](#running-codex-cli-on-an-ubuntu-ec2-instance) for setup.
 
 !!! note "Raw data stays in secure environments"
     Raw data files should only be stored and processed in our secure environments: [AWS](aws.md) (a HIPAA-compliant environment), the [HPC](access.md#high-performance-cluster-hpc), or [CAVATICA](cavatica.md).
