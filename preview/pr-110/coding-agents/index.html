@@ -1557,7 +1557,7 @@
 <td>Yes</td>
 </tr>
 <tr>
-<td>Raw data files (e.g., FASTQ, BAM/CRAM, VCF)</td>
+<td>Raw data files (e.g., FASTQ, BAM/CRAM, germline VCF)</td>
 <td><strong>No</strong> (except creating MD5 checksums); have Claude write code that you run yourself</td>
 <td>Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA</td>
 <td><strong>No</strong>; do not upload. Raw files stay in AWS, the HPC, or CAVATICA</td>
@@ -1581,6 +1581,11 @@ If your work touches any of these, use CNH Codex, which the Children's National 
 Do not upload raw files to any AI tool.
 Instead, ask the coding agent to write code (for example, a script or workflow), and then run that code on the raw files in one of these environments.</p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Run bulk deletes yourself</p>
+<p>Coding agents may refuse, or ask for confirmation, before running bulk cloud deletes such as <code>aws s3 rm --recursive</code>.
+Expect to review and run these commands yourself.</p>
+</div>
 <hr />
 <h2 id="using-claude-code">Using Claude Code</h2>
 <p>The Rokita Lab Claude Team includes Claude Code, which can be run from the terminal or through the VS Code extension.
@@ -1592,7 +1597,8 @@ The steps below cover installation; see the <a href="https://code.claude.com/doc
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Do not let Claude work on raw data files</p>
-<p>Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or VCF files.
+<p>Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or germline VCF files.
+Somatic VCF files are OK, since we release them openly.
 The only exception is creating MD5 checksums (<code>md5sum</code>).
 This also applies when Claude Code runs on an EC2 instance or the HPC, where it can open files directly.
 Instead, ask Claude to write the code, and then run that code yourself outside of Claude.</p>
@@ -1631,7 +1637,7 @@ Once you have a license, open Copilot from Outlook in your web browser.</p>
 Follow the guide at <a href="https://aiml-apim-dev.azure-api.net/developer-docs/code-assistants/codex-cli-setup/">CNH Codex CLI setup guide</a> for the supported-user requirements, Codex installation, the <code>cnh-token.py</code> authentication script, and the Azure/APIM configuration. </p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li>Codex CLI version 0.146.0 is installed on the EC2 instance. (version 0.147 does not work with our Azure models.)</li>
+<li>Codex CLI version 0.146.0 is installed on your computer. (version 0.147 does not work with our Azure models.)</li>
 <li>Python 3.12 or later.</li>
 <li>The <code>cnh-token.py</code> script has been downloaded from the CNH setup guide.</li>
 <li>You are in an approved user group for the CNH coding-assistant endpoint.</li>
@@ -1875,7 +1881,9 @@ use in <code>~/.codex/config.toml</code>:</p>
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.sections","navigation.expand","navigation.top","navigation.instant","search.suggest","search.highlight","content.code.copy","content.action.edit","toc.follow","toc.integrate"],"redirect":null,"search":"../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.sections","navigation.expand","navigation.top","navigation.instant","search.suggest","search.highlight","content.code.copy","content.action.edit","toc.follow","toc.integrate"],"redirect":"../redirect.json","search":"../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../assets/javascripts/bundle.d31f0ffa.min.js"></script>
