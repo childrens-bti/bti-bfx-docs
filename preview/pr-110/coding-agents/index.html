@@ -1335,10 +1335,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#microsoft-365-copilot" class="md-nav__link">
+  <a href="#childrens-national-microsoft-copilot" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Microsoft 365 Copilot
+        Children's National Microsoft Copilot
       </span>
     </span>
   </a>
@@ -1534,16 +1534,29 @@
 <hr />
 <h2 id="what-data-can-go-into-ai-tools">What Data Can Go Into AI Tools</h2>
 <p>We have access to three AI tools, and they have different rules about which data you can use with them.</p>
+<div class="ai-data-rules">
 <table>
 <thead>
 <tr>
 <th></th>
-<th>CNH Codex (AI/ML team, HIPAA-compliant)</th>
-<th>Microsoft 365 Copilot (HIPAA-compliant)</th>
-<th>Rokita Lab Claude Team (<span class="not-hipaa">NOT HIPAA-compliant</span>)</th>
+<th>Children's National Codex</th>
+<th>Children's National Microsoft Copilot</th>
+<th>Rokita Lab Claude Team</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>HIPAA-compliant</td>
+<td>Yes, <strong>only</strong> with Children's National SSO login</td>
+<td>Yes, <strong>only</strong> with Children's National SSO login</td>
+<td><strong>No</strong></td>
+</tr>
+<tr>
+<td>Sign in with</td>
+<td>Children's National SSO login</td>
+<td>Children's National SSO login</td>
+<td>Children's National email address only</td>
+</tr>
 <tr>
 <td>Protected health information (PHI)</td>
 <td>Yes</td>
@@ -1570,10 +1583,17 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Codex and Copilot are only HIPAA-compliant when you sign in with your Children's National SSO login</p>
+<p>The "Yes" answers in the Codex and Copilot columns apply <strong>only</strong> when you sign in with your Children's National single sign-on (SSO) account.
+Codex or Copilot used with a personal account, or without signing in, is <strong>not</strong> HIPAA-compliant; never enter PHI or germline variant data there.
+See <a href="#running-codex-locally">Running Codex Locally</a> and <a href="#childrens-national-microsoft-copilot">Children's National Microsoft Copilot</a> for how to sign in correctly.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">When in doubt, use Codex</p>
 <p>The Rokita Lab Claude Team is not approved for PHI, full germline variant data, or raw files.
-If your work touches any of these, use CNH Codex, which the Children's National AI/ML team maintains for this purpose. See <a href="#running-codex-locally">Running Codex Locally</a> or <a href="#running-codex-cli-on-an-ubuntu-ec2-instance">Running Codex CLI on an Ubuntu EC2 Instance</a> for setup.</p>
+If your work touches any of these, use Children's National Codex, which the Children's National AI/ML team maintains for this purpose. See <a href="#running-codex-locally">Running Codex Locally</a> or <a href="#running-codex-cli-on-an-ubuntu-ec2-instance">Running Codex CLI on an Ubuntu EC2 Instance</a> for setup.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Raw data stays in secure environments</p>
@@ -1591,7 +1611,7 @@ Expect to review and run these commands yourself.</p>
 <p>The Rokita Lab Claude Team includes Claude Code, which can be run from the terminal or through the VS Code extension.
 The steps below cover installation; see the <a href="https://code.claude.com/docs/en/overview">Claude Code documentation</a> for everything else.</p>
 <ul>
-<li>Sign in with your CNH email address.</li>
+<li>Sign in with your Children's National email address. Do not use a personal Claude account.</li>
 <li>You must be added to the lab's Claude Team access group before you can sign in. Contact Jo Lynne Rokita to request access.</li>
 <li>Follow the data rules in <a href="#what-data-can-go-into-ai-tools">What Data Can Go Into AI Tools</a>.</li>
 </ul>
@@ -1619,7 +1639,7 @@ Run <code>brew upgrade claude-code</code> to update.</p>
 claude
 </code></pre></div>
 <p>The first time you run <code>claude</code>, it asks you to sign in through your browser.
-Sign in with your CNH email address.
+Sign in with your Children's National email address.
 On an EC2 instance with no browser, Claude Code prints a sign-in link instead. Open the link in the browser on your local computer, sign in, then copy the code it shows and paste it back into the Claude Code prompt on the instance.
 To switch accounts later, type <code>/login</code> in a Claude Code session.</p>
 <p>Run <code>claude doctor</code> if the installation is not working.</p>
@@ -1628,19 +1648,25 @@ To switch accounts later, type <code>/login</code> in a Claude Code session.</p>
 To open it, open the Command Palette (<code>Cmd+Shift+P</code>), type "Claude Code", and select <strong>Open in New Tab</strong>.
 If you use VS Code Remote-SSH to work on an EC2 instance, install the extension on the remote host when VS Code asks.</p>
 <hr />
-<h2 id="microsoft-365-copilot">Microsoft 365 Copilot</h2>
+<h2 id="childrens-national-microsoft-copilot">Children's National Microsoft Copilot</h2>
 <p>Full-time staff can request a Microsoft 365 Copilot license by submitting a ServiceNow ticket.
 Once you have a license, open Copilot from Outlook in your web browser.</p>
+<div class="admonition danger">
+<p class="admonition-title">Use only the Children's National SSO version</p>
+<p>Only Children's National Copilot opened with your Children's National SSO login is HIPAA-compliant.
+Before entering PHI or germline variant data, check that you are signed in with your Children's National email address.
+Copilot with a personal Microsoft account, or without signing in, is not HIPAA-compliant.</p>
+</div>
 <hr />
 <h2 id="running-codex-locally">Running Codex Locally</h2>
 <p>The AI/ML team at Children's National maintains internal coding agents for our use. 
-Follow the guide at <a href="https://aiml-apim-dev.azure-api.net/developer-docs/code-assistants/codex-cli-setup/">CNH Codex CLI setup guide</a> for the supported-user requirements, Codex installation, the <code>cnh-token.py</code> authentication script, and the Azure/APIM configuration. </p>
+Follow the guide at <a href="https://aiml-apim-dev.azure-api.net/developer-docs/code-assistants/codex-cli-setup/">Children's National Codex CLI setup guide</a> for the supported-user requirements, Codex installation, the <code>cnh-token.py</code> authentication script, and the Azure/APIM configuration. </p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
 <li>Codex CLI version 0.146.0 is installed on your computer. (version 0.147 does not work with our Azure models.)</li>
 <li>Python 3.12 or later.</li>
-<li>The <code>cnh-token.py</code> script has been downloaded from the CNH setup guide.</li>
-<li>You are in an approved user group for the CNH coding-assistant endpoint.</li>
+<li>The <code>cnh-token.py</code> script has been downloaded from the Children's National setup guide.</li>
+<li>You are in an approved user group for the Children's National coding-assistant endpoint.</li>
 <li>Optional: VS Code Codex extension</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Make yourself an admin and install the codex CLI</span>
@@ -1657,9 +1683,9 @@ The steps below address the EC2-specific authentication flow.</p>
 <ul>
 <li>Codex CLI version 0.146.0 is installed on the EC2 instance. (version 0.147 does not work with our Azure models.)</li>
 <li>Python 3.12 or later is available on the instance.</li>
-<li>The <code>cnh-token.py</code> script has been downloaded from the CNH setup guide.</li>
+<li>The <code>cnh-token.py</code> script has been downloaded from the Children's National setup guide.</li>
 <li>You can connect to the instance over SSH from your local computer.</li>
-<li>You are in an approved user group for the CNH coding-assistant endpoint.</li>
+<li>You are in an approved user group for the Children's National coding-assistant endpoint.</li>
 </ul>
 <h3 id="steps">Steps</h3>
 <h4 id="1-create-a-python-virtual-environment">1. Create a Python virtual environment</h4>
@@ -1757,7 +1783,7 @@ not commit it to a repository.</p>
 <h3 id="known-endpoint-compatibility-issue">Known endpoint compatibility issue</h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>On the CNH APIM endpoint, newer Codex CLI version 0.147 may fail with <code>gpt-5.6-*</code>
+<p>On the Children's National APIM endpoint, newer Codex CLI version 0.147 may fail with <code>gpt-5.6-*</code>
 models and report an error like:</p>
 <div class="highlight"><pre><span></span><code>Invalid 'input[0].tools[0].description': empty string ...
 </code></pre></div>

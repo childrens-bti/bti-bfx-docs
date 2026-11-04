@@ -146,11 +146,11 @@
 }
 
 /*
-  Flags a tool as not HIPAA-compliant in the coding-agents data table.
-  Uses the brand accent orange so the warning stands out in the header
-  row; bold keeps it from being mistaken for a link.
+  Highlights the restrictions (bold text) in the coding-agents data
+  table, e.g. "only with Children's National SSO login" and "No". Uses the brand accent
+  orange so the warnings stand out; bold keeps them from being mistaken
+  for links.
 */
-.md-typeset .not-hipaa {
+.md-typeset .ai-data-rules strong {
   color: var(--md-accent-fg-color);
-  font-weight: 700;
 }
