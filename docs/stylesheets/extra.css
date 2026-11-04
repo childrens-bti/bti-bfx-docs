@@ -144,3 +144,13 @@
 .md-nav__link svg {
   opacity: 0.75;
 }
+
+/*
+  Highlights the restrictions (bold text) in the coding-agents data
+  table, e.g. "only with Children's National SSO login" and "No". Uses the brand accent
+  orange so the warnings stand out; bold keeps them from being mistaken
+  for links.
+*/
+.md-typeset .ai-data-rules strong {
+  color: var(--md-accent-fg-color);
+}

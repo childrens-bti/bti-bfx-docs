@@ -54,6 +54,8 @@ jobs:
           git push origin $GH_PAGES_BRANCH
 
       - name: Post PR Comment with Preview Link
+        # Only comment once; later pushes update the same preview URL
+        if: github.event.action == 'opened'
         uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

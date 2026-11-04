@@ -47,8 +47,11 @@ Using AI for bioinformatics (e.g. chatbots, GitHub Copilot) can drastically stre
 However, it is very important to consider the information and data we enter into a chatbot or AI assistant.
 
 !!! danger "Do not"
-    - Paste any identifiable patient data into non-CNH-approved chatbots or AI assistants, whether in the form of files or free text.
+    - Paste any identifiable patient data into any tool other than Children's National Codex and Children's National Microsoft Copilot, whether in the form of files or free text. You must be logged into Codex and Copilot with your Children's National SSO login.
     - Utilize unapproved AI software in conjunction with GitHub or your text editor, so that private repositories are not exposed.
 
-Approved CNH coding agents, such as Codex, may be used with GitHub and your text editor - see [Using Codex](codex.md) for setup instructions.
+Approved AI tools include Children's National Codex, Children's National Microsoft Copilot, and Claude Code (through the Rokita Lab Claude Team, signed in with your Children's National email address).
+Codex and Claude Code may be used with GitHub and your text editor.
+Each tool has different rules about which data you can use with it. For example, Claude is approved for code but not for PHI.
+See [Coding Agents](coding-agents.md) for setup instructions and what data each tool can be used with.
 

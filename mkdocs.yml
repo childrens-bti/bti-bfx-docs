@@ -4,6 +4,9 @@ repo_name: childrens-bti/bti-bfx-docs
 edit_uri: edit/main/docs/
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        codex.md: coding-agents.md
   - git-revision-date-localized:
       type: date
       exclude:
@@ -12,7 +15,7 @@ plugins:
         - cavatica.md
         - cnh-onboarding.md
         - code-review-guide.md
-        - codex.md
+        - coding-agents.md
         - docker.md
         - docs-resources.md
         - github-general.md
@@ -34,7 +37,7 @@ nav:
       - Technology Access Requests: access.md
   - Compute:
       - AWS Compute: aws.md
-      - Using Codex: codex.md
+      - Coding Agents: coding-agents.md
       - CAVATICA Compute: cavatica.md
       - CAVATICA workflow SOP: sop-cwl-cavatica.md
       - Using Docker or Podman: docker.md

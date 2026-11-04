@@ -2,21 +2,124 @@
 icon: material/robot-outline
 ---
 
-# Using Codex
+# Coding Agents
+
+---
+
+## What Data Can Go Into AI Tools
+
+We have access to three AI tools, and they have different rules about which data you can use with them.
+
+<div class="ai-data-rules" markdown>
+
+| | Children's National Codex | Children's National Microsoft Copilot | Rokita Lab Claude Team |
+|---|---|---|---|
+| HIPAA-compliant | Yes, **only** with Children's National SSO login | Yes, **only** with Children's National SSO login | **No** |
+| Sign in with | Children's National SSO login | Children's National SSO login | Children's National email address only |
+| Protected health information (PHI) | Yes | Yes | **No** |
+| Germline variant data | Yes | Yes | Only pathogenic/likely pathogenic (P/LP) variants that we would release with a manuscript |
+| Raw data files (e.g., FASTQ, BAM/CRAM, germline VCF) | Do not upload; use Codex to write code that runs on the files in AWS, the HPC, or CAVATICA | **No**; do not upload. Raw files stay in AWS, the HPC, or CAVATICA | **No** (except creating MD5 checksums); have Claude write code that you run yourself |
+| Code, de-identified summary data, documentation | Yes | Yes | Yes |
+
+</div>
+
+!!! danger "Codex and Copilot are only HIPAA-compliant when you sign in with your Children's National SSO login"
+    The "Yes" answers in the Codex and Copilot columns apply **only** when you sign in with your Children's National single sign-on (SSO) account.
+    Codex or Copilot used with a personal account, or without signing in, is **not** HIPAA-compliant; never enter PHI or germline variant data there.
+    See [Running Codex Locally](#running-codex-locally) and [Children's National Microsoft Copilot](#childrens-national-microsoft-copilot) for how to sign in correctly.
+
+!!! warning "When in doubt, use Codex"
+    The Rokita Lab Claude Team is not approved for PHI, full germline variant data, or raw files.
+    If your work touches any of these, use Children's National Codex, which the Children's National AI/ML team maintains for this purpose. See [Running Codex Locally](#running-codex-locally) or [Running Codex CLI on an Ubuntu EC2 Instance](#running-codex-cli-on-an-ubuntu-ec2-instance) for setup.
+
+!!! note "Raw data stays in secure environments"
+    Raw data files should only be stored and processed in our secure environments: [AWS](aws.md) (a HIPAA-compliant environment), the [HPC](access.md#high-performance-cluster-hpc), or [CAVATICA](cavatica.md).
+    Do not upload raw files to any AI tool.
+    Instead, ask the coding agent to write code (for example, a script or workflow), and then run that code on the raw files in one of these environments.
+
+!!! tip "Run bulk deletes yourself"
+    Coding agents may refuse, or ask for confirmation, before running bulk cloud deletes such as `aws s3 rm --recursive`.
+    Expect to review and run these commands yourself.
+
+---
+
+## Using Claude Code
+
+The Rokita Lab Claude Team includes Claude Code, which can be run from the terminal or through the VS Code extension.
+The steps below cover installation; see the [Claude Code documentation](https://code.claude.com/docs/en/overview) for everything else.
+
+- Sign in with your Children's National email address. Do not use a personal Claude account.
+- You must be added to the lab's Claude Team access group before you can sign in. Contact Jo Lynne Rokita to request access.
+- Follow the data rules in [What Data Can Go Into AI Tools](#what-data-can-go-into-ai-tools).
+
+!!! danger "Do not let Claude work on raw data files"
+    Claude must not read or process raw data files, such as CRAM, BAM, FASTQ, or germline VCF files.
+    Somatic VCF files are OK, since we release them openly.
+    The only exception is creating MD5 checksums (`md5sum`).
+    This also applies when Claude Code runs on an EC2 instance or the HPC, where it can open files directly.
+    Instead, ask Claude to write the code, and then run that code yourself outside of Claude.
+
+### Installing Claude Code (Local or EC2)
+
+The installation steps are the same on your local Mac and on an Ubuntu EC2 instance.
+Node.js is not required.
+
+```bash
+# Install Claude Code (macOS or Linux)
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Check the installation
+claude --version
+```
+
+On a Mac, you can install with Homebrew instead (`brew install --cask claude-code`), but Homebrew installs do not update automatically.
+Run `brew upgrade claude-code` to update.
+
+To start Claude Code, change to your project directory and run `claude`:
+
+```bash
+cd /path/to/your/project
+claude
+```
+
+The first time you run `claude`, it asks you to sign in through your browser.
+Sign in with your Children's National email address.
+On an EC2 instance with no browser, Claude Code prints a sign-in link instead. Open the link in the browser on your local computer, sign in, then copy the code it shows and paste it back into the Claude Code prompt on the instance.
+To switch accounts later, type `/login` in a Claude Code session.
+
+Run `claude doctor` if the installation is not working.
+
+### VS Code Extension
+
+Install the [Claude Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) from the VS Code Marketplace, or search for "Claude Code" in the Extensions view (`Cmd+Shift+X`).
+To open it, open the Command Palette (`Cmd+Shift+P`), type "Claude Code", and select **Open in New Tab**.
+If you use VS Code Remote-SSH to work on an EC2 instance, install the extension on the remote host when VS Code asks.
+
+---
+
+## Children's National Microsoft Copilot
+
+Full-time staff can request a Microsoft 365 Copilot license by submitting a ServiceNow ticket.
+Once you have a license, open Copilot from Outlook in your web browser.
+
+!!! danger "Use only the Children's National SSO version"
+    Only Children's National Copilot opened with your Children's National SSO login is HIPAA-compliant.
+    Before entering PHI or germline variant data, check that you are signed in with your Children's National email address.
+    Copilot with a personal Microsoft account, or without signing in, is not HIPAA-compliant.
 
 ---
 
 ## Running Codex Locally
 
 The AI/ML team at Children's National maintains internal coding agents for our use. 
-Follow the guide at [CNH Codex CLI setup guide](https://aiml-apim-dev.azure-api.net/developer-docs/code-assistants/codex-cli-setup/) for the supported-user requirements, Codex installation, the `cnh-token.py` authentication script, and the Azure/APIM configuration. 
+Follow the guide at [Children's National Codex CLI setup guide](https://aiml-apim-dev.azure-api.net/developer-docs/code-assistants/codex-cli-setup/) for the supported-user requirements, Codex installation, the `cnh-token.py` authentication script, and the Azure/APIM configuration. 
 
 ### Prerequisites
 
-- Codex CLI version 0.146.0 is installed on the EC2 instance. (version 0.147 does not work with our Azure models.)
+- Codex CLI version 0.146.0 is installed on your computer. (version 0.147 does not work with our Azure models.)
 - Python 3.12 or later.
-- The `cnh-token.py` script has been downloaded from the CNH setup guide.
-- You are in an approved user group for the CNH coding-assistant endpoint.
+- The `cnh-token.py` script has been downloaded from the Children's National setup guide.
+- You are in an approved user group for the Children's National coding-assistant endpoint.
 - Optional: VS Code Codex extension
 
 ```bash
@@ -39,9 +142,9 @@ The steps below address the EC2-specific authentication flow.
 
 - Codex CLI version 0.146.0 is installed on the EC2 instance. (version 0.147 does not work with our Azure models.)
 - Python 3.12 or later is available on the instance.
-- The `cnh-token.py` script has been downloaded from the CNH setup guide.
+- The `cnh-token.py` script has been downloaded from the Children's National setup guide.
 - You can connect to the instance over SSH from your local computer.
-- You are in an approved user group for the CNH coding-assistant endpoint.
+- You are in an approved user group for the Children's National coding-assistant endpoint.
 
 ### Steps
 
@@ -180,7 +283,7 @@ not commit it to a repository.
 ### Known endpoint compatibility issue
 
 !!! warning
-    On the CNH APIM endpoint, newer Codex CLI version 0.147 may fail with `gpt-5.6-*`
+    On the Children's National APIM endpoint, newer Codex CLI version 0.147 may fail with `gpt-5.6-*`
     models and report an error like:
 
     ```text
