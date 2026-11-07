@@ -18,7 +18,7 @@ Early involvement allows the Core to contribute meaningfully to study design, wh
     - The type(s) of data involved (e.g. RNA-seq, WGS/WES, single-cell, clinical/metadata) and where they currently live.
     - Anticipated timeline and any hard deadlines (e.g. grant submissions, conference abstracts).
     - Funding source for the analysis.
-3. **Submit a request.** Once scoped, submit your request through the [BTI Bioinformatics Ticket Tracker](https://bti-bio-tickets.streamlit.app/) so it can be logged and prioritized alongside other Core work.
+3. **Submit a request.** Once scoped, submit your request through the appropriate form on our [Request Forms](forms.md) page so it can be logged and prioritized alongside other Core work.
 Internally, Core staff track the resulting work as an issue in the [Internal Ticket Tracker](https://github.com/childrens-bti/internal-ticket-tracker) (see [Project Management](project-mgmt.md)).
 
 ## Prioritization and Scheduling

@@ -32,6 +32,7 @@ plugins:
         - vs-code.md
 nav:
   - Home: index.md
+  - Request Forms: forms.md
   - Onboarding:
       - CNH-Specific Onboarding: cnh-onboarding.md
       - Technology Access Requests: access.md
@@ -53,6 +54,7 @@ nav:
       - Sprint Planning: sprints.md
   - For Principal Investigators:
       - Working with the Core: pi-working-with-core.md
+      - Request Forms: forms.md
       - Services: pi-services.md
       - Authorship Guidelines: pi-authorship-guidelines.md
       - Data Deposition: pi-data-deposition.md
