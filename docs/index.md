@@ -1,58 +1,43 @@
 ---
 icon: material/home
+hide:
+  - toc
 ---
 
-# Documentation for the Rokita Lab and BTI Bioinformatics Core
+# Welcome to the Rokita Lab · BTI Bioinformatics Core Docs
 
-Welcome to documentation website for Children's National Hospital Rokita Lab and Brain Tumor Institute (BTI) Bioinformatics team members.
-This website is a centralized location that contains information about tool accessibility as well as general guidance for utilizing compute infrastructure and using reproducible practices for analytical projects.
-To file an issue, please see the docs repo [here](https://github.com/childrens-bti/bti-bfx-docs/issues).
-To submit a request to the BTI Bioinformatics Core, see [Working with the Core](pi-working-with-core.md).
+The Brain Tumor Institute (BTI) Bioinformatics Core at Children's National Hospital, directed by [Dr. Jo Lynne Rokita](https://rokitalab.com/coremembers/00a-jolynne-rokita.html){ target="_blank" rel="noopener" }, partners with investigators on genomic, transcriptomic, and clinical data analysis, from study design through publication.
+This site documents how to work with the Core, along with the practices and infrastructure used by Rokita Lab and Core staff.
+[Meet the Core team](https://rokitalab.com/core/){ target="_blank" rel="noopener" }.
 
----
+Choose the path that fits you below.
 
-## Responsible and Ethical Use of Bioinformatics Resources
+<div class="grid cards home-paths" markdown>
 
-### Ethical Considerations
+-   :material-handshake-outline:{ .lg .middle } __PIs and collaborators__
 
-Please be sure to work with your PI and/or Dr. Rokita to understand which metadata, clinical data, and genomic data types are allowed to be stored in public and private spaces.
-Please do not share any passwords, tokens, account numbers (e.g. AWS), or IP addresses externally or within GitHub comments, issues, or commits. 
-If you have questions, please ask us!
+    ---
 
-### Submitting Jobs or Tasks
+    How to start a project with the Core, what we offer, and how we share credit.
 
-1. HPC: When utilizing the HPC, please be mindful when submitting large or many jobs, as this is a community resource.
-2. AWS: We have created an EC2 service catalog product, "BTI Research" for use by researchers in the BTI. 
-Each person can utlize their own instance without affecting others' compute.
-3. [CAVATICA](https://cavatica.sbgenomics.com/): We primarily utilize CAVATICA for established upstream workflows. 
-Jobs will be automatically scheduled and queued based on your user capacity.
+    - [:octicons-arrow-right-24: Submit a request](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" }
+    - [:octicons-arrow-right-24: Working with the Core](pi-working-with-core.md)
+    - [:octicons-arrow-right-24: Services](pi-services.md)
+    - [:octicons-arrow-right-24: Authorship guidelines](pi-authorship-guidelines.md)
+    - [:octicons-arrow-right-24: Data deposition](pi-data-deposition.md)
 
-### Fiscal Responsibility 
+-   :material-account-group:{ .lg .middle } __Lab and Core staff__
 
-1. AWS: Please only launch an EC2 instance type and volume for the work you will need to do to minimize costs (We are charged for instances per hour and by storage). Below are some ways you can minimize costs.
-    
-    - Always `STOP` your instance once you are finished, or if are not actively working on the instance (e.g. you have 3 meetings and will not be working on it - you can stop it and come back later).
-    - `TERMINATE` your instance once you no longer need it, or if you will not be using it for an extended period of time (weeks - months).
+    ---
 
-2. CAVATICA: Use of CAVATICA requires set up of a billing group and funds.
-Please work with your PI and/or Dr. Rokita if you would like to run tasks in CAVATICA.
+    Onboarding, tool access, compute, and how we write and review code.
 
-    - The NIH has Cloud Credits available for working with specific datasets through application (e.g. [CFDE](https://docs.cavatica.org/docs/common-fund-data-ecosystem) and/or [Kids First](https://commonfund.nih.gov/kidsfirst/cloudcredits)).
+    - [:octicons-arrow-right-24: Responsible and ethical use](responsible-use.md) (start here)
+    - [:octicons-arrow-right-24: CNH-specific onboarding](cnh-onboarding.md)
+    - [:octicons-arrow-right-24: Technology access requests](access.md)
+    - [:octicons-arrow-right-24: Coding agents](coding-agents.md)
+    - [:octicons-arrow-right-24: Using GitHub](github-general.md)
 
-3. [Cancer Genomics Cloud (CGC)](https://www.cancergenomicscloud.org/): New users of the CGC get $300 in cloud credits when they create a new account, and this can be used to run and/or test new workflows as desired.
-CGC has cloud credits available through [application](https://docs.cancergenomicscloud.org/docs/credits) as well.
+</div>
 
-### Responsible Use of Artificial Intelligence (AI) in Bioinformatics
-
-Using AI for bioinformatics (e.g. chatbots, GitHub Copilot) can drastically streamline time to project completion as it can be very useful when converting code from one language to another, developing functions, working out bugs, and more.
-However, it is very important to consider the information and data we enter into a chatbot or AI assistant.
-
-!!! danger "Do not"
-    - Paste any identifiable patient data into any tool other than Children's National Codex and Children's National Microsoft Copilot, whether in the form of files or free text. You must be logged into Codex and Copilot with your Children's National SSO login.
-    - Utilize unapproved AI software in conjunction with GitHub or your text editor, so that private repositories are not exposed.
-
-Approved AI tools include Children's National Codex, Children's National Microsoft Copilot, and Claude Code (through the Rokita Lab Claude Team, signed in with your Children's National email address).
-Codex and Claude Code may be used with GitHub and your text editor.
-Each tool has different rules about which data you can use with it. For example, Claude is approved for code but not for PHI.
-See [Coding Agents](coding-agents.md) for setup instructions and what data each tool can be used with.
-
+To report a problem with these docs, [file an issue](https://github.com/childrens-bti/bti-bfx-docs/issues).

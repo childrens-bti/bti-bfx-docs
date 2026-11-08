@@ -154,3 +154,67 @@
 .md-typeset .ai-data-rules strong {
   color: var(--md-accent-fg-color);
 }
+
+/*
+  Home page cards: each link already leads with an arrow icon, so the
+  default list bullet doubles up the marker. Drop the bullet and indent.
+*/
+.md-typeset .grid.cards li ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.md-typeset .grid.cards li ul li {
+  margin-left: 0;
+}
+
+/*
+  Small pill for upcoming features (e.g. "Coming soon" on Working with
+  the Core), so the note reads as a status label rather than blending
+  into the surrounding sentence. Uses the PI path blue, since it marks
+  PI-facing features; orange is the staff path color.
+*/
+.md-typeset .coming-soon {
+  display: inline-block;
+  padding: 0 0.5em;
+  margin-right: 0.25em;
+  border-radius: 1em;
+  font-size: 0.85em;
+  color: #ffffff;
+  background-color: #0077cd;
+}
+
+/*
+  Home page path cards: a thin top stripe in Children's National
+  secondary colors (from the BTI Core banner) so each audience path
+  reads as its own lane. Blue and orange are complementary and stay
+  distinct for color-blind readers (blue/purple did not). Order
+  matches docs/index.md: PIs first, staff second.
+*/
+.md-typeset .grid.cards.home-paths > ul > li {
+  border-top: 0.25rem solid var(--path-color);
+}
+
+.md-typeset .grid.cards.home-paths > ul > li:nth-child(1) {
+  --path-color: #0077cd;
+}
+
+.md-typeset .grid.cards.home-paths > ul > li:nth-child(2) {
+  --path-color: #e67200;
+}
+
+/*
+  Sidebar section headings (Onboarding, Compute, ...) get a thin top
+  stripe matching the home page path cards: staff sections use the
+  staff card's orange, and "For Principal Investigators" uses the PI
+  card's blue. nth-child counts Home as item 1, so the PI section
+  (listed right after Home in mkdocs.yml) is 2.
+*/
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+  border-top: 0.15rem solid var(--section-color, #e67200);
+  padding-top: 0.5rem;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item--section:nth-child(2) {
+  --section-color: #0077cd;
+}

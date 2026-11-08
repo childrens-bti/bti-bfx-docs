@@ -1,4 +1,4 @@
-site_name: Rokita Lab and BTI Bioinformatics Documentation
+site_name: "Rokita Lab · BTI Bioinformatics Core | Docs"
 repo_url: https://github.com/childrens-bti/bti-bfx-docs
 repo_name: childrens-bti/bti-bfx-docs
 edit_uri: edit/main/docs/
@@ -27,12 +27,19 @@ plugins:
         - pi-services.md
         - pi-working-with-core.md
         - project-mgmt.md
+        - responsible-use.md
         - sop-cwl-cavatica.md
         - sprints.md
         - vs-code.md
 nav:
   - Home: index.md
+  - For Principal Investigators:
+      - Working with the Core: pi-working-with-core.md
+      - Services: pi-services.md
+      - Authorship Guidelines: pi-authorship-guidelines.md
+      - Data Deposition: pi-data-deposition.md
   - Onboarding:
+      - Responsible and Ethical Use: responsible-use.md
       - CNH-Specific Onboarding: cnh-onboarding.md
       - Technology Access Requests: access.md
   - Compute:
@@ -51,11 +58,6 @@ nav:
   - Team and Project Management:
       - Project Management: project-mgmt.md
       - Sprint Planning: sprints.md
-  - For Principal Investigators:
-      - Working with the Core: pi-working-with-core.md
-      - Services: pi-services.md
-      - Authorship Guidelines: pi-authorship-guidelines.md
-      - Data Deposition: pi-data-deposition.md
   - Resources:
       - Literature: literature.md
       - Docs: docs-resources.md
@@ -106,3 +108,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg

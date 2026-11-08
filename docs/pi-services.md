@@ -7,6 +7,10 @@ icon: material/rocket-launch
 The [BTI Bioinformatics Core](https://rokitalab.com/core/) offers a range of computational and analytical support for projects involving genomic, transcriptomic, and clinical data. 
 See [Working with the Core](pi-working-with-core.md) for how to initiate a collaboration.
 
+!!! tip "Ready to start?"
+    [Submit a request](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" } through our request forms.
+    If you're still shaping the idea, take a look around.
+
 ---
 
 ## Data Transfers & Management
@@ -26,91 +30,77 @@ See [Working with the Core](pi-working-with-core.md) for how to initiate a colla
 
 For additional customization of workflows, additional fees may apply.
 
-**PDX preprocessing**
+??? note "PDX preprocessing"
+    - Quality control assessment
+    - Xenome classification of human and mouse reads
 
-- Quality control assessment
-- Xenome classification of human and mouse reads
+??? note "Normal DNA"
+    - Quality control assessment
+    - Sentieon alignment, single sample genotyping (GATK HaplotypeCaller) with gnomAD v3.1.1 and 4.1 annotation
+    - Normal CNV calls (CNVnator, MantaSV, SVaba) with AnnotSV annotation
+    - Normal SV calls (MantaSV, SVaba) with AnnotSV annotation
+    - Pathogenicity assessment (ClinVar, InterVar, AutoPVS1, AutoGVP)
 
-**Normal DNA**
+??? note "Tumor DNA (WGS, WXS, Panel from T/N pairs)"
+    - Quality control assessment
+    - Sentieon alignment, somatic SNV calls (Lancet, VarDict, Strelka2, Mutect2), and consensus SNV calls with VEP v105 annotation
+    - CNV (ControlFREEC, CNVkit) and SV (MantaSV) calls (WGS and WXS only) with AnnotSV annotation
 
-- Quality control assessment
-- Sentieon alignment, single sample genotyping (GATK HaplotypeCaller) with gnomAD v3.1.1 and 4.1 annotation
-- Normal CNV calls (CNVnator, MantaSV, SVaba) with AnnotSV annotation
-- Normal SV calls (MantaSV, SVaba) with AnnotSV annotation
-- Pathogenicity assessment (ClinVar, InterVar, AutoPVS1, AutoGVP)
+??? note "Tumor only DNA (WGS, WXS, Panel)"
+    - Quality control assessment
+    - Sentieon alignment, somatic SNV calls (Mutect2) using PON with VEP v105 annotation
+    - CNV (ControlFREEC, CNVkit) and SV (MantaSV) calls (WGS and WXS only) with AnnotSV annotation
 
-**Tumor DNA (WGS, WXS, Panel from T/N pairs)**
+??? note "Quality control (sample identity/relatedness checks)"
+    - NGSCheckMate or
+    - Somalier Relate
 
-- Quality control assessment
-- Sentieon alignment, somatic SNV calls (Lancet, VarDict, Strelka2, Mutect2), and consensus SNV calls with VEP v105 annotation
-- CNV (ControlFREEC, CNVkit) and SV (MantaSV) calls (WGS and WXS only) with AnnotSV annotation
+??? note "Short-read RNA (tumor or normal)"
+    - Quality control assessment (RNASeCQ, STAR)
+    - STAR two-pass alignment (GENCODE v39 annotation)
+    - Gene counts and TPM (RSEM)
+    - Isoform counts and TPM (RSEM)
+    - Isoform abundance (Kallisto)
+    - Fusion detection (STAR-Fusion, Arriba Fusion)
+    - Splice events (rMATS turbo)
+    - Flash-Seq supported
 
-**Tumor only DNA (WGS, WXS, Panel)**
+??? note "miRNA-Seq"
+    - novel miRNA target prediction (miRanda, GENCODE v39)
 
-- Quality control assessment
-- Sentieon alignment, somatic SNV calls (Mutect2) using PON with VEP v105 annotation
-- CNV (ControlFREEC, CNVkit) and SV (MantaSV) calls (WGS and WXS only) with AnnotSV annotation
+??? note "Long-read RNA (PacBio Kinnex)"
+    - Quality control assessment
+    - Alignment
+    - Gene and isoform expression
 
-**Quality control (sample identity/relatedness checks)**
+??? note "Single cell or nucleus whole transcriptome"
+    - Quality control assessment
+    - Alignment and filtering (ALSF CCDL workflow, alevin-fry)
+    - Gene expression
+    - Cell type annotation
 
-- NGSCheckMate or 
-- Somalier Relate 
+??? note "10X Flex Gene Expression"
+    - Custom probe design
+    - Quality control assessment
+    - Alignment and filtering (STAR alignment with Cell Ranger)
+    - Gene expression
+    - Cell type annotation
 
-**Short-read RNA (tumor or normal)**
+??? note "Methylation"
+    - CNS tumor classification via NIH Methylscape (CNS tumors only; subject to API limits)
+    - Preprocessing — m-values, beta values, CNVs
+    - Probe annotation
 
-- Quality control assessment (RNASeCQ, STAR)
-- STAR two-pass alignment (GENCODE v39 annotation)
-- Gene counts and TPM (RSEM)
-- Isoform counts and TPM (RSEM)
-- Isoform abundance (Kallisto)
-- Fusion detection (STAR-Fusion, Arriba Fusion)
-- Splice events (rMATS turbo)
-- Flash-Seq supported
+??? note "Neoantigen Discovery (paired RNA-Seq and DDA proteomics)"
+    - Translation of DNA SNVs and/or RNA fusions/splice events into peptides
+    - Peptide identification with custom FASTA (FragPipe)
+    - Peptide ranking
 
-**miRNA-Seq**
+??? note "Kids First DNA long-read (PacBio, ONT)"
+    - Available on request
 
-- novel miRNA target prediction (miRanda, GENCODE v39)
-
-**Long-read RNA (PacBio Kinnex)**
-
-- Quality control assessment
-- Alignment
-- Gene and isoform expression
-
-**Single cell or nucleus whole transcriptome**
-
-- Quality control assessment
-- Alignment and filtering (ALSF CCDL workflow, alevin-fry)
-- Gene expression
-- Cell type annotation
-
-**10X Flex Gene Expression**
-
-- Custom probe design
-- Quality control assessment
-- Alignment and filtering (STAR alignment with Cell Ranger)
-- Gene expression
-- Cell type annotation
-
-**Methylation**
-
-- CNS tumor classification via NIH Methylscape (CNS tumors only; subject to API limits)
-- Preprocessing — m-values, beta values, CNVs
-- Probe annotation
-
-**Neoantigen Discovery (paired RNA-Seq and DDA proteomics)**
-
-- Translation of DNA SNVs and/or RNA fusions/splice events into peptides
-- Peptide identification with custom FASTA (FragPipe)
-- Peptide ranking
-
-**Kids First DNA long-read (PacBio, ONT)**
-
-- Available on request
-
-**LOH assessment**
-
-- AlleleCouNT for paired germline/tumor samples
+??? note "LOH assessment"
+    - AlleleCouNT for paired germline/tumor samples
 
 ## Software Development / Engineering
 
