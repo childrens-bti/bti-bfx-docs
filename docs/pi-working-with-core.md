@@ -7,24 +7,27 @@ icon: material/handshake-outline
 This page is for Principal Investigators (PIs) who are interested in collaborating with the Brain Tumor Institute (BTI) Bioinformatics Core on a project.
 See also [Services](pi-services.md) for what we offer and [Authorship Guidelines](pi-authorship-guidelines.md) for how we handle authorship and acknowledgment.
 
+!!! tip "Ready to start?"
+    [Submit a request][request-form]{ target="_blank" rel="noopener" } through our request forms.
+    If you're still shaping the idea, take a look around.
+
 ---
 
 ## Getting Started
 
-1. **Reach out early.** Contact Dr. Jo Lynne Rokita (Core Director) or Bailey Farrow (Senior Bioinformatics Operations and Program Manager) to discuss your project idea, even at the conception stage.
+1. **Reach out early.** Fill out the appropriate form on our [Request Forms page][request-form]{ target="_blank" rel="noopener" } to tell us about your project idea, even at the conception stage.
+Requests go to Bailey Farrow (Senior Bioinformatics Operations and Program Manager), so they can be logged and prioritized alongside other Core work.
 Early involvement allows the Core to contribute meaningfully to study design, which is often required to meet authorship criteria (see [Authorship Guidelines](pi-authorship-guidelines.md)).
-2. **Describe the project.** Be prepared to share:
+2. **Have your project details ready.** The form will ask for:
     - A brief description of the scientific question and study design.
     - The type(s) of data involved (e.g. RNA-seq, WGS/WES, single-cell, clinical/metadata) and where they currently live.
     - Anticipated timeline and any hard deadlines (e.g. grant submissions, conference abstracts).
     - Funding source for the analysis.
-3. **Submit a request.** Once scoped, submit your request through the [BTI Bioinformatics Ticket Tracker](https://bti-bio-tickets.streamlit.app/) so it can be logged and prioritized alongside other Core work.
-Internally, Core staff track the resulting work as an issue in the [Internal Ticket Tracker](https://github.com/childrens-bti/internal-ticket-tracker) (see [Project Management](project-mgmt.md)).
 
 ## Prioritization and Scheduling
 
-The Core plans work in two-week sprints (see [Sprint Planning](sprints.md)).
-New requests are reviewed and prioritized during Sprint Planning, so turnaround time depends on current workload and priority relative to other active projects.
+The Core plans work in two-week sprints.
+New requests are reviewed and prioritized during sprint planning, so turnaround time depends on current workload and priority relative to other active projects.
 Time-sensitive requests (e.g. an upcoming submission deadline) should be flagged as early as possible so they can be accounted for in planning.
 
 ## Lead Times for Grant Consults
@@ -43,7 +46,8 @@ For requirements around pre-submission review of the resulting scholarly outputs
 
 - Bailey Farrow will be the primary point of contact for the project.
 - Multiple engineers and scientists may play roles in the project, but one scientist will serve as lead analyst.
-- Progress and blockers are tracked internally via the associated GitHub issue(s).
+- Progress and blockers are tracked internally through GitHub and Airtable.<br>
+**Coming soon**{ .coming-soon } real-time project tracking for PIs.
 - The PI is expected to be reasonably available to answer scientific questions that affect analysis decisions, since Core staff involved in analytical judgment calls may be entitled to authorship consideration.
 - The PI is expected to attend meetings related to the project.
 
