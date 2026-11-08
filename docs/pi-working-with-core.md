@@ -8,14 +8,14 @@ This page is for Principal Investigators (PIs) who are interested in collaborati
 See also [Services](pi-services.md) for what we offer and [Authorship Guidelines](pi-authorship-guidelines.md) for how we handle authorship and acknowledgment.
 
 !!! tip "Ready to start?"
-    [Submit a request](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" } through our request forms.
+    [Submit a request][request-form]{ target="_blank" rel="noopener" } through our request forms.
     If you're still shaping the idea, take a look around.
 
 ---
 
 ## Getting Started
 
-1. **Reach out early.** Fill out the appropriate form on our [Request Forms page](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" } to tell us about your project idea, even at the conception stage.
+1. **Reach out early.** Fill out the appropriate form on our [Request Forms page][request-form]{ target="_blank" rel="noopener" } to tell us about your project idea, even at the conception stage.
 Requests go to Bailey Farrow (Senior Bioinformatics Operations and Program Manager), so they can be logged and prioritized alongside other Core work.
 Early involvement allows the Core to contribute meaningfully to study design, which is often required to meet authorship criteria (see [Authorship Guidelines](pi-authorship-guidelines.md)).
 2. **Have your project details ready.** The form will ask for:

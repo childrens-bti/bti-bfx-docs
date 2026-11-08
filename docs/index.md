@@ -20,7 +20,7 @@ Choose the path that fits you below.
 
     How to start a project with the Core, what we offer, and how we share credit.
 
-    - [:octicons-arrow-right-24: Submit a request](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" }
+    - [:octicons-arrow-right-24: Submit a request][request-form]{ target="_blank" rel="noopener" }
     - [:octicons-arrow-right-24: Working with the Core](pi-working-with-core.md)
     - [:octicons-arrow-right-24: Services](pi-services.md)
     - [:octicons-arrow-right-24: Authorship guidelines](pi-authorship-guidelines.md)

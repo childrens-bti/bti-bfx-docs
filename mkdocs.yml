@@ -108,6 +108,12 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
+  # includes/links.md holds shared link targets (e.g. the Airtable request
+  # form) and is appended to every page, so pages can write
+  # [Submit a request][request-form] and the URL lives in one place.
+  - pymdownx.snippets:
+      auto_append:
+        - includes/links.md
   - pymdownx.emoji:
       emoji_index: !!python/name:zensical.extensions.emoji.twemoji
       emoji_generator: !!python/name:zensical.extensions.emoji.to_svg

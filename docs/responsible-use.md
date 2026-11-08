@@ -16,7 +16,7 @@ If you have questions, please ask us!
 
 1. HPC: When utilizing the HPC, please be mindful when submitting large or many jobs, as this is a community resource.
 2. AWS: We have created an EC2 service catalog product, "BTI Research" for use by researchers in the BTI. 
-Each person can utlize their own instance without affecting others' compute.
+Each person can utilize their own instance without affecting others' compute.
 3. [CAVATICA](https://cavatica.sbgenomics.com/): We primarily utilize CAVATICA for established upstream workflows. 
 Jobs will be automatically scheduled and queued based on your user capacity.
 

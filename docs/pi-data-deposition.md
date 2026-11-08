@@ -5,7 +5,7 @@ icon: material/cloud-upload-outline
 # Data Deposition
 
 The BTI Bioinformatics Core can help deposit sequencing data to public repositories ahead of publication.
-See [Services](pi-services.md) for the repositories we support, or [submit a request](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" } to get started.
+See [Services](pi-services.md) for the repositories we support, or [submit a request][request-form]{ target="_blank" rel="noopener" } to get started.
 
 ---
 

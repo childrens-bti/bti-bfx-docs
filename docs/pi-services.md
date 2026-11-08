@@ -8,7 +8,7 @@ The [BTI Bioinformatics Core](https://rokitalab.com/core/) offers a range of com
 See [Working with the Core](pi-working-with-core.md) for how to initiate a collaboration.
 
 !!! tip "Ready to start?"
-    [Submit a request](https://airtable.app/published/5524d079-3b48-43d3-8624-12eca80d1223){ target="_blank" rel="noopener" } through our request forms.
+    [Submit a request][request-form]{ target="_blank" rel="noopener" } through our request forms.
     If you're still shaping the idea, take a look around.
 
 ---
