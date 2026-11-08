@@ -231,15 +231,16 @@
   Sidebar section headings (Onboarding, Compute, ...) get a thin top
   stripe matching the home page path cards: staff sections use the
   staff color, and "For Principal Investigators" uses the PI color.
-  nth-child counts Home as item 1, so the PI section (listed right
-  after Home in mkdocs.yml) is 2.
+  The PI section is matched by the page it contains (Working with the
+  Core) rather than its position, so reordering the nav does not move
+  the stripe to another section.
 */
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
   border-top: 0.15rem solid var(--section-color, var(--path-staff));
   padding-top: 0.5rem;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item--section:nth-child(2) {
+.md-nav--primary > .md-nav__list > .md-nav__item--section:has(a[href*="pi-working-with-core"]) {
   --section-color: var(--path-pi);
 }
 
