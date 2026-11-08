@@ -26,6 +26,16 @@
 }
 
 /*
+  Links default to the primary slate, which is nearly invisible on the
+  dark (slate) background. Use a lighter slate in dark mode only, so
+  links stay on-brand but readable (~9:1 contrast). Hover still goes
+  to the accent orange.
+*/
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-typeset-a-color: #9db4cc;
+}
+
+/*
   Zensical's "modern" theme.variant decouples .md-header from
   --md-primary-fg-color (it goes neutral by default), unlike classic
   Material where the header reads that variable directly. Re-pin it so
@@ -169,10 +179,26 @@
 }
 
 /*
+  Audience path colors, shared by the home page cards, the sidebar
+  section stripes, and the "Coming soon" pill. PIs get the brand accent
+  orange so the path we most want found stands out; staff get the
+  brand slate. Slate nearly vanishes on the dark background, so dark
+  mode uses the lighter slate from the header gradient instead.
+*/
+:root {
+  --path-pi: #e67200;
+  --path-staff: #415569;
+}
+
+[data-md-color-scheme="slate"] {
+  --path-staff: #84919e;
+}
+
+/*
   Small pill for upcoming features (e.g. "Coming soon" on Working with
   the Core), so the note reads as a status label rather than blending
-  into the surrounding sentence. Uses the PI path blue, since it marks
-  PI-facing features; orange is the staff path color.
+  into the surrounding sentence. Uses the PI path color, since it marks
+  PI-facing features.
 */
 .md-typeset .coming-soon {
   display: inline-block;
@@ -181,40 +207,54 @@
   border-radius: 1em;
   font-size: 0.85em;
   color: #ffffff;
-  background-color: #0077cd;
+  background-color: var(--path-pi);
 }
 
 /*
-  Home page path cards: a thin top stripe in Children's National
-  secondary colors (from the BTI Core banner) so each audience path
-  reads as its own lane. Blue and orange are complementary and stay
-  distinct for color-blind readers (blue/purple did not). Order
-  matches docs/index.md: PIs first, staff second.
+  Home page path cards: a thin top stripe in the path color so each
+  audience path reads as its own lane. Order matches docs/index.md:
+  PIs first, staff second.
 */
 .md-typeset .grid.cards.home-paths > ul > li {
   border-top: 0.25rem solid var(--path-color);
 }
 
 .md-typeset .grid.cards.home-paths > ul > li:nth-child(1) {
-  --path-color: #0077cd;
+  --path-color: var(--path-pi);
 }
 
 .md-typeset .grid.cards.home-paths > ul > li:nth-child(2) {
-  --path-color: #e67200;
+  --path-color: var(--path-staff);
 }
 
 /*
   Sidebar section headings (Onboarding, Compute, ...) get a thin top
   stripe matching the home page path cards: staff sections use the
-  staff card's orange, and "For Principal Investigators" uses the PI
-  card's blue. nth-child counts Home as item 1, so the PI section
-  (listed right after Home in mkdocs.yml) is 2.
+  staff color, and "For Principal Investigators" uses the PI color.
+  nth-child counts Home as item 1, so the PI section (listed right
+  after Home in mkdocs.yml) is 2.
 */
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
-  border-top: 0.15rem solid var(--section-color, #e67200);
+  border-top: 0.15rem solid var(--section-color, var(--path-staff));
   padding-top: 0.5rem;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item--section:nth-child(2) {
-  --section-color: #0077cd;
+  --section-color: var(--path-pi);
+}
+
+/*
+  In dark mode the sidebar section headings, the sidebar Home link, and
+  the home page card titles render the same mid-gray as the text around
+  them, so they do not read as headings. Make them near-white (and the
+  Home icon fully opaque, overriding the dimmed nav icons above).
+*/
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__link,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-paths > ul > li > p:first-child {
+  color: #f2f3f5;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__link svg {
+  opacity: 1;
 }
